@@ -3,7 +3,7 @@ import Balon from './componentes/balonLogin/Balon';
 import LoginContainer from './componentes/LoginContainer';
 
 
-function App() {
+function Login() {
   return (
     <div className="App">
       <header className='LogIn'>

@@ -1,16 +1,27 @@
 import './App.css';
+import Header from './componentes/header/Header';
+import Footer from './componentes/footer/Footer';
+import FotosApartados from './componentes/fotosApartado/FotosApartados';
+
 
 
 
 function App() {
   return (
     <div className="App">
-      <header className='LogIn'>
-        <h1>Limited Footbal</h1>
+      <header className='pagina-principal'>
+      <Header />
       </header>
-      <div className='contenedor-principal'>
 
+      <body>
+      <div className='contenedor-principal'>
+      <FotosApartados />
       </div>
+      </body>
+
+      <footer className='pie-pagina'>
+        <Footer />
+      </footer>
     </div>
   );
 }
