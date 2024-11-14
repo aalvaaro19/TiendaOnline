@@ -1,0 +1,90 @@
+/* CSS del contenedor principal donde se encuentran los sub-componentes */
+.contenedor-login {
+  height: 500px;
+  width: 320px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; /* Distribuye espacio entre elementos */
+  gap: 20px;
+}
+
+/* CSS del icono del container */
+.encabezado-contenedor-login {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px; /* Ajusta el espacio superior */
+}
+
+.logo-usuario {
+  width: 70px;
+  height: 70px;
+  color: #4a5568;
+}
+
+/* CSS para los inputs */
+.principal-contenedor-login {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+/* Ajustes para cada entrada */
+.entrada-correo,
+.entrada-contrasena {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="email"],
+input[type="password"] {
+  height: 50px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #a0aec0;
+}
+
+/* CSS para el botón del container */
+.boton-contenedor-login {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px; /* Ajusta el espacio inferior */
+}
+
+.boton-login {
+  width: 70%;
+  padding: 12px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: rgb(81, 81, 133);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-login:hover {
+  background-color: rgb(110, 110, 204);
+}
+
+/* CSS del texto inferior del container */
+.inferior-contenedor-login {
+  text-align: center;
+  font-size: 14px;
+  color: #4a5568;
+  margin-top: auto; /* Empuja el texto hacia abajo */
+}
