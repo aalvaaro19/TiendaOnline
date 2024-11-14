@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { GiSoccerBall } from "react-icons/gi";
+import { Link } from 'react-router-dom';  // Importa Link de react-router-dom
 import './Registro.css';
 
 function Registro() {
@@ -46,17 +47,17 @@ function Registro() {
         </div>
       </div>
       <div className='boton-contenedor-login'>
-        <button className='boton-login'>Iniciar Sesion</button>
+        <button className='boton-login'>Registrarse</button>
       </div>
       <div className='inferior-contenedor-login'>
-        <p>¿No tienes cuenta? 
+        <p>¿Ya tienes cuenta? 
           <button className='navBar-element'>
-            <a href="#Registro">Registrate</a>
+            <Link to="/">Iniciar sesión</Link>
           </button>
         </p>
       </div>
     </div>
-  )
+  );
 }
 
-export default Registro
+export default Registro;

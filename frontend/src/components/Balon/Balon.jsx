@@ -1,5 +1,5 @@
 import React from 'react'
-import imgBalon from '../../imagenes/balon.png'
+import imgBalon from '../../images/balon.png'
 import './Balon.css'
 function    Balon() {
   return (

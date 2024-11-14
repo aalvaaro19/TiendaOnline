@@ -1,5 +1,6 @@
-import React from 'react'
+import React from 'react';
 import { GiSoccerBall } from "react-icons/gi";
+import { Link } from 'react-router-dom';  // Importa Link de react-router-dom
 import './LoginContenedor.css';
 
 function LoginContainer() {
@@ -30,12 +31,12 @@ function LoginContainer() {
       <div className='inferior-contenedor-login'>
         <p>¿No tienes cuenta? 
           <button className='navBar-element'>
-            <a href="#Registro">Registrate</a>
+            <Link to="/registro">Registrate</Link>
           </button>
         </p>
       </div>
     </div>
-  )
+  );
 }
 
-export default LoginContainer
+export default LoginContainer;
