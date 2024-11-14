@@ -2,6 +2,7 @@ import './App.css';
 import Header from './componentes/header/Header';
 import Footer from './componentes/footer/Footer';
 import FotosApartados from './componentes/fotosApartado/FotosApartados';
+import ContactaConNosotros from './componentes/ContactaConNosotros/ContactaConNosotros';
 
 
 
@@ -17,6 +18,9 @@ function App() {
       <div className='contenedor-principal'>
       <FotosApartados />
       </div>
+      <div className='contacta-con-nosotros'>
+      <ContactaConNosotros />
+      </div>   
       </body>
 
       <footer className='pie-pagina'>
