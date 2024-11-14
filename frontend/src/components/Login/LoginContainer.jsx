@@ -1,12 +1,12 @@
 import React from 'react'
-import { HiOutlineUserCircle } from "react-icons/hi2";
+import { GiSoccerBall } from "react-icons/gi";
 import './LoginContenedor.css';
 
 function LoginContainer() {
   return (
     <div className='contenedor-login'>
       <div className='encabezado-contenedor-login'>
-        <HiOutlineUserCircle className='logo-usuario'/>
+        <GiSoccerBall className='logo-usuario'/>
       </div>
       <div className='principal-contenedor-login'>
         <div className='entrada-correo'>
@@ -28,7 +28,11 @@ function LoginContainer() {
         <button className='boton-login'>Iniciar Sesion</button>
       </div>
       <div className='inferior-contenedor-login'>
-        <p>¿No tienes cuenta? <b>Registrate</b></p>
+        <p>¿No tienes cuenta? 
+          <button className='navBar-element'>
+            <a href="#Registro">Registrate</a>
+          </button>
+        </p>
       </div>
     </div>
   )

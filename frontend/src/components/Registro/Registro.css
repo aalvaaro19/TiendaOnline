@@ -1,7 +1,6 @@
-/* CSS del contenedor principal donde se encuentran los sub-componentes */
 .contenedor-login {
-  height: 500px;
-  width: 320px;
+  height: auto;
+  width: 450px;
   padding: 20px;
   background-color: #ffffff;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -42,6 +41,8 @@
 }
 
 input[type="email"],
+input[type="text"],
+input[type="number"],
 input[type="password"] {
   height: 50px;
   width: 100%;
@@ -52,6 +53,8 @@ input[type="password"] {
 }
 
 input[type="email"]::placeholder,
+input[type="text"]::placeholder,
+input[type="number"]::placeholder,
 input[type="password"]::placeholder {
   color: #a0aec0;
 }
@@ -87,4 +90,40 @@ input[type="password"]::placeholder {
   font-size: 14px;
   color: #4a5568;
   margin-top: auto; /* Empuja el texto hacia abajo */
+  font-size: 15px;
+}
+
+.navBar-element{
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+	text-decoration: none;
+  border: none;
+  background: none;
+	font-family: 'Poppins', sans-serif;
+  color: #fff;
+	text-decoration: none;
+}
+
+.navBar-element a{
+  color: black;
+  text-decoration: none;
+}
+
+.navBar-element::before {
+  margin-left: auto;
+}
+
+.navBar-element::after, .navBar-element::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #515185;
+	display: block;
+  transition: 0.5s;
+}
+
+.navBar-element:hover::after, .navBar-element:hover::before {
+  width: 100%;
 }
