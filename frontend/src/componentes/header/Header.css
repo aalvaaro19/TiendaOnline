@@ -6,6 +6,8 @@
 .header-display{
 	display: grid;
 	grid-template-columns: 25% 50% 25%;
+  align-items: center;
+  margin-bottom: 30px;
 }
   
 
@@ -16,7 +18,7 @@
 }
 
 .header-Image{
-  width: 125px;
+  width: 110px;
   float: left;
   margin-left: 25%;
 }
@@ -40,24 +42,25 @@
 }
 
 .header-Search-button {
-  background-color: rgb(85, 85, 146);
+  margin-right: 15px;
   border: none;
-  color: #fff;
+  background-color: transparent;
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 20px;
   position: absolute;
   top: 0;
   right: -20px;
-  transition: .9s ease;
+  transition: .01s ease;
+
 }
 
-.header-Search-button:hover {
-  transform: scale(1.1);
-  color: rgb(255, 255, 255);
-  background-color: rgb(99, 115, 186);
-  box-shadow: 0 0 10px #aeaeae;
+.header-Search-button:hover{
+  transform: scale(1.2);
+
+
 }
+
 
 .header-icons{
 	width: 100%;
@@ -73,4 +76,8 @@
 .nombre-tienda{
   display: flex;
   justify-content: center;
+}
+
+.nombre-tienda h1{
+  margin-top: 20px;
 }
