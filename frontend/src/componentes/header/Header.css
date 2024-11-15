@@ -1,7 +1,6 @@
 .header {
     width: 100%;
     background-color: rgb(87, 87, 141);
-
 }
 
 .header-display{
@@ -10,7 +9,6 @@
 }
   
 
-
 @media (max-width: 600px) {
   h1 {
     font-size: 2em;
@@ -18,8 +16,7 @@
 }
 
 .header-Image{
-  width: 25%;
-  border-radius: 15px;
+  width: 125px;
   float: left;
   margin-left: 25%;
 }
@@ -27,7 +24,7 @@
 .header-Search {
   display: inline-block;
   position: relative;
-  margin-top: 4.5%;
+  margin-top: 15px;
 }
 
 .header-Search-input {
@@ -35,12 +32,11 @@
   padding: 10px;
   border: none;
   border-radius: 20px;
-  box-shadow: 0 0 10px #aeaeae;
 }
 
 .header-Search-input:focus{
   outline: none;
-	box-shadow: 0 0 10px green;
+  box-shadow: 0 0 10px #aeaeae;
 }
 
 .header-Search-button {
@@ -50,7 +46,6 @@
   cursor: pointer;
   padding: 10px 20px;
   border-radius: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 0;
   right: -20px;
@@ -61,11 +56,12 @@
   transform: scale(1.1);
   color: rgb(255, 255, 255);
   background-color: rgb(99, 115, 186);
+  box-shadow: 0 0 10px #aeaeae;
 }
 
 .header-icons{
 	width: 100%;
-	margin-top: 45px;
+	margin-top: 20px;
 	float: right;
     margin-left: 125px;
     display: flex;
@@ -75,7 +71,6 @@
 
 
 .nombre-tienda{
-  
   display: flex;
   justify-content: center;
 }

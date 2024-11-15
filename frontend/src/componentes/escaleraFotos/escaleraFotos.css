@@ -1,0 +1,78 @@
+
+
+/* Todo el contenedor */
+.escalera-fotos-container {
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+
+    text-align: center; 
+
+}
+
+.escalera-fotos-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: left; /* asegurar que este centrado a la izquierda */
+    font-size: 40px;
+}
+
+/* contenedor fotos */
+.contenedor-fotos{
+    margin-top: 70px;
+    width: 100%;
+}
+
+/* Contenedor de cada foto */
+.item {
+    display: flex;
+    margin-bottom: 25px;
+    width: 100%;
+    justify-content: center; /* Asegura que el contenido dentro del contenedor esté centrado */
+}
+
+/* cambiar contenedor imagen */
+.item img {
+    width: 350px; /* Aumento del tamaño de la foto */
+    height: auto;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+
+
+/* Cambiar texto  */
+.item p, .item2 p {
+    color: #666;
+    max-width: 400px;
+    margin-right: 30px;
+}
+
+/* Creo que se podria borrar */
+/* .item.reverse img {
+    margin-left: 20px;
+    margin-right: 0;
+} */
+
+/* El texto explicativo de la imagen */
+.foto-pie-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.foto-pie {
+    font-style: italic;
+    margin-top: 10px;
+    font-size: 18px; /* Disminuir tamaño de pie de foto */
+}
+
+.descripcion-foto {
+    font-size: 16px; /* Disminuir tamaño del texto de la descripción */
+    color: #555;
+    margin-top: 5px;
+    text-align: justify; /* Justificamos el texto de la descripción */
+}

@@ -9,14 +9,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'LV', sans-serif;
+
 }
 
 html, body {
   color: rgb(255, 255, 255);
   background-color: rgb(255, 255, 255);
-  font-family: 'Arial', sans-serif;
-
+  font-family: 'LV', sans-serif;
   user-select: none;
 }
 
@@ -24,9 +23,13 @@ html, body {
   padding-bottom: 50px;
   background-color: white;
   font-size: medium;
-  font-family: 'Times New Roman', Times, serif;
   display: flex;
   flex-direction: column; 
   align-items: center;
+}
+
+.descripcion-principal{
+  
+  margin-top: 150px;
 }
 
