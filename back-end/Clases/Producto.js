@@ -1,14 +1,10 @@
 class Producto{
-    constructor(id, nombre, descripcion,precio, stock){
-        this.id = id;
+    constructor(nombre, descripcion, precio, stock, imagen){
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;
         this.stock = stock;
-    }
-
-    getId(){
-        return this.id;
+        this.imagen = imagen;
     }
 
     getNombre(){
@@ -27,8 +23,8 @@ class Producto{
         return this.stock;
     }
 
-    setId(id){
-        this.id = id;
+    getImagen(){
+        return this.imagen;
     }
 
     setNombre(nombre){
@@ -46,4 +42,10 @@ class Producto{
     setStock(stock){
         this.stock = stock;
     }
+
+    setImagen(imagen){
+        this.imagen = imagen;
+    }
 }
+
+module.exports = Producto;
