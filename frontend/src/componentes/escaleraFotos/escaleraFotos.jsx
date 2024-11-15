@@ -8,7 +8,9 @@ import foto4 from '../../imagenes/fotopele2.jpeg';
 const EscaleraFotos = () => {
   return (
     <div className="escalera-fotos-container">
+    <div className='h2-contenedor'>
       <h2>Carrusel fotos históricas</h2>
+      </div>
       <div className='contenedor-fotos'>
         <div className="item">
             <img src={foto1} alt="Foto de Iniesta" />
@@ -16,7 +18,8 @@ const EscaleraFotos = () => {
                 <p className="foto-pie">Iniesta y la gloria</p>
                 <p className="descripcion-foto">
                     Andrés Iniesta en el momento decisivo del Mundial 2010, justo antes de rematar el balón que daría el gol de la victoria a España en la final contra Países Bajos. Con serenidad y precisión, Iniesta prepara el disparo que cambiaría la historia del fútbol español, capturando un instante inmortal de gloria.            </p>
-            </div>      </div>
+            </div>     
+        </div>
         <div className="item">
             <div className='foto-pie-container'>
                 <p className="foto-pie">Maradona y la mano de DIOS</p>

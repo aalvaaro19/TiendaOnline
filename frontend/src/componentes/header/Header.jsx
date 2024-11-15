@@ -9,9 +9,6 @@ import { IoSearchOutline } from "react-icons/io5";
 function Header(){
     return (
         <div className="header">
-			<div className='nombre-tienda'>
-				<h1>Limited Football</h1>
-			</div>
 			<div className="header-display">
 				<div className='imagen-header'>
 				<img  

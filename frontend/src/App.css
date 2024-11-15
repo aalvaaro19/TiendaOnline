@@ -14,7 +14,7 @@
 
 html, body {
   color: rgb(255, 255, 255);
-  background-color: rgb(255, 255, 255);
+  background-color: #efefef;
   font-family: 'LV', sans-serif;
   user-select: none;
 }

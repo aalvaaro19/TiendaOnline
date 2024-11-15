@@ -2,7 +2,7 @@
 
 .descripcion-container {
     padding: 20px;
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
     border-radius: 8px;
     max-width: 90%;
     margin: 0 auto;
@@ -21,7 +21,7 @@
     color: #666;
     line-height: 1.6;
     text-align: justify ; /* Justificar texto */
-    font-size: 18px; /* Tamaño de letra */
+    font-size: 20px; /* Tamaño de letra */
     margin-top: 50px;
   }
 
