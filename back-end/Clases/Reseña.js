@@ -1,15 +1,10 @@
 class Reseña {
-  constructor(id, idUsuario, idProducto, calificacion, comentario, fecha) {
-    this.id = id;
+  constructor(idUsuario, idProducto, calificacion, comentario, fecha) {
     this.idUsuario = idUsuario;
     this.idProducto = idProducto;
-    this.calificacion = calificacion;
     this.comentario = comentario;
+    this.calificacion = calificacion;
     this.fecha = fecha;
-  }
-
-  getId() {
-    return this.id;
   }
 
   getIdUsuario() {
@@ -32,10 +27,6 @@ class Reseña {
     return this.fecha;
   }
 
-  setId(id) {
-    this.id = id;
-  }
-
   setIdUsuario(idUsuario) {
     this.idUsuario = idUsuario;
   }
@@ -56,3 +47,5 @@ class Reseña {
     this.fecha = fecha;
   }
 }
+
+module.exports = Reseña;

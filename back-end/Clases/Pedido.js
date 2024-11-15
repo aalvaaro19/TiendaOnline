@@ -1,49 +1,42 @@
 class Pedido {
-  constructor(id, fecha, total, estado, idUsuario) {
-    this.id = id;
+  constructor(idUsuario, fecha, total, estado) {
+    this.idUsuario = idUsuario;
     this.fecha = fecha;
     this.total = total;
     this.estado = estado;
-    this.idUsuario = idUsuario;
   }
 
-    getId() {
-      return this.id;
-    };
+  getFecha() {
+    return this.fecha;
+  };
 
-    getFecha() {
-      return this.fecha;
-    };
+  getTotal() {
+    return this.total;
+  };
 
-    getTotal() {
-      return this.total;
-    };
+  getEstado() {
+    return this.estado;
+  };
 
-    getEstado() {
-      return this.estado;
-    };
+  getIdUsuario() {
+    return this.idUsuario;
+  };
 
-    getIdUsuario() {
-      return this.idUsuario;
-    };
+  setFecha(fecha) {
+    this.fecha = fecha;
+  };
 
-    setId(id) {
-      this.id = id;
-    };
+  setTotal(total){
+    this.total = total;
+  };
 
-    setFecha(fecha) {
-      this.fecha = fecha;
-    };
+  setEstado(estado) {
+    this.estado = estado;
+  };
 
-    setTotal(total){
-      this.total = total;
-    };
-
-    setEstado(estado) {
-      this.estado = estado;
-    };
-
-    setIdUsuario(idUsuario) {
-      this.idUsuario = idUsuario;
-    };
+  setIdUsuario(idUsuario) {
+    this.idUsuario = idUsuario;
+  };
 }
+
+module.exports = Pedido;
