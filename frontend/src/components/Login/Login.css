@@ -1,9 +1,10 @@
 /* CSS del contenedor principal donde se encuentran los sub-componentes */
 .contenedor-login {
+  margin-top: 100px;
   height: 550px;
   width: 450px;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: rgb(81, 81, 133);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   display: flex;
@@ -23,7 +24,7 @@
 .logo-usuario {
   width: 70px;
   height: 70px;
-  color: #4a5568;
+  color: white;
 }
 
 /* CSS para los inputs */
@@ -32,6 +33,7 @@
   flex-direction: column;
   gap: 15px;
   width: 100%;
+
 }
 
 /* Ajustes para cada entrada */
@@ -69,8 +71,8 @@ input[type="password"]::placeholder {
   width: 70%;
   padding: 12px;
   font-size: 16px;
-  color: #ffffff;
-  background-color: rgb(81, 81, 133);
+  color: black;
+  background-color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;

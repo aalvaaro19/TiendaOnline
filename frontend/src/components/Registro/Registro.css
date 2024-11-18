@@ -2,7 +2,7 @@
   height: auto;
   width: 450px;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: rgb(81, 81, 133);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   display: flex;
@@ -22,7 +22,7 @@
 .logo-usuario {
   width: 70px;
   height: 70px;
-  color: #4a5568;
+  color: white;
 }
 
 /* CSS para los inputs */
@@ -72,16 +72,23 @@ input[type="password"]::placeholder {
   width: 70%;
   padding: 12px;
   font-size: 16px;
-  color: #ffffff;
-  background-color: rgb(81, 81, 133);
+  color: black;
+  background-color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.boton-login:hover {
+.boton-login:hover .palabra-boton-login:hover{
   background-color: rgb(110, 110, 204);
+  text-decoration: none;
+  color: white;
+}
+
+.palabra-boton-login{
+  text-decoration: none;
+  color: rgb(81, 81, 133);
 }
 
 /* CSS del texto inferior del container */
@@ -91,6 +98,10 @@ input[type="password"]::placeholder {
   color: #4a5568;
   margin-top: auto; /* Empuja el texto hacia abajo */
   font-size: 15px;
+}
+
+.inferior-contenedor-login p{
+  color: white;
 }
 
 .navBar-element{
@@ -119,7 +130,7 @@ input[type="password"]::placeholder {
   content: '';
   width: 0%;
   height: 2px;
-  background: #515185;
+  background: white;
 	display: block;
   transition: 0.5s;
 }
