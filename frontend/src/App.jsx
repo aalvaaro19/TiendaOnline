@@ -4,7 +4,7 @@ import Footer from './componentes/footer/Footer';
 import FotosApartados from './componentes/fotosApartado/FotosApartados';
 import ContactaConNosotros from './componentes/ContactaConNosotros/ContactaConNosotros';
 import Descripcion from './componentes/descripcion/descripcion';
-import EscaleraFotos from './componentes/escaleraFotos/escaleraFotos';
+import EscaleraFotos from './componentes/escaleraFotos/CarruselFotos';
 
 
 

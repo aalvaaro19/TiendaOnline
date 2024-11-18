@@ -1,9 +1,14 @@
+
+
 .div-externo-contacta {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 30px;
-  }
+  margin-top: 190px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+
+}
   
   .texto-contacta-con-nosotros {
     font-size: 2.5em;

@@ -1,0 +1,128 @@
+
+body {
+    font-family: 'LV', sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f9; */
+  }
+  
+  .contendor-carrusel-principal {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8a4;
+    border-radius: 8px;
+  }
+  
+  .contendor-titulo-carrusel {
+    margin-bottom: 30px;
+    text-align: left;
+    margin-left: 0px;
+  }
+  
+  .contendor-titulo-carrusel h1 {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  .contendor-imagenes-carrusel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Menos separación entre los contenedores */
+  }
+  
+  .contenedor-imagen-1,
+  .contenedor-imagen-3 {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Menos separación entre imagen y texto */
+    flex-direction: row-reverse; /* Imagen a la derecha */
+  }
+  
+  .contenedor-imagen-2,
+  .contenedor-imagen-4 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row; /* Imagen a la izquierda */
+  }
+  
+  .contenedor-imagen-2 {
+    align-items: flex-start; /* Alinea el texto con las imágenes de contenedor 1 y 3 */
+  }
+  
+  .contenedor-imagen-4 {
+    align-items: flex-start; /* Alinea el texto con la imagen del contenedor 3 */
+  }
+  
+  img {
+    max-width: 350px; /* Tamaño más grande */
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-contenedor-1,
+  .info-contenedor-2,
+  .info-contenedor-3,
+  .info-contenedor-4 {
+    flex: 1;
+    text-align: left;
+  }
+  
+.info-contenedor-2, .info-contenedor-4{
+    margin-left: 90px;
+}
+
+  .texto-info-contenedor-1,
+  .texto-info-contenedor-2,
+  .texto-info-contenedor-3,
+  .texto-info-contenedor-4 {
+    max-width: 500px; /* Ancho reducido para los textos */
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 5px; /* Menos separación con el párrafo */
+    color: #444;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .contenedor-imagen-1,
+    .contenedor-imagen-2,
+    .contenedor-imagen-3,
+    .contenedor-imagen-4 {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .info-contenedor-1,
+    .info-contenedor-2,
+    .info-contenedor-3,
+    .info-contenedor-4 {
+      text-align: center;
+    }
+  
+    .texto-info-contenedor-1,
+    .texto-info-contenedor-2,
+    .texto-info-contenedor-3,
+    .texto-info-contenedor-4 {
+      max-width: 90%;
+    }
+  
+    img {
+      max-width: 100%;
+    }
+  
+    .contendor-titulo-carrusel h1 {
+      text-align: center;
+    }
+  }
+  

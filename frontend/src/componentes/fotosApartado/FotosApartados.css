@@ -1,4 +1,4 @@
-.contenedor-imagenes {
+.contenedor-apartados-imagenes {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
@@ -7,9 +7,9 @@
     margin: auto; 
   }
   
-  .contenedor-imagen-1,
-  .contenedor-imagen-2,
-  .contenedor-imagen-3 {
+  .contenedor-apartados-imagen-1,
+  .contenedor-apartados-imagen-2,
+  .contenedor-apartados-imagen-3 {
     flex: 1;
     margin: 0 10px; 
     height: 100%; 
@@ -23,30 +23,30 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
   }
 
-.contenedor-imagen-1:hover,
-.contenedor-imagen-2:hover,
-.contenedor-imagen-3:hover {
+.contenedor-apartados-imagen-1:hover,
+.contenedor-apartados-imagen-2:hover,
+.contenedor-apartados-imagen-3:hover {
     transform: scale(1.02);
     background-color: rgba(0, 0, 0, 0.4);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 
 }
   
-  .contenedor-imagen-1 {
+  .contenedor-apartados-imagen-1 {
     background-image: url('../../imagenes/retro.jpg');
   }
   
-  .contenedor-imagen-2 {
+  .contenedor-apartados-imagen-2 {
     background-image: url('../../imagenes/firmadas.jpg');
   }
   
-  .contenedor-imagen-3 {
+  .contenedor-apartados-imagen-3 {
     background-image: url('../../imagenes/colaboraciones.jpg');
   }
   
-  .header-contenedor-imagen-1,
-  .header-contenedor-imagen-2,
-  .header-contenedor-imagen-3 {
+  .header-contenedor-apartados-imagen-1,
+  .header-contenedor-apartados-imagen-2,
+  .header-contenedor-apartados-imagen-3 {
     text-align: center;
 }
 
