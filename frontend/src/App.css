@@ -9,27 +9,30 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  font-family: 'LV', sans-serif;
 }
 
 html, body {
   color: rgb(255, 255, 255);
-  background-color: #ffffff;
-  font-family: 'LV', sans-serif;
+  font-family: 'Arial', sans-serif;
   user-select: none;
+  width: auto;
 }
 
-.pagina-principal {
-  padding-bottom: 50px;
-  background-color: white;
-  font-size: medium;
+
+.LogIn {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
   display: flex;
-  flex-direction: column; 
+  justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
-.descripcion-principal{
-  
-  margin-top: 150px;
+.contenedor-principal {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; /* Alineación vertical centrada */
+  gap: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
-

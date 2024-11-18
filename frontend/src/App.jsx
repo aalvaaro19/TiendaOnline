@@ -1,39 +1,28 @@
 import './App.css';
-import Header from './componentes/header/Header';
-import Footer from './componentes/footer/Footer';
-import FotosApartados from './componentes/fotosApartado/FotosApartados';
-import ContactaConNosotros from './componentes/ContactaConNosotros/ContactaConNosotros';
-import Descripcion from './componentes/descripcion/descripcion';
-import EscaleraFotos from './componentes/escaleraFotos/CarruselFotos';
-
-
+// import Balon from './components/Balon/Balon';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Registro from './components/Registro/Registro';
+import PaginaPrincipal from './components/PaginaPrincipal/PaginaPrincipal';
+import Login from './components/Login/Login';
 
 
 function App() {
   return (
-    <div className="App">
-      <header className='pagina-principal'>
-      <Header />
-      </header>
-      <body>
-      <div className='contenedor-principal'>
-      <FotosApartados />
+    <Router>
+      <div className="App">
+        <div className="contenedor-principal">
+          {/* <Balon /> */}
+          <Routes>
+            <Route path="/" element={<Login />} />
+            <Route path="/registro" element={<Registro />} />
+            <Route path="/paginaPrincipal" element={<PaginaPrincipal />} />
+          </Routes>
+          {/* <Balon /> */}
+        </div>
       </div>
-      <div className='descripcion-principal'>
-      <EscaleraFotos />
-      </div>
-      <div className='escalerafotos-principal'>
-      <Descripcion />      
-      </div>
-      <div className='contacta-con-nosotros'>
-      <ContactaConNosotros />
-      </div>   
-      </body>
 
-      <footer className='pie-pagina'>
-        <Footer />
-      </footer>
-    </div>
+    </Router>
+
   );
 }
 

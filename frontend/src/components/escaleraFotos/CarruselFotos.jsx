@@ -1,9 +1,9 @@
 import React from "react";
 import '../escaleraFotos/CarruselFotos.css';
-import fotoIniesta from '../../imagenes/fotoiniesta.png';
-import fotoMaradona from '../../imagenes/fotomaradona.png';
-import fotoMilan from '../../imagenes/fotomilan.png';
-import fotoPele from '../../imagenes/fotopele.png';
+import fotoIniesta from '../../images/fotoiniesta.png';
+import fotoMaradona from '../../images/fotomaradona.png';
+import fotoMilan from '../../images/fotomilan.png';
+import fotoPele from '../../images/fotopele.png';
 
 
 function CarruselFotos() {

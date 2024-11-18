@@ -5,7 +5,7 @@
 
 .header-display{
 	display: grid;
-	grid-template-columns: 25% 50% 25%;
+	grid-template-columns: 24% 50% 24%;
   align-items: center;
   margin-bottom: 15px;
 }
@@ -21,6 +21,7 @@
   width: 110px;
   float: left;
   margin-left: 25%;
+  box-shadow: none;
 }
 
 .header-Search {
@@ -46,7 +47,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  padding: 10px 20px;
+  padding: 20px 20px;
   border-radius: 20px;
   position: absolute;
   top: 0;
@@ -63,13 +64,12 @@
 
 
 .header-icons{
-	width: 100%;
-	margin-top: 20px;
+	margin-top: 15px;
 	float: right;
-    margin-left: 125px;
-    display: flex;
-    gap: 40px;
-    font-size: 22px;
+  margin-left: 160px;
+  display: flex;
+  gap: 30px;
+  font-size: 25px;
 }
 
 
