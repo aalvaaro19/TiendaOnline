@@ -1,0 +1,30 @@
+
+
+.descripcion-container {
+    padding: 20px;
+    background-color: #f8f8f8a4;
+    border-radius: 8px;
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 70px;
+
+  }
+  
+  .descripcion-container h2 {
+    color: #333;
+    margin-bottom: 15px;
+    text-align: left; /* Mantener el título centrado iz */
+    font-size: 40px;
+  }
+  
+  .descripcion-container p {
+    color: #666;
+    line-height: 1.6;
+    text-align: justify ; /* Justificar texto */
+    font-size: 20px; /* Tamaño de letra */
+    margin-top: 20px;
+  }
+
+
+  

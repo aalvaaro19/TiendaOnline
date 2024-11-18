@@ -1,23 +1,23 @@
 import './App.css';
-import Balon from './components/Balon/Balon';
-import LoginContainer from './components/Login/LoginContainer';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  // Asegúrate de que importes BrowserRouter
+// import Balon from './components/Balon/Balon';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Registro from './components/Registro/Registro';
+import PaginaPrincipal from './components/PaginaPrincipal/PaginaPrincipal';
+import Login from './components/Login/Login';
+
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <header className='LogIn'>
-          <h1>Limited Football</h1>
-        </header>
-        <div className='contenedor-principal'>
-          <Balon />
+        <div className="contenedor-principal">
+          {/* <Balon /> */}
           <Routes>
-            <Route path="/" element={<LoginContainer />} />
+            <Route path="/" element={<Login />} />
             <Route path="/registro" element={<Registro />} />
+            <Route path="/paginaPrincipal" element={<PaginaPrincipal />} />
           </Routes>
-          <Balon />
+          {/* <Balon /> */}
         </div>
       </div>
     </Router>
