@@ -1,5 +1,5 @@
 const express = require('express');
-const api = express.api();
+const api = express.Router();
 const connection = require('../bd/Conexion.js');
 const Usuario = require('../Clases/User.js');
 
