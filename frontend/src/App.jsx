@@ -20,10 +20,10 @@ function App() {
       <FotosApartados />
       </div>
       <div className='descripcion-principal'>
-      <Descripcion />
+      <EscaleraFotos />
       </div>
       <div className='escalerafotos-principal'>
-      <EscaleraFotos />
+      <Descripcion />      
       </div>
       <div className='contacta-con-nosotros'>
       <ContactaConNosotros />
