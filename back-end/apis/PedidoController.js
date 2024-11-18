@@ -1,23 +1,23 @@
 const express = require('express');
-const router = express.Router();
+const api = express.api();
 const connection = require('../bd/Conexion.js');
 const Pedido = require('../Clases/Pedido.js');
 
-router.get('/listarPedidos', (req, res) => {
+api.get('/listarPedidos', (req, res) => {
     connection.query('SELECT * FROM pedidos', (err, rows) => {
         if (err) throw err;
         res.json(rows);
     });
 });
 
-router.get('/obtenerPedido/:id', (req, res) => {
+api.get('/obtenerPedido/:id', (req, res) => {
     connection.query(`SELECT * FROM pedidos WHERE idPedido = ${req.params.id}`, (err, rows) => {
         if (err) throw err;
         res.json(rows);
     });
 });
 
-router.post('/crearPedido', (req, res) => {
+api.post('/crearPedido', (req, res) => {
     const { idUsuario, fecha, total, estado } = req.body;
     connection.query(`INSERT INTO pedidos (fecha, total, estado, idUsuario) VALUES ('${fecha}', '${total}', '${estado}', '${idUsuario}')`, (err, result) => {
         if (err) throw err;
@@ -25,7 +25,7 @@ router.post('/crearPedido', (req, res) => {
     });
 });
 
-router.post('/actualizarPedido/:id', (req, res) => {
+api.post('/actualizarPedido/:id', (req, res) => {
     const { idUsuario, fecha, total, estado } = req.body;
     const pedido = new Pedido(idUsuario, fecha, total, estado);
     connection.query(`UPDATE pedidos SET ? WHERE idPedido = ${req.params.id}`, pedido, (err, result) => {
@@ -34,11 +34,11 @@ router.post('/actualizarPedido/:id', (req, res) => {
     });
 });
 
-router.delete('/eliminarPedido/:id', (req, res) => {
+api.delete('/eliminarPedido/:id', (req, res) => {
     connection.query('DELETE FROM pedidos WHERE idPedido = ?', [req.params.id], (err, result) => {
         if (err) throw err;
         res.json('Pedido deleted');
     });
 });
 
-module.exports = router;
+module.exports = api;

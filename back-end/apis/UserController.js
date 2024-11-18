@@ -1,9 +1,9 @@
 const express = require('express');
-const router = express.Router();
+const api = express.api();
 const connection = require('../bd/Conexion.js');
 const Usuario = require('../Clases/User.js');
 
-router.get('/listarUsuarios', (req, res) => {
+api.get('/listarUsuarios', (req, res) => {
     connection.query('SELECT * FROM usuarios', (err, rows) => {
         if (err) throw err;
         if (rows.length === 0) {
@@ -14,14 +14,14 @@ router.get('/listarUsuarios', (req, res) => {
     });
 });
 
-router.get('/listarUsuarios/:id', (req, res) => {
+api.get('/listarUsuarios/:id', (req, res) => {
     connection.query(`SELECT * FROM usuarios WHERE idUsuario = ${req.params.id}`, (err, rows) => {
         if (err) throw err;
         res.json(rows);
     });
 });
 
-router.post('/crearUsuario', (req, res) => {
+api.post('/crearUsuario', (req, res) => {
     const { nombreUsuario, nombreCompleto, telefono, direccion, email, password } = req.body;
     connection.query(`INSERT INTO usuarios (nombreUsuario, nombreCompleto, telefono, direccion, email, password) VALUES ('${nombreUsuario}', '${nombreCompleto}', '${telefono}', '${direccion}', '${email}', '${password}')`, (err, result) => {
         if (err) throw err;
@@ -29,7 +29,7 @@ router.post('/crearUsuario', (req, res) => {
     });
 });
 
-router.post('/actualizarUsuario/:id', (req, res) => {
+api.post('/actualizarUsuario/:id', (req, res) => {
     const { nombreUsuario, nombreCompleto, telefono, direccion, email, password } = req.body;
     const usuario = new Usuario(nombreUsuario, nombreCompleto, telefono, direccion, email, password);
     connection.query(`UPDATE usuarios SET ? WHERE idUsuario = ${req.params.id}`, usuario, (err, result) => {
@@ -38,14 +38,14 @@ router.post('/actualizarUsuario/:id', (req, res) => {
     });
 });
 
-router.delete('/eliminarUsuario/:id', (req, res) => {
+api.delete('/eliminarUsuario/:id', (req, res) => {
     connection.query('DELETE FROM usuarios WHERE idUsuario = ?', [req.params.id], (err, result) => {
         if (err) throw err;
         res.json('Usuario deleted');
     });
 });
 
-router.get('/loginUser/:nombreUsuario/:password', (req, res) => {
+api.get('/loginUser/:nombreUsuario/:password', (req, res) => {
     const { nombreUsuario, password } = req.params;
     connection.query('SELECT idUsuario FROM usuarios WHERE nombreUsuario = ? AND password = ?', [nombreUsuario, password], (err, rows) => {
         if (err) throw err;
@@ -57,11 +57,11 @@ router.get('/loginUser/:nombreUsuario/:password', (req, res) => {
     });
 });
 
-router.get('/getUsuario/:id', (req, res) => {
+api.get('/getUsuario/:id', (req, res) => {
     connection.query(`SELECT * FROM usuarios WHERE idUsuario = ${req.params.id}`, (err, rows) => {
         if (err) throw err;
         res.json(rows);
     });
 });
 
-module.exports = router;
+module.exports = api;
