@@ -6,6 +6,7 @@ function Certificacion() {
         <div className="div-externo-certificacion">
             <div className='div-interno-certificacion'>
                 <img src={certificacionImg} alt="marca-certificacion" id="img-certificacion" />
+                
             </div>
         </div>
     );
