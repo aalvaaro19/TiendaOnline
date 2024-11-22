@@ -29,10 +29,3 @@ html, body {
   padding: 20px;
 }
 
-.contenedor-principal {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center; /* Alineación vertical centrada */
-  gap: 20px;
-  font-family: 'Times New Roman', Times, serif;
-}
