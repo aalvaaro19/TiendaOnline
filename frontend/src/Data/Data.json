@@ -49,17 +49,45 @@
       "image": "arsenal2"
     },
     {
-          "id" : 8,
-      "name": "CAMISETA JAPON",
-      "description": "EDICION LIMITADA x GOKU",
-      "price" : "150$",
-      "image": "japon2"
+        "id" : 8,
+    "name": "CAMISETA JAPON",
+    "description": "EDICION LIMITADA x GOKU",
+    "price" : "150$",
+    "image": "japon2"
     },
     {
-          "id" : 9,
-      "name": "CAMISETA CLUBE ATLÉTICO MINEIRO",
-      "description": "CAMISETA LOCAL 1995",
-      "price" : "80$",
-      "image": "mineiro"
+        "id" : 9,
+    "name": "CAMISETA CLUBE ATLÉTICO MINEIRO",
+    "description": "CAMISETA LOCAL 1995",
+    "price" : "80$",
+    "image": "mineiro"
+    },
+    {
+        "id" : 9,
+    "name": "CAMISETA CLUBE ATLÉTICO MINEIRO",
+    "description": "CAMISETA LOCAL 1995",
+    "price" : "80$",
+    "image": "mineiro"
+    },
+    {
+        "id" : 9,
+    "name": "CAMISETA CLUBE ATLÉTICO MINEIRO",
+    "description": "CAMISETA LOCAL 1995",
+    "price" : "80$",
+    "image": "mineiro"
+    },
+    {
+        "id" : 9,
+    "name": "CAMISETA CLUBE ATLÉTICO MINEIRO",
+    "description": "CAMISETA LOCAL 1995",
+    "price" : "80$",
+    "image": "mineiro"
+    },
+    {
+        "id" : 9,
+    "name": "CAMISETA CLUBE ATLÉTICO MINEIRO",
+    "description": "CAMISETA LOCAL 1995",
+    "price" : "80$",
+    "image": "mineiro"
     }
   ]

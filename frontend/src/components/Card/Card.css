@@ -8,8 +8,9 @@
   }
   
   .personal-Card{
-    background-color: rgb(109, 93, 162);
+    background-color: #CACACA;
     width: 90%;
+    height: 1000px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;

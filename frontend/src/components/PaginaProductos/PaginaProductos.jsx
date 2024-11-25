@@ -1,5 +1,5 @@
 import React from 'react'
-import HeaderProductos from '../HeaderProductos/HeaderProductos'
+import HeaderProductos from '../HeaderProductos/HeaderProductos.jsx'
 import Footer from '../footer/Footer';
 import ContactaConNosotros from '../ContactaConNosotros/ContactaConNosotros';
 import Card from '../Card/Card';

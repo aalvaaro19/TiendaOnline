@@ -1,5 +1,5 @@
 import './Certificacion.css';
-import certificacionImg from '../../images/CertifyLogo.png';
+import certificacionImg from '../../images/certificacion.png';
 
 function Certificacion() {
     return (
