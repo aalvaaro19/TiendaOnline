@@ -8,13 +8,12 @@
   }
   
   .personal-Card{
-    background-color: #CACACA;
-    width: 90%;
-    height: 1000px;
+    background-color: white;
+    width: 450px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
   }
   
   .personal-Image{
@@ -26,10 +25,12 @@
     margin-top: 10px;
     font-size: 18px;
     font-weight: bold;
+    text-align: center;
   }
   
   
   .cardPrice{
     margin-top: 10px;
     font-size: 18px;
+    text-align: center;
   }

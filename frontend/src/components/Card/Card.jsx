@@ -1,14 +1,14 @@
 import React from "react";
-import '../Card/Card.css';
+import './Card.css';
+import equipacion from '../../images/equipacion-ajax.png'
 
 function Card(props) {
   return (
     <div className="personal-Card">
-      {/* <img
+      <img
         className="personal-Image"
-        src={require(`../../equipacion-${props.images}.png`)}
-        alt={`Edición especial del ${props.name}`}
-      /> */}
+        src={equipacion}
+      />
       <div className="personal-card-text">
         <p className="cardDescription">{props.name}</p>
         <p className="cardDescription">{props.description}</p>

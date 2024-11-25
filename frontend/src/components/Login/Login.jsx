@@ -34,6 +34,18 @@ function Login() {
               <Link to="/registro">Regístrate</Link>
             </button>
           </p>
+          <p>
+            Registra un Producto{' '}
+            <button className="navBar-element">
+              <Link to="/registrarProductos">Entra aqui</Link>
+            </button>
+          </p>
+          <p>
+            Registra una Reseña{' '}
+            <button className="navBar-element">
+              <Link to="/registrarResenia">Entra aqui</Link>
+            </button>
+          </p>
         </div>
       </div>
       <Balon />

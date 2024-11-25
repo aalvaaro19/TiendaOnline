@@ -1,5 +1,6 @@
 .navBar {
 	margin-top: 1rem;
+  margin-bottom: 50px;
 
 }
 
@@ -19,7 +20,6 @@ ul{
   background: none;
   font-family: 'LV', sans-serif;
   color: #ffffff;
-  text-decoration: none;
 }
 
 
