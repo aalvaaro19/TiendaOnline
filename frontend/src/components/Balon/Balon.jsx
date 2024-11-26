@@ -4,7 +4,7 @@ import './Balon.css'
 function    Balon() {
   return (
     <div className="balon-logo-contenedor">
-        <img src={imgBalon} alt="logo-balon" id='balon-login'/>
+        <img src={imgBalon} alt="logo-balon" id='balon-login' className='imagenBalon'/>
     </div>  
 )
 }

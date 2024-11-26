@@ -1,0 +1,24 @@
+.div-externo-certificacion {
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #57578D;
+
+}
+
+.div-interno-certificacion {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-certificacion {
+    width: 300px;
+    height: auto;
+    
+}

@@ -1,0 +1,93 @@
+[
+    {
+          "id" : 1,
+      "name": "CAMISETA ABERDEEN F.C.",
+      "description": "CAMISETA VISITANTE 2024-2025",
+      "price" : "80$",
+      "image": "barsa"
+    },
+    {
+          "id" : 2,
+      "name": "CAMISETA CELTIC",
+      "description": "CAMISETA VISITANTE 1984-1986",
+      "price" : "100$",
+      "image": "celtic"
+    },
+    {
+          "id" : 3,
+      "name": "CAMISETA AC MILAN",
+      "description": "EDICION LIMITADA MILAN x GUCCI",
+      "price" : "120$",
+      "image": "milan"
+    },
+    {
+          "id" : 4,
+      "name": "CAMISETA REAL MADRID CF",
+      "description": "BLACK CAILONG SPECIAL EDITION",
+      "price" : "150$",
+      "image": "madrid2"
+    },
+    {
+          "id" : 5,
+      "name": "CAMISETA JAPON",
+      "description": "EDICIÓN ESPECIAL x ZORO",
+      "price" : "80$",
+      "image": "japon"
+    },
+    {
+          "id" : 6,
+      "name": "CAMISETA CLUB AMERICA",
+      "description": "CAMISETA VISITANTE 1995",
+      "price" : "100$",
+      "image": "america"
+    },
+    {
+          "id" : 7,
+      "name": "CAMISETA ARSENAL FC",
+      "description": "CAMISETA VISITANTE 1991-1993",
+      "price" : "120$",
+      "image": "arsenal2"
+    },
+    {
+        "id" : 8,
+    "name": "CAMISETA JAPON",
+    "description": "EDICION LIMITADA x GOKU",
+    "price" : "150$",
+    "image": "japon2"
+    },
+    {
+        "id" : 9,
+    "name": "CAMISETA CLUBE ATLÉTICO MINEIRO",
+    "description": "CAMISETA LOCAL 1995",
+    "price" : "80$",
+    "image": "mineiro"
+    },
+    {
+        "id" : 9,
+    "name": "CAMISETA CLUBE ATLÉTICO MINEIRO",
+    "description": "CAMISETA LOCAL 1995",
+    "price" : "80$",
+    "image": "mineiro"
+    },
+    {
+        "id" : 9,
+    "name": "CAMISETA CLUBE ATLÉTICO MINEIRO",
+    "description": "CAMISETA LOCAL 1995",
+    "price" : "80$",
+    "image": "mineiro"
+    },
+    {
+        "id" : 9,
+    "name": "CAMISETA CLUBE ATLÉTICO MINEIRO",
+    "description": "CAMISETA LOCAL 1995",
+    "price" : "80$",
+    "image": "mineiro"
+    },
+    {
+        "id" : 9,
+    "name": "CAMISETA CLUBE ATLÉTICO MINEIRO",
+    "description": "CAMISETA LOCAL 1995",
+    "price" : "80$",
+    "image": "mineiro"
+    }
+  ]

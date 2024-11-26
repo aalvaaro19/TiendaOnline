@@ -1,0 +1,107 @@
+[
+    {
+      "id": 1,
+      "nombre": "Lionel Messi - FC Barcelona - 2012",
+      "descripcion": "Camiseta firmada de Lionel Messi del FC Barcelona, temporada 2012, año en que ganó su cuarto Balón de Oro.",
+      "imagen": "https://ejemplo.com/imagenes/messi-barcelona-2012.jpg",
+      "precio": 500
+    },
+    {
+      "id": 2,
+      "nombre": "Cristiano Ronaldo - Real Madrid - 2017",
+      "descripcion": "Camiseta firmada por Cristiano Ronaldo del Real Madrid, temporada 2017, donde conquistó su quinta Champions League.",
+      "imagen": "https://ejemplo.com/imagenes/ronaldo-real-madrid-2017.jpg",
+      "precio": 550
+    },
+    {
+      "id": 3,
+      "nombre": "Diego Maradona - Napoli - 1986",
+      "descripcion": "Camiseta firmada por Diego Maradona del Napoli, temporada 1986, recordada por su histórica actuación en Serie A.",
+      "imagen": "https://ejemplo.com/imagenes/maradona-napoli-1986.jpg",
+      "precio": 800
+    },
+    {
+      "id": 4,
+      "nombre": "Pelé - Santos - 1970",
+      "descripcion": "Camiseta firmada por Pelé con el Santos, emblemática en el fútbol mundial de los años 70.",
+      "imagen": "https://ejemplo.com/imagenes/pele-santos-1970.jpg",
+      "precio": 750
+    },
+    {
+      "id": 5,
+      "nombre": "Zinedine Zidane - Francia - 1998",
+      "descripcion": "Camiseta firmada por Zidane, usada en la Copa del Mundo 1998, donde lideró a Francia al título.",
+      "imagen": "https://ejemplo.com/imagenes/zidane-francia-1998.jpg",
+      "precio": 600
+    },
+    {
+      "id": 6,
+      "nombre": "David Beckham - Manchester United - 1999",
+      "descripcion": "Camiseta firmada por David Beckham, temporada 1999, año del histórico triplete del Manchester United.",
+      "imagen": "https://ejemplo.com/imagenes/beckham-united-1999.jpg",
+      "precio": 450
+    },
+    {
+      "id": 7,
+      "nombre": "Andrés Iniesta - FC Barcelona - 2010",
+      "descripcion": "Camiseta firmada por Andrés Iniesta del FC Barcelona, usada en la temporada 2010, año de su icónico gol en el Mundial.",
+      "imagen": "https://ejemplo.com/imagenes/iniesta-barcelona-2010.jpg",
+      "precio": 500
+    },
+    {
+      "id": 8,
+      "nombre": "Johan Cruyff - Ajax - 1972",
+      "descripcion": "Camiseta firmada por Johan Cruyff, leyenda del Ajax y pionero del fútbol total, temporada 1972.",
+      "imagen": "https://ejemplo.com/imagenes/cruyff-ajax-1972.jpg",
+      "precio": 700
+    },
+    {
+      "id": 9,
+      "nombre": "Ronaldo Nazário - Brasil - 2002",
+      "descripcion": "Camiseta firmada por Ronaldo Nazário, usada en el Mundial 2002, donde fue el máximo goleador.",
+      "imagen": "https://ejemplo.com/imagenes/ronaldo-brasil-2002.jpg",
+      "precio": 650
+    },
+    {
+      "id": 10,
+      "nombre": "Francesco Totti - AS Roma - 2001",
+      "descripcion": "Camiseta firmada por Francesco Totti, temporada 2001, donde lideró a la Roma al título de la Serie A.",
+      "imagen": "https://ejemplo.com/imagenes/totti-roma-2001.jpg",
+      "precio": 480
+    },
+    {
+      "id": 11,
+      "nombre": "Eric Cantona - Manchester United - 1996",
+      "descripcion": "Camiseta firmada por Eric Cantona, figura del Manchester United en los años 90.",
+      "imagen": "https://ejemplo.com/imagenes/cantona-united-1996.jpg",
+      "precio": 430
+    },
+    {
+      "id": 12,
+      "nombre": "Kaka - AC Milan - 2007",
+      "descripcion": "Camiseta firmada por Kaka, usada en la temporada 2007, cuando ganó la Champions League y el Balón de Oro.",
+      "imagen": "https://ejemplo.com/imagenes/kaka-milan-2007.jpg",
+      "precio": 470
+    },
+    {
+      "id": 13,
+      "nombre": "Steven Gerrard - Liverpool - 2005",
+      "descripcion": "Camiseta firmada por Steven Gerrard, capitán del Liverpool, temporada 2005, año del milagro en Estambul.",
+      "imagen": "https://ejemplo.com/imagenes/gerrard-liverpool-2005.jpg",
+      "precio": 520
+    },
+    {
+      "id": 14,
+      "nombre": "Xavi Hernández - FC Barcelona - 2011",
+      "descripcion": "Camiseta firmada por Xavi Hernández, arquitecto del juego del FC Barcelona, temporada 2011.",
+      "imagen": "https://ejemplo.com/imagenes/xavi-barcelona-2011.jpg",
+      "precio": 490
+    },
+    {
+      "id": 15,
+      "nombre": "Raúl González - Real Madrid - 2001",
+      "descripcion": "Camiseta firmada por Raúl, leyenda del Real Madrid, usada en la temporada 2001.",
+      "imagen": "https://ejemplo.com/imagenes/raul-madrid-2001.jpg",
+      "precio": 450
+    }
+  ]
