@@ -5,7 +5,7 @@ function Nav(){
 		<nav className='navBar'>
 			<ul className='navBar-list'>
 				<li><button className='navBar-element'>
-					<Link to="/paginaPrincipal" className='palabra-boton-login'>INICIO</Link>
+					<Link to="/" className='palabra-boton-login'>INICIO</Link>
 				</button></li>
 				<li><button className='navBar-element'>
 					<Link to="/paginaRetro" className='palabra-boton-login'>RETRO</Link>

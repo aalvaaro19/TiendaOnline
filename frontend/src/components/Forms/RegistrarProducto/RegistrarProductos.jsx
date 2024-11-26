@@ -8,11 +8,11 @@ function RegistrarProductos() {
   return (
     <>
       <Balon />
-      <div className='contenedor-login'>
-        <div className='encabezado-contenedor-login'>
+      <div className='contenedor-productos'>
+        <div className='encabezado-contenedor-productos'>
           <GiSoccerBall className='logo-usuario' />
         </div>
-        <div className='principal-contenedor-login'>
+        <div className='principal-contenedor-productos'>
           <form className='formulario-productos'>
             <div className='entrada-campo'>
               <input
@@ -67,9 +67,9 @@ function RegistrarProductos() {
                 required
               />
             </div>
-            <div className='boton-contenedor-login'>
-              <button type="submit" className='boton-login'>
-                <Link to="/#" className='palabra-boton-login'>Registrar producto</Link>
+            <div className='boton-contenedor-productos'>
+              <button type="submit" className='boton-productos'>
+                <Link to="/#" className='palabra-boton-productos'>Registrar producto</Link>
               </button>
             </div>
           </form>

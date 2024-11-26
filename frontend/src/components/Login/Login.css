@@ -79,17 +79,22 @@ input[type="password"]::placeholder {
   transition: background-color 0.3s ease;
 }
 
-.boton-login:hover {
-  background-color: rgb(110, 110, 204);
+.palabra-boton-login{
+  text-decoration: none;
+  color: rgb(81, 81, 133);
 }
 
 /* CSS del texto inferior del container */
 .inferior-contenedor-login {
   text-align: center;
   font-size: 14px;
-  color: #4a5568;
+  color: white;
   margin-top: auto; /* Empuja el texto hacia abajo */
   font-size: 15px;
+}
+
+.cuenta-texto{
+  color: white
 }
 
 .navBar-element{
@@ -118,9 +123,9 @@ input[type="password"]::placeholder {
   content: '';
   width: 0%;
   height: 2px;
-  background: #515185;
 	display: block;
   transition: 0.5s;
+  background: #ffffff;
 }
 
 .navBar-element:hover::after, .navBar-element:hover::before {

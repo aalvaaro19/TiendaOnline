@@ -15,9 +15,9 @@ function App() {
       <div className="App">
         <div className="contenedor-principal">
           <Routes>
-            <Route path="/" element={<Login />} />
+            <Route path="/" element={<PaginaPrincipal />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/registro" element={<Registro />} />
-            <Route path="/paginaPrincipal" element={<PaginaPrincipal />} />
             <Route path="/paginaRetro" element={<Productos />} />
             <Route path="/paginaFirmadas" element={<PaginaFirmadas />} />
             <Route path="/paginaColaboraciones" element={<PaginaColaboraciones />} />

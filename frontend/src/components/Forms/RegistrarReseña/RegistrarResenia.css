@@ -1,5 +1,5 @@
 /* CSS del contenedor principal donde se encuentran los sub-componentes */
-.contenedor-login {
+.contenedor-resenia {
     width: 450px;
     padding: 20px;
     background-color: rgb(81, 81, 133);
@@ -13,7 +13,7 @@
   }
   
   /* CSS del icono del container */
-  .encabezado-contenedor-login {
+  .encabezado-contenedor-resenia {
     display: flex;
     justify-content: center;
     margin-top: 10px; /* Ajusta el espacio superior */
@@ -26,7 +26,7 @@
   }
   
   /* CSS para los inputs */
-  .principal-contenedor-login {
+  .principal-contenedor-resenia {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -57,7 +57,7 @@
   }
   
   /* CSS para el botón del container */
-  .boton-contenedor-login {
+  .boton-contenedor-resenia {
     width: 100%;
     display: flex;
     align-items: center;
@@ -65,7 +65,7 @@
     margin-bottom: 20px; /* Ajusta el espacio inferior */
   }
   
-  .boton-login {
+  .boton-resenia {
     width: 70%;
     padding: 12px;
     font-size: 16px;
@@ -77,12 +77,12 @@
     transition: background-color 0.3s ease;
   }
   
-  .boton-login:hover {
+  .boton-resenia:hover {
     background-color: rgb(110, 110, 204);
   }
   
   /* CSS del texto inferior del container */
-  .inferior-contenedor-login {
+  .inferior-contenedor-resenia {
     text-align: center;
     font-size: 14px;
     color: #4a5568;
