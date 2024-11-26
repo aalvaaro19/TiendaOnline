@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Registro from './components/Registro/Registro';
 import PaginaPrincipal from './components/PaginaPrincipal/PaginaPrincipal';
 import Login from './components/Login/Login';
+import Productos from './components/PaginaProductos/PaginaProductos';
 import RegistrarProductos from './components/Forms/RegistrarProducto/RegistrarProductos';
 import RegistrarResenia from './components/Forms/RegistrarReseña/RegistrarResenia';
-
 
 function App() {
   return (
@@ -16,12 +16,15 @@ function App() {
             <Route path="/" element={<Login />} />
             <Route path="/registro" element={<Registro />} />
             <Route path="/paginaPrincipal" element={<PaginaPrincipal />} />
+            <Route path="/paginaProductos" element={<Productos />} />
             <Route path="/registrarProductos" element={<RegistrarProductos />} />
-            <Route path="/registrarResenia" element={<RegistrarResenia />} />
+            <Route path="/registrarResenia" element={<RegistrarResenia/>} />
           </Routes>
         </div>
       </div>
+
     </Router>
+
   );
 }
 

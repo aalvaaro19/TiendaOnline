@@ -35,15 +35,15 @@ function Login() {
             </button>
           </p>
           <p>
-            Registra un producto{' '}
+            Registra un Producto{' '}
             <button className="navBar-element">
-              <Link to="/registrarProductos">Entra aquí</Link>
+              <Link to="/registrarProductos">Entra aqui</Link>
             </button>
           </p>
           <p>
-            Registrar una reseña{' '}
+            Registra una Reseña{' '}
             <button className="navBar-element">
-              <Link to="/registrarResenia">Entra aquí</Link>
+              <Link to="/registrarResenia">Entra aqui</Link>
             </button>
           </p>
         </div>
