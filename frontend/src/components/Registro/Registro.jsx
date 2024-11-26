@@ -8,11 +8,11 @@ function Registro() {
   return (
     <>
       <Balon />
-      <div className='contenedor-login'>
-        <div className='encabezado-contenedor-login'>
+      <div className='contenedor-registro'>
+        <div className='encabezado-contenedor-registro'>
           <GiSoccerBall className='logo-usuario'/>
         </div>
-        <div className='principal-contenedor-login'>
+        <div className='principal-contenedor-registro'>
           <div className='entrada-correo'>
             <input
               type="text"
@@ -49,12 +49,12 @@ function Registro() {
             />
           </div>
         </div>
-        <div className='boton-contenedor-login'>
-          <button className='boton-login'>
-            <Link to="/paginaPrincipal" className='palabra-boton-login'>Registrarse</Link>
+        <div className='boton-contenedor-registro'>
+          <button className='boton-registro'>
+            <Link to="/login" className='palabra-boton-registro'>Registrarse</Link>
           </button>
         </div>
-        <div className='inferior-contenedor-login'>
+        <div className='inferior-contenedor-registro'>
           <p>¿Ya tienes cuenta? 
             <button className='navBar-element'>
               <Link to="/">Iniciar sesión</Link>

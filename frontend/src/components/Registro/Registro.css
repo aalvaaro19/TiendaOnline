@@ -1,4 +1,4 @@
-.contenedor-login {
+.contenedor-registro {
   height: auto;
   width: 450px;
   padding: 20px;
@@ -10,10 +10,11 @@
   align-items: center;
   justify-content: space-between; /* Distribuye espacio entre elementos */
   gap: 20px;
+  margin-top: 70px;
 }
 
 /* CSS del icono del container */
-.encabezado-contenedor-login {
+.encabezado-contenedor-registro {
   display: flex;
   justify-content: center;
   margin-top: 10px; /* Ajusta el espacio superior */
@@ -26,7 +27,7 @@
 }
 
 /* CSS para los inputs */
-.principal-contenedor-login {
+.principal-contenedor-registro {
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -60,7 +61,7 @@ input[type="password"]::placeholder {
 }
 
 /* CSS para el botón del container */
-.boton-contenedor-login {
+.boton-contenedor-registro {
   width: 100%;
   display: flex;
   align-items: center;
@@ -68,7 +69,7 @@ input[type="password"]::placeholder {
   margin-bottom: 20px; /* Ajusta el espacio inferior */
 }
 
-.boton-login {
+.boton-registro {
   width: 70%;
   padding: 12px;
   font-size: 16px;
@@ -80,19 +81,13 @@ input[type="password"]::placeholder {
   transition: background-color 0.3s ease;
 }
 
-.boton-login:hover .palabra-boton-login:hover{
-  background-color: rgb(110, 110, 204);
-  text-decoration: none;
-  color: white;
-}
-
-.palabra-boton-login{
+.palabra-boton-registro{
   text-decoration: none;
   color: rgb(81, 81, 133);
 }
 
 /* CSS del texto inferior del container */
-.inferior-contenedor-login {
+.inferior-contenedor-registro {
   text-align: center;
   font-size: 14px;
   color: #4a5568;
@@ -100,7 +95,7 @@ input[type="password"]::placeholder {
   font-size: 15px;
 }
 
-.inferior-contenedor-login p{
+.inferior-contenedor-registro p{
   color: white;
 }
 

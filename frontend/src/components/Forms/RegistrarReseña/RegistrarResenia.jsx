@@ -8,11 +8,11 @@ function RegistrarResenia() {
   return (
     <>
       <Balon />
-      <div className='contenedor-login'>
-        <div className='encabezado-contenedor-login'>
+      <div className='contenedor-resenia'>
+        <div className='encabezado-contenedor-resenia'>
           <GiSoccerBall className='logo-usuario' />
         </div>
-        <div className='principal-contenedor-login'>
+        <div className='principal-contenedor-resenia'>
           <form className='formulario-productos'>
             <div className='entrada-campo'>
               <input
@@ -45,9 +45,9 @@ function RegistrarResenia() {
                 required
               />
             </div>
-            <div className='boton-contenedor-login'>
-              <button type="submit" className='boton-login'>
-                <Link to="/#" className='palabra-boton-login'>Registrar reseña</Link>
+            <div className='boton-contenedor-resenia'>
+              <button type="submit" className='boton-resenia'>
+                <Link to="/#" className='palabra-boton-resenia'>Registrar reseña</Link>
               </button>
             </div>
           </form>
