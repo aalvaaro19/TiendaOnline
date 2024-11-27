@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Registro from './components/Registro/Registro';
 import PaginaPrincipal from './components/PaginaPrincipal/PaginaPrincipal';
 import Login from './components/Login/Login';
+import PaginaCertificacion from './components/PaginaCertificacion/PaginaCertificacion';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
             <Route path="/" element={<Login />} />
             <Route path="/registro" element={<Registro />} />
             <Route path="/paginaPrincipal" element={<PaginaPrincipal />} />
+            <Route path="/PaginaCertificacion" element={<PaginaCertificacion />} />
           </Routes>
           {/* <Balon /> */}
         </div>
