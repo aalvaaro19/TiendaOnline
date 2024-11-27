@@ -96,38 +96,3 @@ input[type="password"]::placeholder {
 .cuenta-texto{
   color: white
 }
-
-.navBar-element{
-  text-align: center;
-  padding: 10px;
-  font-size: 15px;
-  font-weight: bold;
-	text-decoration: none;
-  border: none;
-  background: none;
-	font-family: 'Poppins', sans-serif;
-  color: #fff;
-	text-decoration: none;
-}
-
-.navBar-element a{
-  color: black;
-  text-decoration: none;
-}
-
-.navBar-element::before {
-  margin-left: auto;
-}
-
-.navBar-element::after, .navBar-element::before {
-  content: '';
-  width: 0%;
-  height: 2px;
-	display: block;
-  transition: 0.5s;
-  background: #ffffff;
-}
-
-.navBar-element:hover::after, .navBar-element:hover::before {
-  width: 100%;
-}
