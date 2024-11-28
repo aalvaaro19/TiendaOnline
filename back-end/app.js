@@ -20,10 +20,10 @@ class Server {
     configureMiddleware() {
         this.app.use(bodyParser.json());
         this.app.use(bodyParser.urlencoded({ extended: true }));
-        this.app.use(cors()); // Corregido aquí
+        this.app.use(cors());
     }
     
-    // Configura las rutas de la aplicación
+    // Configuro las rutas de la aplicación
     configureRoutes() {
     this.app.use('/api', UsuarioController);
     this.app.use('/api', PedidoController);
@@ -31,7 +31,7 @@ class Server {
     this.app.use('/api', ReseñaController);
     this.app.use('/api', CarritoController);
    }
-    // Inicia el servidor
+    // Inicio el servidor
     start() {
       this.app.listen(this.port, () => {
         console.log(`Servidor iniciado en el puerto ${this.port}`);

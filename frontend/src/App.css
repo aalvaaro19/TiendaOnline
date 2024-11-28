@@ -14,7 +14,6 @@
 
 html, body {
   color: rgb(255, 255, 255);
-  font-family: 'Arial', sans-serif;
   user-select: none;
   width: auto;
 }
@@ -22,17 +21,16 @@ html, body {
 
 .LogIn {
   font-size: 20px;
-  font-family: 'Times New Roman', Times, serif;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
-.contenedor-principal {
+.contenedor-principal{
   display: flex;
-  justify-content: space-evenly;
-  align-items: center; /* Alineación vertical centrada */
-  gap: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
+

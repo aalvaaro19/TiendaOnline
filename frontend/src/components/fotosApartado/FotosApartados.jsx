@@ -1,27 +1,28 @@
 import './FotosApartados.css';
+import { Link } from 'react-router-dom';
 
 function FotosApartados() {
     return (
         <body>
             <div className="contenedor-apartados-imagenes">
-                <div className="contenedor-apartados-imagen-1">
+                <Link to="/paginaRetro" className="contenedor-apartados-imagen-1">
                     <div className="header-contenedor-apartados-imagen-1">
-                        <h1>RETRO</h1>
+                        <h1 className='titulo'>RETRO</h1>
                     </div>
-                </div>
-                <div className="contenedor-apartados-imagen-2">
+                </Link>
+                <Link to="/paginaFirmadas" className="contenedor-apartados-imagen-2">
                     <div className="header-contenedor-apartados-imagen-2">
-                        <h1>FIRMADAS</h1>
+                        <h1 className='titulo'>FIRMADAS</h1>
                     </div>
-                </div>
-                <div className="contenedor-apartados-imagen-3">
+                </Link>
+                <Link to="/paginaColaboraciones" className="contenedor-apartados-imagen-3">
                     <div className="header-contenedor-apartados-imagen-3">
-                        <h1>COLABORACIONES</h1>
+                        <h1 className='titulo'>COLABORACIONES</h1>
                     </div>
-                </div>
+                </Link>
             </div>
         </body>
     );
-  }
-  
-  export default FotosApartados;
+}
+
+export default FotosApartados;

@@ -22,18 +22,30 @@ function Login() {
         </div>
         <div className="boton-contenedor-login">
           <button className="boton-login">
-            <Link to="/paginaPrincipal" className="palabra-boton-login">
+            <Link to="/" className="palabra-boton-login">
               Iniciar sesión
             </Link>
           </button>
         </div>
         <div className="inferior-contenedor-login">
-          <p>
+          <p className='cuenta-texto'>
             ¿No tienes cuenta?{' '}
             <button className="navBar-element">
-              <Link to="/registro">Regístrate</Link>
+              <Link to="/registro" className='palabra-boton-login'>Regístrate</Link>
             </button>
           </p>
+          {/* <p>
+            Registra un Producto{' '}
+            <button className="navBar-element">
+              <Link to="/registrarProductos">Entra aqui</Link>
+            </button>
+          </p>
+          <p>
+            Registra una Reseña{' '}
+            <button className="navBar-element">
+              <Link to="/registrarResenia">Entra aqui</Link>
+            </button>
+          </p> */}
         </div>
       </div>
       <Balon />
