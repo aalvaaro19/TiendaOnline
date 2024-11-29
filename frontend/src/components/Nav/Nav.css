@@ -9,6 +9,10 @@ ul{
   text-align: center;
 }
 
+.palabra-boton-login{
+  color: white;
+}
+
 .navBar-element{
   text-align: center;
   padding: 10px;
@@ -31,7 +35,7 @@ ul{
   margin-left: auto;
 }
 
-.navBar-element::after, .navBar-element::before {
+.navBar-element::after, .navBar-element::before, .palabra-boton-login::after, .palabra-boton-login::before {
   content: '';
   width: 0%;
   height: 2px;

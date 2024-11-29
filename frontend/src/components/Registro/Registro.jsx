@@ -57,7 +57,7 @@ function Registro() {
         <div className='inferior-contenedor-registro'>
           <p>¿Ya tienes cuenta? 
             <button className='navBar-element'>
-              <Link to="/">Iniciar sesión</Link>
+              <Link to="/login">Iniciar sesión</Link>
             </button>
           </p>
         </div>

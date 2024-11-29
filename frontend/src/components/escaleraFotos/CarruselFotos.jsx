@@ -24,7 +24,7 @@ function CarruselFotos() {
                 <h2>Andres Iniesta, Sudárfica 2010</h2>
                 </div>
                 <div className="texto-info-contenedor-1">
-                <p>Andrés Iniesta en el momento decisivo del Mundial 2010, justo antes de rematar el balón que daría el gol de la victoria a España en la final contra Países Bajos. Con serenidad y precisión, Iniesta prepara el disparo que cambiaría la historia del fútbol español, capturando un instante inmortal de gloria.</p>
+                <p className="info-texto">Andrés Iniesta en el momento decisivo del Mundial 2010, justo antes de rematar el balón que daría el gol de la victoria a España en la final contra Países Bajos. Con serenidad y precisión, Iniesta prepara el disparo que cambiaría la historia del fútbol español, capturando un instante inmortal de gloria.</p>
                 </div>
               </div>
             </div>
