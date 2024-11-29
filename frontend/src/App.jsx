@@ -8,6 +8,8 @@ import RegistrarProductos from './components/Forms/RegistrarProducto/RegistrarPr
 import RegistrarResenia from './components/Forms/RegistrarReseña/RegistrarResenia';
 import PaginaFirmadas from './components/PaginaFirmadas/PaginaFirmadas';
 import PaginaColaboraciones from './components/PaginaColaboraciones/PaginaColaboraciones';
+import ProductoIndividual from './components/ProductoIndividual/ProductoIndividual';
+import PaginaCertificacion from './components/PaginaCertificacion/PaginaCertificacion';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
             <Route path="/paginaColaboraciones" element={<PaginaColaboraciones />} />
             <Route path="/registrarProductos" element={<RegistrarProductos />} />
             <Route path="/registrarResenia" element={<RegistrarResenia/>} />
+            <Route path="/ProductoIndividual" element={<ProductoIndividual/>} />
+            <Route path="/PaginaCertificacion" element={<PaginaCertificacion/>} />  
           </Routes>
         </div>
       </div>
