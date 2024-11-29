@@ -12,13 +12,13 @@ function PaginaFirmadas() {
     <>
         <HeaderProductos />
         <div className='bodyApp'>
-        {DataFirmadas.map((shirt) => (
+        {DataFirmadas.map((camiseta) => (
           <Card
-            key={shirt.id}
-            name={shirt.name}
-            description={shirt.description}
-            price={shirt.price}
-            image={shirt.image}
+            key={camiseta.id}
+            name={camiseta.name}
+            description={camiseta.description}
+            price={camiseta.price}
+            image={camiseta.image}
           />
         ))}
       </div>

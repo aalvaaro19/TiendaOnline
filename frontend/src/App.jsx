@@ -1,5 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import { createBrowserRouter, RouterProvider, Link, Outlet } from 'react-router-dom';
+// import { createBrowserRouter } from 'react-router-dom';
 import Registro from './components/Registro/Registro';
 import PaginaPrincipal from './components/PaginaPrincipal/PaginaPrincipal';
 import Login from './components/Login/Login';
@@ -9,8 +11,54 @@ import RegistrarResenia from './components/Forms/RegistrarReseña/RegistrarResen
 import PaginaFirmadas from './components/PaginaFirmadas/PaginaFirmadas';
 import PaginaColaboraciones from './components/PaginaColaboraciones/PaginaColaboraciones';
 
+// const routerFran = createBrowserRouter([
+//   {
+//     path: '/',
+//     element: (
+//       <div className="App" >
+//         <Outlet />
+//       </div>
+//     ),
+//     children: [
+//       {
+//         path: '/',
+//         element: <PaginaPrincipal />
+//       },
+//       {
+//         path: '/login',
+//         element: <Login />
+//       },
+//       {
+//         path: '/registro',
+//         element: <Registro />
+//       },
+//       {
+//         path: '/paginaRetro',
+//         element: <Productos />
+//       },
+//       {
+//         path: '/registrarProductos',
+//         element: <RegistrarProductos />
+//       },
+//       {
+//         path: '/registrarResenia',
+//         element: <RegistrarResenia />
+//       },
+//       {
+//         path: '/paginaFirmadas',
+//         element: <PaginaFirmadas />
+//       },
+//       {
+//         path: '/paginaColaboraciones',
+//         element: <PaginaColaboraciones />
+//       }
+//     ]
+//   }
+// ]);
+
 function App() {
   return (
+    // <RouterProvider router={routerFran} />
     <Router>
       <div className="App">
         <div className="contenedor-principal">
@@ -26,9 +74,7 @@ function App() {
           </Routes>
         </div>
       </div>
-
     </Router>
-
   );
 }
 

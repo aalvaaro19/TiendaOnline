@@ -5,16 +5,16 @@ function Nav(){
 		<nav className='navBar'>
 			<ul className='navBar-list'>
 				<li><button className='navBar-element'>
-					<Link to="/" className='palabra-boton-login'>INICIO</Link>
+					<Link to="/"><p className='palabra-boton-login'>INICIO</p></Link>
 				</button></li>
 				<li><button className='navBar-element'>
-					<Link to="/paginaRetro" className='palabra-boton-login'>RETRO</Link>
+					<Link to="/paginaRetro"><p className='palabra-boton-login'>RETRO</p></Link>
 				</button></li>
 				<li><button className='navBar-element'>
-					<Link to="/paginaFirmadas" className='palabra-boton-login'>FIRMADAS</Link>
+					<Link to="/paginaFirmadas"><p className='palabra-boton-login'>FIRMADAS</p></Link>
 				</button></li>
         <li><button className='navBar-element'>
-					<Link to="/paginaColaboraciones" className='palabra-boton-login'>COLABORACIONES</Link>
+					<Link to="/paginaColaboraciones"><p className='palabra-boton-login'>COLABORACIONES</p></Link>
 				</button></li>
 			</ul>
 		</nav>
