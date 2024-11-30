@@ -11,6 +11,7 @@ import PaginaColaboraciones from './components/PaginaColaboraciones/PaginaColabo
 import PaginaCertificacion from './components/PaginaCertificacion/PaginaCertificacion';
 import BotonComprarProductoIndividual from './components/BotonComprarProductoIndividual/BotonComprarProductoIndividual';
 import BotonCarritoProductoIndividual from './components/BotonCarritoProductoIndividual/BotonCarritoProductoIndividual';
+import PaginaCarrito from './components/PaginaCarrito/PaginaCarrito';
 
 function App() {
   return (
@@ -30,7 +31,7 @@ function App() {
             <Route path="/paginaCertificacion" element={<PaginaCertificacion/>} />
             <Route path='/BotonComprarProductoIndividual' element={<BotonComprarProductoIndividual />} />
             <Route path='/BotonCarritoProductoIndividual' element={<BotonCarritoProductoIndividual />} />
-
+            <Route path='/PaginaCarrito' element={<PaginaCarrito />} />
           </Routes>
         </div>
       </div>
