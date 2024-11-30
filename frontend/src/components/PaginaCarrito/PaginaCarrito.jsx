@@ -11,6 +11,10 @@ function PaginaCarrito(){
 	return (
         <div className='general-carrito'>
             <Header />
+            <div className='h1-carrito-div'>
+                <h1 className='h1-carrito'>CARRITO DE COMPRA</h1>
+            </div>
+
         <div className='pagina-carrito-main'>
             <div className='pagina-carrito-sector-1'>
                 <img src={camiPrueba} alt='camiPrueba' className='camiPrueba' />

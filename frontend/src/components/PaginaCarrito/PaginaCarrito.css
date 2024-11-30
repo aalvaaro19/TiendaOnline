@@ -96,3 +96,16 @@ hr {
     margin-top: 300px;
     margin-bottom: 200px;
 }
+
+
+.h1-carrito-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.h1-carrito {
+    text-align: center;
+    color: black;
+}
