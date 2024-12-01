@@ -1,0 +1,84 @@
+.PaginaPago {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .contenedor-pago {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .detalle-compra, .formulario-pago {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detalle-compra h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .resumen, .subtotal, .total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  hr{
+    width: 270px;
+  }
+  
+  .formulario-pago h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 15px;
+  }
+  
+  form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .info-tarjeta {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .info-tarjeta input {
+    flex: 1;
+  }
+
+  form button {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #0056b3;
+  }
+  
