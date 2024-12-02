@@ -9,7 +9,7 @@ import BotonCarritoProductoIndividual from '../BotonCarritoProductoIndividual/Bo
 import equipacionIndividual from "../../images/equipacion-españa.png"
 import { Link } from 'react-router-dom';
 import Cantidad from '../Cantidad/Cantidad'
-import PrecioIndividual from '../PrecioIndividual/PrecioIndividual'
+import PrecioIndividual from '../Precio/PrecioIndividual'
 import { CiCircleCheck } from "react-icons/ci";
 
 function ProductoIndividual() {
