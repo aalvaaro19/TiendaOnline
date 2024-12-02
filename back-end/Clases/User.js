@@ -1,6 +1,6 @@
 class User{
-  constructor( nombreUser, nombreCompleto, telefono, direccion, email, password){
-    this.nombreUser = nombreUser;
+  constructor( nombreUsuario, nombreCompleto, telefono, direccion, email, password){
+    this.nombreUsuario = nombreUsuario;
     this.nombreCompleto = nombreCompleto;
     this.telefono = telefono;
     this.direccion = direccion;
@@ -12,8 +12,8 @@ class User{
     return this.idUsuario;
   }
 
-  getNombreUser(){
-    return this.nombreUser;
+  getNombreUsuario(){
+    return this.nombreUsuario;
   }
 
   getNombreCompleto(){
@@ -28,7 +28,7 @@ class User{
     return this.direccion;
   }
 
-  getCp(){
+  getemail(){
     return this.email;
   }
 
@@ -40,8 +40,8 @@ class User{
     this.idUsuario = idUsuario;
   }
 
-  setNombreUser(nombreUser){
-    this.nombreUser = nombreUser;
+  setNombreUsuario(nombreUsuario){
+    this.nombreUsuario = nombreUsuario;
   }
 
   setNombreCompleto(nombreCompleto){
@@ -56,16 +56,12 @@ class User{
     this.direccion = direccion;
   }
 
-  setCp(email){
+  setemail(email){
     this.email = email;
   }
 
   setPassword(password){
     this.password = password;
-  }
-
-  toString(){
-    return `User ID: ${this.idUsuario}, Username: ${this.nombreUser}, Full Name: ${this.nombreCompleto}, Phone: ${this.telefono}, Address: ${this.direccion}, Email: ${this.email}, Password: ${this.password}`;
   }
 }
 

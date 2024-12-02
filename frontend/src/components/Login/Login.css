@@ -1,9 +1,10 @@
 /* CSS del contenedor principal donde se encuentran los sub-componentes */
 .contenedor-login {
+  margin-top: 100px;
   height: 550px;
   width: 450px;
   padding: 20px;
-  background-color: #ffffff;
+  background-color: rgb(81, 81, 133);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   display: flex;
@@ -23,7 +24,7 @@
 .logo-usuario {
   width: 70px;
   height: 70px;
-  color: #4a5568;
+  color: white;
 }
 
 /* CSS para los inputs */
@@ -32,6 +33,7 @@
   flex-direction: column;
   gap: 15px;
   width: 100%;
+
 }
 
 /* Ajustes para cada entrada */
@@ -69,58 +71,28 @@ input[type="password"]::placeholder {
   width: 70%;
   padding: 12px;
   font-size: 16px;
-  color: #ffffff;
-  background-color: rgb(81, 81, 133);
+  color: black;
+  background-color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.boton-login:hover {
-  background-color: rgb(110, 110, 204);
+.palabra-boton-login{
+  text-decoration: none;
+  color: rgb(81, 81, 133);
 }
 
 /* CSS del texto inferior del container */
 .inferior-contenedor-login {
   text-align: center;
   font-size: 14px;
-  color: #4a5568;
+  color: white;
   margin-top: auto; /* Empuja el texto hacia abajo */
   font-size: 15px;
 }
 
-.navBar-element{
-  text-align: center;
-  padding: 10px;
-  font-size: 15px;
-  font-weight: bold;
-	text-decoration: none;
-  border: none;
-  background: none;
-	font-family: 'Poppins', sans-serif;
-  color: #fff;
-	text-decoration: none;
-}
-
-.navBar-element a{
-  color: black;
-  text-decoration: none;
-}
-
-.navBar-element::before {
-  margin-left: auto;
-}
-
-.navBar-element::after, .navBar-element::before {
-  content: '';
-  width: 0%;
-  height: 2px;
-  background: #515185;
-	display: block;
-  transition: 0.5s;
-}
-
-.navBar-element:hover::after, .navBar-element:hover::before {
-  width: 100%;
+.cuenta-texto{
+  color: white
 }

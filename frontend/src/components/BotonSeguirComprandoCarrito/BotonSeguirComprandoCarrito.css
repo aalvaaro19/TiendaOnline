@@ -1,0 +1,18 @@
+.boton-seguir-comprando-carrito{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 30px;
+    font-size: 18px;
+    color: black;
+    border-radius: 15px;
+    text-decoration: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.boton-seguir-comprando-carrito:hover{
+    text-decoration: underline;
+}

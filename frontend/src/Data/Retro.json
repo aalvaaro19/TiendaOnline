@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Diego Maradona - Argentina - 1986",
+    "description": "Camiseta retro de la selección argentina usada en el Mundial de 1986, donde Maradona hizo historia con la 'Mano de Dios'.",
+    "image": "https://ejemplo.com/imagenes/maradona-argentina-1986.jpg",
+    "carpeta": "retro",
+    "price": "$250"
+  },
+  {
+    "id": 2,
+    "name": "Zinedine Zidane - Francia - 1998",
+    "description": "Camiseta retro de Francia del Mundial 1998, donde Zidane lideró al equipo a su primer campeonato del mundo.",
+    "image": "https://ejemplo.com/imagenes/zidane-francia-1998.jpg",
+    "carpeta": "retro",
+    "price": "$230"
+  },
+  {
+    "id": 3,
+    "name": "Pelé - Brasil - 1970",
+    "description": "Camiseta retro de la selección brasileña usada por Pelé en el Mundial de 1970, considerada una de las mejores selecciones de la historia.",
+    "image": "https://ejemplo.com/imagenes/pele-brasil-1970.jpg",
+    "carpeta": "retro",
+    "price": "$300"
+  },
+  {
+    "id": 4,
+    "name": "Johan Cruyff - Holanda - 1974",
+    "description": "Camiseta retro de Holanda utilizada por Johan Cruyff durante la Copa del Mundo de 1974, emblema del fútbol total.",
+    "image": "https://ejemplo.com/imagenes/cruyff-holanda-1974.jpg",
+    "carpeta": "retro",
+    "price": "$280"
+  },
+  {
+    "id": 5,
+    "name": "George Best - Manchester United - 1968",
+    "description": "Camiseta retro del Manchester United usada por George Best durante la histórica final de la Copa de Europa de 1968.",
+    "image": "https://ejemplo.com/imagenes/best-united-1968.jpg",
+    "carpeta": "retro",
+    "price": "$270"
+  },
+  {
+    "id": 6,
+    "name": "Marco van Basten - AC Milan - 1989",
+    "description": "Camiseta retro del AC Milan de la temporada 1988-89, cuando Marco van Basten deslumbró al mundo del fútbol.",
+    "image": "https://ejemplo.com/imagenes/vanbasten-milan-1989.jpg",
+    "carpeta": "retro",
+    "price": "$240"
+  },
+  {
+    "id": 7,
+    "name": "Gerd Müller - Alemania - 1974",
+    "description": "Camiseta retro de la selección alemana usada por Gerd Müller en el Mundial de 1974, donde se coronaron campeones.",
+    "image": "https://ejemplo.com/imagenes/muller-alemania-1974.jpg",
+    "carpeta": "retro",
+    "price": "$260"
+  },
+  {
+    "id": 8,
+    "name": "Roberto Baggio - Italia - 1994",
+    "description": "Camiseta retro de Italia del Mundial 1994, famosa por las actuaciones de Roberto Baggio en la competición.",
+    "image": "https://ejemplo.com/imagenes/baggio-italia-1994.jpg",
+    "carpeta": "retro",
+    "price": "$220"
+  },
+  {
+    "id": 9,
+    "name": "David Beckham - Inglaterra - 1998",
+    "description": "Camiseta retro de la selección inglesa usada por David Beckham durante el Mundial de 1998.",
+    "image": "https://ejemplo.com/imagenes/beckham-inglaterra-1998.jpg",
+    "carpeta": "retro",
+    "price": "$230"
+  },
+  {
+    "id": 10,
+    "name": "Ronaldo Nazário - Brasil - 2002",
+    "description": "Camiseta retro de la selección brasileña usada por Ronaldo durante el Mundial 2002, donde fue máximo goleador.",
+    "image": "https://ejemplo.com/imagenes/ronaldo-brasil-2002.jpg",
+    "carpeta": "retro",
+    "price": "$250"
+  },
+  {
+    "id": 11,
+    "name": "Eusebio - Portugal - 1966",
+    "description": "Camiseta retro de la selección portuguesa usada por Eusebio durante el Mundial de 1966, donde fue el máximo goleador.",
+    "image": "https://ejemplo.com/imagenes/eusebio-portugal-1966.jpg",
+    "carpeta": "retro",
+    "price": "$280"
+  },
+  {
+    "id": 12,
+    "name": "Francesco Totti - AS Roma - 2001",
+    "description": "Camiseta retro de la AS Roma usada por Totti durante la temporada 2000-2001, cuando ganaron la Serie A.",
+    "image": "https://ejemplo.com/imagenes/totti-roma-2001.jpg",
+    "carpeta": "retro",
+    "price": "$240"
+  }
+]

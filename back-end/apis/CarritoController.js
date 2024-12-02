@@ -1,23 +1,23 @@
 const express = require('express');
-const router = express.Router();
+const api = express.Router();
 const connection = require('../bd/Conexion.js');
 const Carrito = require('../Clases/Carrito.js');
 
-router.get('/listarCarritos', (req, res) => {
+api.get('/listarCarritos', (req, res) => {
   connection.query('SELECT * FROM carrito', (err, rows) => {
     if (err) throw err;
     res.json(rows);
   });
 });
 
-router.get('/listarCarritos/:id', (req, res) => {
+api.get('/listarCarritos/:id', (req, res) => {
   connection.query(`SELECT * FROM carrito WHERE idUsuario = ${req.params.id}`, (err, rows) => {
     if (err) throw err;
     res.json(rows);
   });
 });
 
-router.post('/añadirAlCarrito', (req, res) => {
+api.post('/añadirAlCarrito', (req, res) => {
   const { idUsuario, fecha, total } = req
   const carrito = new Carrito(idUsuario, fecha, total);
   connection.query('INSERT INTO carrito SET ?', carrito, (err, rows) => {
@@ -27,7 +27,7 @@ router.post('/añadirAlCarrito', (req, res) => {
   );
 });
 
-router.post('/actualizarCarrito/:id', (req, res) => {
+api.post('/actualizarCarrito/:id', (req, res) => {
   const { idUsuario, fecha, total } = req.body;
   const carrito = new Carrito(idUsuario, fecha, total);
   connection.query(`UPDATE carrito SET ? WHERE idUsuario = ${req.params.id}`, carrito, (err, rows) => {
@@ -36,11 +36,11 @@ router.post('/actualizarCarrito/:id', (req, res) => {
   });
 });
 
-router.delete('/eliminarCarrito/:id', (req, res) => {
+api.delete('/eliminarCarrito/:id', (req, res) => {
   connection.query('DELETE FROM carrito WHERE idUsuario = ?', [req.params.id], (err, rows) => {
     if (err) throw err;
     res.json(rows);
   });
 });
 
-module.exports = router;
+module.exports = api;

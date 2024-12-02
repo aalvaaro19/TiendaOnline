@@ -1,0 +1,49 @@
+.navBar {
+	margin-top: 1rem;
+}
+
+ul{
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  list-style: none;
+  text-align: center;
+}
+
+.palabra-boton-login{
+  color: white;
+}
+
+.navBar-element{
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  background: none;
+  font-family: 'LV', sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navBar-element a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.navBar-element::before {
+  margin-left: auto;
+}
+
+.navBar-element::after, .navBar-element::before, .palabra-boton-login::after, .palabra-boton-login::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #ffffff;
+  display: block;
+  transition: 0.5s;
+}
+
+.navBar-element:hover::after, .navBar-element:hover::before {
+  width: 100%;
+}

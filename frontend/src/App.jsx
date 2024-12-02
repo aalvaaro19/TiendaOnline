@@ -1,25 +1,39 @@
 import './App.css';
-import Balon from './components/Balon/Balon';
-import LoginContainer from './components/Login/LoginContainer';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';  // Asegúrate de que importes BrowserRouter
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Registro from './components/Registro/Registro';
-import { Link } from 'react-router-dom';  // Importa Link para la navegación
+import PaginaPrincipal from './components/PaginaPrincipal/PaginaPrincipal';
+import Login from './components/Login/Login';
+import Productos from './components/PaginaRetro/PaginaRetro';
+import RegistrarProductos from './components/Forms/RegistrarProducto/RegistrarProductos';
+import RegistrarResenia from './components/Forms/RegistrarReseña/RegistrarResenia';
+import PaginaFirmadas from './components/PaginaFirmadas/PaginaFirmadas';
+import PaginaColaboraciones from './components/PaginaColaboraciones/PaginaColaboraciones';
+import PaginaCertificacion from './components/PaginaCertificacion/PaginaCertificacion';
+import PaginaCarrito from './components/PaginaCarrito/PaginaCarrito';
+import PaginaPago from './components/PaginaPago/PaginaPago';
+import ProductoIndividual from './components/ProductoIndividual/ProductoIndividual';
+import PaginaFavoritos from './components/PaginaFavoritos/PaginaFavoritos';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <header className='LogIn'>
-          <h1>Limited Football</h1>
-        </header>
-        <div className='contenedor-principal'>
-          <Balon />
+        <div className="contenedor-principal">
           <Routes>
-            <Route path="/" element={<LoginContainer />} />
+            <Route path="/" element={<PaginaPrincipal />} />
+            <Route path="/login" element={<Login />} />
             <Route path="/registro" element={<Registro />} />
+            <Route path="/paginaRetro" element={<Productos />} />
+            <Route path="/paginaFirmadas" element={<PaginaFirmadas />} />
+            <Route path="/paginaColaboraciones" element={<PaginaColaboraciones />} />
+            <Route path="/registrarProductos" element={<RegistrarProductos />} />
+            <Route path="/registrarResenia" element={<RegistrarResenia/>} />
+            <Route path="/paginaCertificacion" element={<PaginaCertificacion/>} />
+            <Route path='/PaginaCarrito' element={<PaginaCarrito />} />
+            <Route path='/PaginaPago' element={<PaginaPago />} />
+            <Route path="/ProductoIndividual" element={<ProductoIndividual/>} />
+            <Route path="/PaginaFavoritos" element={<PaginaFavoritos/>} />
           </Routes>
-
-          <Balon />
         </div>
       </div>
     </Router>
