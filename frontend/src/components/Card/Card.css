@@ -24,7 +24,6 @@
   .cardDescription{
     margin-top: 10px;
     font-size: 18px;
-    font-weight: bold;
     text-align: center;
   }
   
@@ -33,6 +32,7 @@
     margin-top: 10px;
     font-size: 18px;
     text-align: center;
+    font-weight: bold;
   }
 
   .cardHeart{
@@ -40,4 +40,8 @@
     font-size: 25px;
     margin-top: 10px;
     color: red;
+  }
+
+  .link-producto-individual{
+    text-decoration: none;
   }
