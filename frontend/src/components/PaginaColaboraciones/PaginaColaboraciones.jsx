@@ -18,6 +18,7 @@ function PaginaColaboraciones() {
             name={camiseta.name}
             description={camiseta.description}
             price={camiseta.price}
+            carpeta={camiseta.carpeta}
             image={camiseta.image}
           />
         ))}

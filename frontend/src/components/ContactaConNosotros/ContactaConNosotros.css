@@ -1,8 +1,5 @@
-
-
 .div-externo-contacta {
-
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,6 +10,7 @@
   .texto-contacta-con-nosotros {
     font-size: 2.5em;
     color: rgb(85, 85, 146);
+    margin-top: 10px;
     margin-bottom: 20px;
     text-align: left;
     width: 80%;

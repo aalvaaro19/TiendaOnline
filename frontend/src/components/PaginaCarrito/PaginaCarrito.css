@@ -1,0 +1,115 @@
+.pagina-carrito-main {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 800px;
+    color: #333;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 70px;
+}
+
+.pagina-carrito-sector-1 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.camiPrueba {
+    width: 160px;
+    height: auto;
+    margin-right: 30px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.conjunto-texto-carrito-sector-1 {
+    flex-grow: 1;
+}
+
+.h2-texto-carrito-sector-1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.p-texto-carrito-sector-1 {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+}
+
+.precio-texto-carrito-sector-1 {
+    margin: 10px 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #ddd;
+    margin: 30px 0;
+}
+
+.pagina-carrito-sector-2, 
+.pagina-carrito-sector-3, 
+.pagina-carrito-sector-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.columna-izq-carrito-sector-2, 
+.columna-izq-carrito-sector-3, 
+.columna-izq-carrito-sector-4 {
+    flex-grow: 1;
+}
+
+.texto-columna-izq-sector-2, 
+.texto-columna-izq-sector-3, 
+.texto-columna-izq-sector-4 {
+    margin: 0;
+    font-size: 18px;
+    color: #555;
+}
+
+.texto-columna-der-sector-2, 
+.texto-columna-der-sector-3, 
+.texto-columna-der-sector-4 {
+    margin: 0;
+    font-size: 18px;
+    color: #000;
+    text-align: right;
+    font-weight: bold;
+}
+
+.pagina-carrito-sector-2 p {
+    margin-bottom: 15px;
+}
+
+
+.certificacion-carrito{
+    margin-top: 100px;
+}
+
+
+.h1-carrito-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.h1-carrito {
+    text-align: center;
+    color: black;
+}
+
+.acciones-carrito{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

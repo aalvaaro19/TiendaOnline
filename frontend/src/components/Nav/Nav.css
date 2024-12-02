@@ -1,7 +1,5 @@
 .navBar {
 	margin-top: 1rem;
-  margin-bottom: 50px;
-
 }
 
 ul{
@@ -16,16 +14,22 @@ ul{
 }
 
 .navBar-element{
+  text-align: center;
   padding: 10px;
-  font-size: 1rem;
+  font-size: 15px;
   font-weight: bold;
   text-decoration: none;
   border: none;
   background: none;
   font-family: 'LV', sans-serif;
-  color: #ffffff;
+  color: #fff;
+  text-decoration: none;
 }
 
+.navBar-element a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
 
 .navBar-element::before {
   margin-left: auto;

@@ -1,0 +1,39 @@
+.contenedor-favoritos-principal{
+    width: 100%;
+    margin-bottom: 50px;
+
+}
+
+.contenedor-h1-favoritos{
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-favoritos{
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    background: none;
+}
+  
+.titulo-favoritos::before {
+    margin-left: auto;
+}
+  
+.titulo-favoritos::after, .titulo-favoritos::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #E3001B;
+    display: block;
+    transition: 0.5s;
+}
+  
+.titulo-favoritos:hover::after, .titulo-favoritos:hover::before {
+    width: 100%;
+}

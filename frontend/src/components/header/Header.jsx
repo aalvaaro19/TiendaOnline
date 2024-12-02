@@ -24,15 +24,17 @@ function Header(){
                 <button className="header-Search-button"><IoSearchOutline /></button>
             </div>
             <div className="header-icons">
-                <Link to="/#">
-                    <FaRegHeart className="color-icono"/>
-                </Link>
-                <Link to="/#">
-                    <MdOutlineShoppingBag  className="color-icono"/>
-                </Link>
-                <Link to="/login">
-                    <FaRegUser  className="color-icono"/>
-                </Link>
+                <div className='display-header-icons'>
+                    <Link to="/PaginaFavoritos">
+                        <FaRegHeart className="color-iconos"/>
+                    </Link>
+                    <Link to="/PaginaCarrito">
+                        <MdOutlineShoppingBag  className="color-iconos"/>
+                    </Link>
+                    <Link to="/login">
+                        <FaRegUser  className="color-iconos"/>
+                    </Link>
+                </div>
             </div>
         </div>
     </div>
