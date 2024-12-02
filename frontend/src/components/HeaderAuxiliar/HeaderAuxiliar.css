@@ -1,0 +1,31 @@
+*{
+    width: 100%;
+}
+
+header {
+    background-color: #57578D;
+    display: flex;
+    justify-content: space-between; /* Distribuye elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 0 20px; /* Espaciado interno */
+    box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
+}
+
+/* Estilo del logo */
+.header-auxiliar-Image {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto; /* Centra el logo horizontalmente */
+}
+
+/* Contenedor del icono de usuario */
+.usuario {
+    display: flex;
+    align-items: center;
+}
+
+/* Icono de usuario */
+.color-icono {
+    color: black;
+    font-size: 1.5rem; /* Ajusta el tamaño */
+}

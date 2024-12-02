@@ -25,13 +25,13 @@ function Header(){
             </div>
             <div className="header-icons">
                 <Link to="/#">
-                    <FaRegHeart className="color-icono"/>
+                    <FaRegHeart className="color-iconos"/>
                 </Link>
-                <Link to="/#">
-                    <MdOutlineShoppingBag  className="color-icono"/>
+                <Link to="/PaginaCarrito">
+                    <MdOutlineShoppingBag  className="color-iconos"/>
                 </Link>
                 <Link to="/login">
-                    <FaRegUser  className="color-icono"/>
+                    <FaRegUser  className="color-iconos"/>
                 </Link>
             </div>
         </div>

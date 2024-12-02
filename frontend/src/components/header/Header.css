@@ -65,14 +65,12 @@
 
 .header-icons{
 	margin-top: 15px;
-	float: right;
-  margin-left: 160px;
   display: flex;
-  gap: 30px;
+  justify-content: space-evenly;
   font-size: 25px;
 }
 
-.color-icono{
+.color-iconos{
   color: white;
 }
 

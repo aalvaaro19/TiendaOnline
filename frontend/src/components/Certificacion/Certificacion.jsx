@@ -1,4 +1,4 @@
-import '../certificacion/Certificacion.css';
+import '../Certificacion/Certificacion.css';
 import certificacionImg from '../../images/certificacion.png';
 
 function Certificacion() {
