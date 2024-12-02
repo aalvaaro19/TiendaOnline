@@ -13,6 +13,7 @@ import PaginaCarrito from './components/PaginaCarrito/PaginaCarrito';
 import PaginaPago from './components/PaginaPago/PaginaPago';
 import ProductoIndividual from './components/ProductoIndividual/ProductoIndividual';
 import PaginaFavoritos from './components/PaginaFavoritos/PaginaFavoritos';
+import Contacto from './components/Contacto/Contacto';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
             <Route path='/PaginaPago' element={<PaginaPago />} />
             <Route path="/ProductoIndividual" element={<ProductoIndividual/>} />
             <Route path="/PaginaFavoritos" element={<PaginaFavoritos/>} />
+            <Route path='/Contacto' element={<Contacto/>}/>
           </Routes>
         </div>
       </div>
