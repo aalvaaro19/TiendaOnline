@@ -34,3 +34,10 @@
     font-size: 18px;
     text-align: center;
   }
+
+  .cardHeart{
+    width: 190%;
+    font-size: 25px;
+    margin-top: 10px;
+    color: red;
+  }

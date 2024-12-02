@@ -1,4 +1,9 @@
 /* CSS del contenedor principal donde se encuentran los sub-componentes */
+.contenedor-login-login{
+  display: flex;
+  justify-content: center;
+}
+
 .contenedor-login {
   margin-top: 100px;
   height: 550px;
@@ -79,7 +84,7 @@ input[type="password"]::placeholder {
   transition: background-color 0.3s ease;
 }
 
-.palabra-boton-login{
+.palabra-boton-login-login{
   text-decoration: none;
   color: rgb(81, 81, 133);
 }
@@ -95,4 +100,40 @@ input[type="password"]::placeholder {
 
 .cuenta-texto{
   color: white
+}
+
+
+.navBar-element-login{
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+	text-decoration: none;
+  border: none;
+  background: none;
+	font-family: 'Poppins', sans-serif;
+  color: #fff;
+	text-decoration: none;
+}
+
+.navBar-element-login a{
+  color: black;
+  text-decoration: none;
+}
+
+.navBar-element-login::before {
+  margin-left: auto;
+}
+
+.navBar-element-login::after, .navBar-element-login::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: white;
+	display: block;
+  transition: 0.5s;
+}
+
+.navBar-element-login:hover::after, .navBar-element-login:hover::before {
+  width: 100%;
 }

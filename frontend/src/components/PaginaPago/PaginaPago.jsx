@@ -9,7 +9,7 @@ function PaginaPago() {
       <Header />
       <main className='contenedor-pago'>
         <section className='detalle-compra'>
-          <h2>Pasarela de pago</h2>
+          <h2>Resumen del pedido</h2>
           <div className='resumen'>
             <p>Zidane 1998 - Francia</p>
             <p>120,00 €</p>

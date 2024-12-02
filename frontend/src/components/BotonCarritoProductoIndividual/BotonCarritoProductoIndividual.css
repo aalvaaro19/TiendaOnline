@@ -1,12 +1,14 @@
 .boton-carrito-p-i{
-    width: 100px;
+    width: 250px;
     padding-top: 7px;
     padding-bottom: 7px;
-    border-radius: 7px;
+    border-radius: 10px;
     background-color: #ffffff00;
     border: 0.1px solid black;
+    transition: 0.8s;
 }
 
 .boton-carrito-p-i:hover{
+    background-color: lightgrey;
     cursor: pointer;
 }
