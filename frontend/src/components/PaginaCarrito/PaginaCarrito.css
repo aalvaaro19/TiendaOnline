@@ -8,7 +8,6 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 70px;
-    margin-bottom: 120px;
 }
 
 .pagina-carrito-sector-1 {
@@ -93,8 +92,7 @@ hr {
 
 
 .certificacion-carrito{
-    margin-top: 300px;
-    margin-bottom: 200px;
+    margin-top: 100px;
 }
 
 
@@ -108,4 +106,10 @@ hr {
 .h1-carrito {
     text-align: center;
     color: black;
+}
+
+.acciones-carrito{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

@@ -26,21 +26,11 @@ function CarruselFotos() {
               </p>
             </div>
           </div>
-          <div className="contendor-imagenes-carrusel">
-            <div className="contenedor-imagen-1">
-              <div className="imagen-contenedor-1">
-                <img src={fotoIniesta} alt="fotoIniesta" id="fotoIniesta"/>
-              </div>
-              <div className="info-contenedor-1">
-                <div className="titulo-info-contenedor-1">
-                <h2>Andres Iniesta, Sudárfica 2010</h2>
-                </div>
-                <div className="texto-info-contenedor-1">
-                <p className="info-texto">Andrés Iniesta en el momento decisivo del Mundial 2010, justo antes de rematar el balón que daría el gol de la victoria a España en la final contra Países Bajos. Con serenidad y precisión, Iniesta prepara el disparo que cambiaría la historia del fútbol español, capturando un instante inmortal de gloria.</p>
-                </div>
-              </div>
+          <div className="contenedor-imagen-4">
+            <div className="imagen-contenedor-4">
+              <img src={fotoMaradona} alt="Andrés Iniesta celebrando el gol decisivo en Sudáfrica 2010" />
             </div>
-            <div className="info-contenedor-2">
+            <div className="info-contenedor-4">
               <h2>Diego Maradona, Argentina 1986</h2>
               <p>
                 Diego Maradona, el genio del fútbol, levantando la Copa del Mundo de 1986 después 

@@ -65,13 +65,17 @@
 
 .header-icons{
 	margin-top: 15px;
-  display: flex;
-  justify-content: space-evenly;
   font-size: 25px;
 }
 
 .color-iconos{
   color: white;
+}
+
+.display-header-icons{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 

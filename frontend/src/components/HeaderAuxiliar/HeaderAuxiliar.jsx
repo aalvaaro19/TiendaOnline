@@ -3,7 +3,7 @@ import './HeaderAuxiliar.css';
 import imagenLogo from '../../images/LogoTienda.png'
 import { Link } from 'react-router-dom';
 import { FaRegUser } from "react-icons/fa6";
-import { IoMdHome } from "react-icons/io";
+import { IoHomeOutline } from "react-icons/io5";
 
 
 
@@ -11,7 +11,7 @@ function HeaderAuxiliar() {
   return (
     <div className='header-auxiliar'>
     <Link to='/'>
-    <IoMdHome className='home-icono-auxiliar'/>
+    <IoHomeOutline  className='home-icono-auxiliar'/>
     </Link>
 		<img  
 			className="header-auxiliar-Image"

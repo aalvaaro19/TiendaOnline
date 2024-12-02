@@ -57,8 +57,10 @@ function PaginaCarrito(){
                     <p className='texto-columna-der-sector-4'>***€</p>
                 </div>
             </div>
-            <BotonProcederAPagarCarrito />
-            <BotonSeguirComprandoCarrito />
+            <div className='acciones-carrito'>
+                <BotonSeguirComprandoCarrito />
+                <BotonProcederAPagarCarrito />
+            </div>
         </div>
         <div className='certificacion-carrito'>
             <Certificacion />
