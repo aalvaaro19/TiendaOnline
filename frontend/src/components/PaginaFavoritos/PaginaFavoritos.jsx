@@ -3,7 +3,7 @@ import './PaginaFavoritos.css'
 import HeaderAuxiliar from '../HeaderAuxiliar/HeaderAuxiliar';
 import Footer from '../footer/Footer'
 import ContactaConNosotros from '../ContactaConNosotros/ContactaConNosotros';
-import Certificacion from '../certificacion/Certificacion';
+import Certificacion from '../Certificacion/Certificacion';
 import ProductosFavoritos from '../ProductosFavoritos/ProductosFavoritos';
 
 

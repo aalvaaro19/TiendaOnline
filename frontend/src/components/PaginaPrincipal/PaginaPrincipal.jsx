@@ -5,7 +5,7 @@ import FotosApartados from '../fotosApartado/FotosApartados';
 import ContactaConNosotros from '../ContactaConNosotros/ContactaConNosotros';
 import Descripcion from '../descripcion/descripcion';
 import EscaleraFotos from '../escaleraFotos/CarruselFotos';
-import Certificacion from '../certificacion/Certificacion';
+import Certificacion from '../Certificacion/Certificacion';
 
 function PaginaPrincipal() {
   return (

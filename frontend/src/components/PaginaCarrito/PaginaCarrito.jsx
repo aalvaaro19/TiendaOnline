@@ -5,7 +5,7 @@ import ContactaConNosotros from '../ContactaConNosotros/ContactaConNosotros';
 import BotonProcederAPagarCarrito from '../BotonProcederAPagarCarrito/BotonProcederAPagarCarrito';
 import Footer from '../footer/Footer'
 import BotonSeguirComprandoCarrito from '../BotonSeguirComprandoCarrito/BotonSeguirComprandoCarrito';
-import Certificacion from '../certificacion/Certificacion';
+import Certificacion from '../Certificacion/Certificacion';
 
 function PaginaCarrito(){
 	return (

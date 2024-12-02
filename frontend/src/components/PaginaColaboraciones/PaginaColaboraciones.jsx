@@ -3,7 +3,7 @@ import HeaderProductos from '../HeaderProductos/HeaderProductos.jsx'
 import Footer from '../footer/Footer.jsx';
 import ContactaConNosotros from '../ContactaConNosotros/ContactaConNosotros.jsx';
 import Card from '../Card/Card.jsx';
-import Certificacion from '../certificacion/Certificacion.jsx';
+import Certificacion from '../Certificacion/Certificacion.jsx';
 import './PaginaColaboraciones.css'
 import DataColabos from '../../Data/Exclusivas.json'
 
