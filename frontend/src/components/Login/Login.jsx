@@ -6,7 +6,7 @@ import './Login.css';
 
 function Login() {
   return (
-    <>
+    <div className='contenedor-login-login'>
       <Balon />
       <div className="contenedor-login">
         <div className="encabezado-contenedor-login">
@@ -22,7 +22,7 @@ function Login() {
         </div>
         <div className="boton-contenedor-login">
           <button className="boton-login">
-            <Link to="/" className="palabra-boton-login">
+            <Link to="/" className="palabra-boton-login-login">
               Iniciar sesión
             </Link>
           </button>
@@ -30,7 +30,7 @@ function Login() {
         <div className="inferior-contenedor-login">
           <p className='cuenta-texto'>
             ¿No tienes cuenta?{' '}
-            <button className="navBar-element">
+            <button className="navBar-element-login">
               <Link to="/registro" className='palabra-boton-login'>Regístrate</Link>
             </button>
           </p>
@@ -49,7 +49,7 @@ function Login() {
         </div>
       </div>
       <Balon />
-    </>
+    </div>
   );
 }
 

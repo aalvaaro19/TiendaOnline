@@ -1,3 +1,8 @@
+.contenedor-login-login{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .contenedor-registro {
   height: auto;
   width: 450px;
@@ -41,10 +46,7 @@
   flex-direction: column;
 }
 
-input[type="email"],
-input[type="text"],
-input[type="number"],
-input[type="password"] {
+.entrada {
   height: 50px;
   width: 100%;
   padding: 12px;
@@ -53,10 +55,7 @@ input[type="password"] {
   font-size: 16px;
 }
 
-input[type="email"]::placeholder,
-input[type="text"]::placeholder,
-input[type="number"]::placeholder,
-input[type="password"]::placeholder {
+.entrada::placeholder{
   color: #a0aec0;
 }
 
@@ -79,6 +78,7 @@ input[type="password"]::placeholder {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .palabra-boton-registro{
@@ -99,7 +99,7 @@ input[type="password"]::placeholder {
   color: white;
 }
 
-.navBar-element{
+.navBar-element-registro{
   text-align: center;
   padding: 10px;
   font-size: 15px;
@@ -112,16 +112,16 @@ input[type="password"]::placeholder {
 	text-decoration: none;
 }
 
-.navBar-element a{
+.navBar-element-registro a{
   color: black;
   text-decoration: none;
 }
 
-.navBar-element::before {
+.navBar-element-registro::before {
   margin-left: auto;
 }
 
-.navBar-element::after, .navBar-element::before {
+.navBar-element-registro::after, .navBar-element-registro::before {
   content: '';
   width: 0%;
   height: 2px;
@@ -130,6 +130,6 @@ input[type="password"]::placeholder {
   transition: 0.5s;
 }
 
-.navBar-element:hover::after, .navBar-element:hover::before {
+.navBar-element-registro:hover::after, .navBar-element-registro:hover::before {
   width: 100%;
 }

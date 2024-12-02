@@ -19,6 +19,7 @@ function PaginaFirmadas() {
             description={camiseta.description}
             price={camiseta.price}
             image={camiseta.image}
+            carpeta={camiseta.carpeta}
           />
         ))}
       </div>

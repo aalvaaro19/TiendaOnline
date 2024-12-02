@@ -5,7 +5,7 @@
 .contenedor-producto-individual{
     width: auto;
     margin-top: 50px;
-    margin-bottom: 1000px;
+    margin-bottom: 100px;
     display: flex;
     justify-content: center;
     gap: 200px;
@@ -17,7 +17,12 @@
     margin-bottom: 10px;
 }
 
-.link-certificacion-individual, .precio-individual{
+.a-link-certificacion-individual{
+    text-decoration: none;
+}
+
+.link-certificacion-individual{
+    color: #57578D;
     margin-top: 5px;
 }
 
@@ -48,3 +53,21 @@
     height: 100%;
     border-radius: 25px;
 }
+
+.precio-y-cantidad{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.check-logo{
+    color: rgb(34, 205, 34);
+    font-size: 25px;
+    margin: 5px;
+}
+
+.certificacion-contenedor{
+    display: flex;
+
+}
+

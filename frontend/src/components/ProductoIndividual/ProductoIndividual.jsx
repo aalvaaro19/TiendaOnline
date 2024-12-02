@@ -7,6 +7,10 @@ import './ProductoIndividual.css'
 import BotonComprarProductoIndividual from '../BotonComprarProductoIndividual/BotonComprarProductoIndividual'
 import BotonCarritoProductoIndividual from '../BotonCarritoProductoIndividual/BotonCarritoProductoIndividual'
 import equipacionIndividual from "../../images/equipacion-españa.png"
+import { Link } from 'react-router-dom';
+import Cantidad from '../Cantidad/Cantidad'
+import PrecioIndividual from '../PrecioIndividual/PrecioIndividual'
+import { CiCircleCheck } from "react-icons/ci";
 
 function ProductoIndividual() {
   return (
@@ -23,8 +27,14 @@ function ProductoIndividual() {
       <div className='informacion-producto'>
         <p className='texto-informacion-producto'>Revive uno de los momentos más icónicos del fútbol mundial con esta camiseta retro de Zinedine Zidane, inspirada en la equipación original que Francia llevó en el Mundial de 1998.Confeccionada con materiales de alta calidad, esta réplica oficial destaca por su atención al detalle, desde el clásico escudo de la Federación Francesa de Fútbol hasta las características rayas azules y rojas que evocan el estilo inconfundible de la época.</p>
       </div>
-      <p className='precio-individual'>**** €</p>
-      <p className='link-certificacion-individual'>Certify By Limited</p>
+      <div className='precio-y-cantidad'>
+        <PrecioIndividual />
+        <Cantidad />
+      </div>
+      <div className='certificacion-contenedor'>
+        <Link to="/paginaCertificacion" className='a-link-certificacion-individual'><p className='link-certificacion-individual'>Certify By Limited</p></Link>
+        <CiCircleCheck className='check-logo'/>
+      </div>
       <div className='botones-producto-individual'>
         <BotonCarritoProductoIndividual />
         <BotonComprarProductoIndividual />
