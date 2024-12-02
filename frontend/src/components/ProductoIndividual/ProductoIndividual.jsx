@@ -15,7 +15,7 @@ function ProductoIndividual() {
     <HeaderAuxiliar />
     <div className='contenedor-producto-individual'>
     <div className='contenedor-producto-individual-imagen'>
-      <img src={pokemonRare} alt='foto' className='imagen-individual' />
+       {/* <img src={pokemonRare} alt='foto' className='imagen-individual' /> */}
     </div>
     <div className='contenedor-producto-individual-contenido'>
       <div className='nombre-producto'>

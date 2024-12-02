@@ -12,6 +12,8 @@ import PaginaFirmadas from './components/PaginaFirmadas/PaginaFirmadas';
 import PaginaColaboraciones from './components/PaginaColaboraciones/PaginaColaboraciones';
 import ProductoIndividual from './components/ProductoIndividual/ProductoIndividual';
 import PaginaCertificacion from './components/PaginaCertificacion/PaginaCertificacion';
+import PaginaFavoritos from './components/PaginaFavoritos/PaginaFavoritos';
+import PaginaCarrito from './components/PaginaCarrito/PaginaCarrito';
 
 // const routerFran = createBrowserRouter([
 //   {
@@ -74,7 +76,9 @@ function App() {
             <Route path="/registrarProductos" element={<RegistrarProductos />} />
             <Route path="/registrarResenia" element={<RegistrarResenia/>} />
             <Route path="/ProductoIndividual" element={<ProductoIndividual/>} />
-            <Route path="/PaginaCertificacion" element={<PaginaCertificacion/>} />  
+            <Route path="/PaginaCertificacion" element={<PaginaCertificacion/>} />
+            <Route path="/PaginaFavoritos" element={<PaginaFavoritos/>} />
+            <Route path="/PaginaCarrito" element={<PaginaCarrito />} />
           </Routes>
         </div>
       </div>
