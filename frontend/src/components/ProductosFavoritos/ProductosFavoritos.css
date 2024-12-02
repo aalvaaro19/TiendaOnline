@@ -1,0 +1,29 @@
+.contenedor-contenido-favoritos{
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.imagen-div{
+  margin: 10px;
+}
+
+.imagen-favoritos{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.contenedor-contenido-favoritos-principal{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 5%;
+  margin-top: 15px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.info-producto-favoritos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

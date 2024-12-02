@@ -11,10 +11,11 @@ import PaginaColaboraciones from './components/PaginaColaboraciones/PaginaColabo
 import PaginaCertificacion from './components/PaginaCertificacion/PaginaCertificacion';
 import PaginaCarrito from './components/PaginaCarrito/PaginaCarrito';
 import PaginaPago from './components/PaginaPago/PaginaPago';
+import ProductoIndividual from './components/ProductoIndividual/ProductoIndividual';
+import PaginaFavoritos from './components/PaginaFavoritos/PaginaFavoritos';
 
 function App() {
   return (
-    // <RouterProvider router={routerFran} />
     <Router>
       <div className="App">
         <div className="contenedor-principal">
@@ -30,6 +31,8 @@ function App() {
             <Route path="/paginaCertificacion" element={<PaginaCertificacion/>} />
             <Route path='/PaginaCarrito' element={<PaginaCarrito />} />
             <Route path='/PaginaPago' element={<PaginaPago />} />
+            <Route path="/ProductoIndividual" element={<ProductoIndividual/>} />
+            <Route path="/PaginaFavoritos" element={<PaginaFavoritos/>} />
           </Routes>
         </div>
       </div>

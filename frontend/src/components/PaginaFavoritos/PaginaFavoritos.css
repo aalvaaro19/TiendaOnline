@@ -1,0 +1,44 @@
+.contenedor-favoritos-principal{
+    width: 100%;
+
+}
+
+.titulo-favoritos{
+    width: 250px;
+    margin-left: 100px;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 30px;
+    border: 2px solid black;
+}
+
+.contenedor-contenido-favoritos{
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.imagen-div{
+    width: 350px;
+    height: 500px;
+    margin: 10px;
+
+    border-radius: 15px;
+    background-color: rgb(211, 211, 211);
+}
+
+.contenedor-contenido-favoritos-principal{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.info-producto-favoritos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

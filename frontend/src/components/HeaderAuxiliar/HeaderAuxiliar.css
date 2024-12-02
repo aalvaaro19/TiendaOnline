@@ -1,15 +1,14 @@
-*{
+.header-auxiliar{
     width: 100%;
-}
-
-header {
     background-color: #57578D;
     display: flex;
     justify-content: space-between; /* Distribuye elementos a los extremos */
     align-items: center; /* Centra verticalmente los elementos */
-    padding: 0 20px; /* Espaciado interno */
+    padding-right: 80px; /* Espaciado interno */
+    padding-left: 80px;
     box-sizing: border-box; /* Incluye padding en el cálculo del ancho */
 }
+
 
 /* Estilo del logo */
 .header-auxiliar-Image {
@@ -25,7 +24,13 @@ header {
 }
 
 /* Icono de usuario */
-.color-icono {
-    color: black;
+.color-icono-auxiliar {
+    color: rgb(255, 255, 255);
     font-size: 1.5rem; /* Ajusta el tamaño */
+    
+}
+
+.home-icono-auxiliar{
+    color: rgb(255, 255, 255);
+    font-size: 2.1rem;
 }

@@ -3,7 +3,8 @@
     "id": 1,
     "name": "AC Milan - Off-White - Edición Especial 2023",
     "description": "Camiseta del AC Milan diseñada en colaboración con Off-White, combinando estilo urbano y deportivo.",
-    "image": "chaqueta-offwhite",
+    "image": "milan-off-white",
+    "carpeta": "colaboraciones",
     "price": "$350"
   },
   {
@@ -11,6 +12,7 @@
     "name": "PSG - Louis Vuitton - Edición Limitada 2022",
     "description": "Camiseta exclusiva del PSG creada por Louis Vuitton, destacando por su elegancia y detalles de lujo.",
     "image": "psg-lv",
+    "carpeta": "colaboraciones",
     "price": "$600"
   },
   {
@@ -18,6 +20,7 @@
     "name": "Real Madrid - Gucci - Colección 2021",
     "description": "Camiseta del Real Madrid en colaboración con Gucci, perfecta para los amantes de la moda y el fútbol.",
     "image": "real_madrid_gucci",
+    "carpeta": "colaboraciones",
     "price": "$580"
   },
   {
@@ -25,83 +28,71 @@
     "name": "FC Barcelona - Balenciaga - Edición Especial 2023",
     "description": "Camiseta del FC Barcelona diseñada por Balenciaga, destacando la vanguardia y minimalismo.",
     "image": "camiseta-fc-barcelona-especial-2024",
+    "carpeta": "colaboraciones",
     "price": "$500"
   },
   {
     "id": 5,
     "name": "Juventus - Prada - Edición Limitada 2020",
     "description": "Camiseta de la Juventus creada por Prada, combinando tradición futbolística y diseño de alta costura.",
-    "image": "chaqueta-offwhite",
+    "image": "juventus-prada",
+    "carpeta": "colaboraciones",
     "price": "$550"
   },
   {
     "id": 6,
     "name": "Manchester United - Dior - Colección 2021",
     "description": "Camiseta del Manchester United diseñada por Dior, con detalles refinados y materiales de alta calidad.",
-    "image": "chaqueta-offwhite",
+    "image": "manUnited-dior",
+    "carpeta": "colaboraciones",
     "price": "$620"
   },
   {
     "id": 7,
     "name": "Chelsea - Burberry - Edición Especial 2022",
     "description": "Camiseta del Chelsea en colaboración con Burberry, destacando su icónico diseño de cuadros.",
-    "image": "chaqueta-offwhite",
+    "image": "chelsea-burberry",
+    "carpeta": "colaboraciones",
     "price": "$480"
   },
   {
     "id": 8,
     "name": "Bayern Múnich - Versace - Colección 2023",
     "description": "Camiseta del Bayern Múnich creada por Versace, con un diseño audaz y elegante.",
-    "image": "chaqueta-offwhite",
+    "image": "bayern-versace",
+    "carpeta": "colaboraciones",
     "price": "$520"
-  },
-  {
-    "id": 9,
-    "name": "Inter de Milán - Armani - Edición Especial 2020",
-    "description": "Camiseta del Inter de Milán diseñada por Giorgio Armani, combinando sofisticación y deportividad.",
-    "image": "chaqueta-offwhite",
-    "price": "$500"
   },
   {
     "id": 10,
     "name": "Arsenal - Alexander McQueen - Colección 2022",
     "description": "Camiseta del Arsenal en colaboración con Alexander McQueen, ideal para los fanáticos de la moda.",
-    "image": "chaqueta-offwhite",
+    "image": "arsenal-queen",
+    "carpeta": "colaboraciones",
     "price": "$540"
   },
   {
     "id": 11,
     "name": "Tottenham - Ralph Lauren - Edición Limitada 2023",
     "description": "Camiseta del Tottenham diseñada por Ralph Lauren, fusionando deporte y estilo clásico.",
-    "image": "chaqueta-offwhite",
+    "image": "spurs-polo",
+    "carpeta": "colaboraciones",
     "price": "$490"
   },
   {
     "id": 12,
     "name": "Atlético de Madrid - Hugo Boss - Colección 2021",
     "description": "Camiseta del Atlético de Madrid en colaboración con Hugo Boss, destacando por su estilo sobrio y moderno.",
-    "image": "chaqueta-offwhite",
+    "image": "atm-hugo",
+    "carpeta": "colaboraciones",
     "price": "$450"
-  },
-  {
-    "id": 13,
-    "name": "Liverpool - Hermès - Edición Especial 2023",
-    "description": "Camiseta del Liverpool creada por Hermès, con detalles de lujo que resaltan su diseño único.",
-    "image": "chaqueta-offwhite",
-    "price": "$650"
-  },
-  {
-    "id": 14,
-    "name": "Sevilla - Loewe - Edición Limitada 2022",
-    "description": "Camiseta del Sevilla en colaboración con Loewe, combinando tradición española y diseño contemporáneo.",
-    "image": "chaqueta-offwhite",
-    "price": "$460"
   },
   {
     "id": 15,
     "name": "Borussia Dortmund - Kenzo - Colección 2021",
     "description": "Camiseta del Borussia Dortmund diseñada por Kenzo, destacando un diseño atrevido y moderno.",
-    "image": "chaqueta-offwhite",
+    "image": "borussia-kenzo",
+    "carpeta": "colaboraciones",
     "price": "$480"
   }
 ]

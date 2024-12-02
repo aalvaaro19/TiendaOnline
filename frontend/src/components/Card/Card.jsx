@@ -6,7 +6,7 @@ function Card(props) {
     <div className="personal-Card">
       <img
        className="personal-Image"
-       src= {require(`../../images/${props.image}.png`)}
+       src= {require(`../../images/${props.carpeta}/${props.image}.png`)}
        alt={`Edicion especial del ${props.image}`}
       />
       <div className="personal-card-text">
