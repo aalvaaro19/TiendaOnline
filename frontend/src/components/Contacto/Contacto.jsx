@@ -2,7 +2,6 @@ import React from 'react'
 import './Contacto.css';
 import Footer from '../footer/Footer';
 import HeaderAuxiliar from '../HeaderAuxiliar/HeaderAuxiliar';
-import { TbMessageCircleCheck } from "react-icons/tb";
 
 function Contacto() {
   return (
