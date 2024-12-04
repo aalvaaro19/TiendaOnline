@@ -5,7 +5,7 @@ import Footer from '../footer/Footer'
 import ContactaConNosotros from '../ContactaConNosotros/ContactaConNosotros';
 import Certificacion from '../certificacion/Certificacion';
 import ProductosFavoritos from '../ProductosFavoritos/ProductosFavoritos';
-
+import { Link } from 'react-router-dom';
 
 function PaginaFavoritos() {
   return (
@@ -16,9 +16,15 @@ function PaginaFavoritos() {
             <button className='titulo-favoritos'>Favoritos</button>
         </div>
         <div className='contenedor-contenido-favoritos-principal'>
-            <ProductosFavoritos />
-            <ProductosFavoritos />
-            <ProductosFavoritos />
+          <Link to="/ProductoIndividual" className="link-producto-individual">
+            <ProductosFavoritos className="producto-favorito"/>
+          </Link>
+          <Link to="/ProductoIndividual" className="link-producto-individual">
+            <ProductosFavoritos className="producto-favorito"/>
+          </Link>
+          <Link to="/ProductoIndividual" className="link-producto-individual">
+            <ProductosFavoritos className="producto-favorito"/>
+          </Link>
         </div>
     </div>
     <Certificacion />

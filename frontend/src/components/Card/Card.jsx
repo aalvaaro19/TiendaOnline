@@ -7,7 +7,7 @@ function Card(props) {
   return (
     <Link to="/ProductoIndividual" className="link-producto-individual">
       <div className="personal-Card">
-      <FaRegHeart className='cardHeart'/>
+      <Link to="/PaginaFavoritos" className="link-producto-individual"><FaRegHeart className='cardHeart'/></Link>
         <img
         className="personal-Image"
         src= {require(`../../images/${props.carpeta}/${props.image}.png`)}

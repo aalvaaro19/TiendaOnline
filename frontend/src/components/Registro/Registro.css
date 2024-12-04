@@ -69,7 +69,11 @@
 }
 
 .boton-registro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 70%;
+  height: 70%;
   padding: 12px;
   font-size: 16px;
   color: black;
@@ -79,6 +83,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   text-decoration: none;
+  color: rgb(81, 81, 133);
 }
 
 .palabra-boton-registro{

@@ -12,8 +12,8 @@ function PaginaPrincipal() {
     <div>
         <Header />
         <FotosApartados />
-        <Descripcion />
         <EscaleraFotos />
+        <Descripcion />
         <Certificacion />
         <ContactaConNosotros />
         <Footer />
