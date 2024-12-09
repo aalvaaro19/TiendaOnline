@@ -1,4 +1,10 @@
 /* CSS del contenedor principal donde se encuentran los sub-componentes */
+.principal-registrar-productos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .contenedor-productos {
     width: 450px;
     padding: 20px;

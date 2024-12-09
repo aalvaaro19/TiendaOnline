@@ -6,7 +6,7 @@ import './RegistrarProductos.css';
 
 function RegistrarProductos() {
   return (
-    <>
+    <div className='principal-registrar-productos'>
       <Balon />
       <div className='contenedor-productos'>
         <div className='encabezado-contenedor-productos'>
@@ -76,7 +76,7 @@ function RegistrarProductos() {
         </div>
       </div>
       <Balon />
-    </>
+    </div>
   );
 }
 
