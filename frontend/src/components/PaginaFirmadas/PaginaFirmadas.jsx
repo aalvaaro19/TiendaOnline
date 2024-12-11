@@ -11,6 +11,9 @@ function PaginaFirmadas() {
   return (
     <>
         <HeaderProductos />
+        <div className='titulo-alineacion'>
+          <button className='titulo-favoritos'>FIRMADAS</button>
+        </div>
         <div className='bodyApp'>
         {DataFirmadas.map((camiseta) => (
           <Card

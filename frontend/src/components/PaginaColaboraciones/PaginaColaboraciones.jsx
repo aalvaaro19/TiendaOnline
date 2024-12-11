@@ -11,6 +11,9 @@ function PaginaColaboraciones() {
   return (
     <>
         <HeaderProductos />
+        <div className='titulo-alineacion'>
+          <button className='titulo-favoritos'>COLABORACIONES</button>
+        </div>
         <div className='bodyApp'>
         {DataColabos.map((camiseta) => (
           <Card

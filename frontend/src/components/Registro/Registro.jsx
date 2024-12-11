@@ -13,46 +13,53 @@ function Registro() {
           <GiSoccerBall className='logo-usuario'/>
         </div>
         <div className='principal-contenedor-registro'>
-          <div className='entrada'>
+          <div>
             <input
               type="text"
               id="text"
               placeholder="Nombre completo"
+              className='entrada'
             />
           </div>
-          <div className='entrada'>
+          <div>
             <input
               type="number"
               id="number"
               placeholder="Número de telefono"
+              className='entrada'
             />
           </div>
-          <div className='entrada'>
+          <div>
             <input
               type="text"
               id="text"
               placeholder="Dirección"
+              className='entrada'
             />
           </div>
-          <div className='entrada'>
+          <div>
             <input
               type="email"
               id="email"
               placeholder="example@gmail.com"
+              className='entrada'
             />
           </div>
-          <div className='entrada'>
+          <div>
             <input
               type="password"
               id="password"
               placeholder="Contraseña"
+              className='entrada'
             />
           </div>
         </div>
         <div className='boton-contenedor-registro'>
-          <button className='boton-registro'>
-            <Link to="/login" className='palabra-boton-registro'>Registrarse</Link>
-          </button>
+          <Link to="/login" className='boton-registro'>
+            <button className='boton-registro'>
+              Registrarse
+            </button>
+          </Link>
         </div>
         <div className='inferior-contenedor-registro'>
           <p>¿Ya tienes cuenta? 

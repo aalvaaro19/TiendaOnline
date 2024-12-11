@@ -21,11 +21,11 @@ function Login() {
           </div>
         </div>
         <div className="boton-contenedor-login">
-          <button className="boton-login">
-            <Link to="/" className="palabra-boton-login-login">
+          <Link to="/" className="boton-login">
+            <button className="boton-login">
               Iniciar sesión
-            </Link>
-          </button>
+            </button>
+          </Link>
         </div>
         <div className="inferior-contenedor-login">
           <p className='cuenta-texto'>

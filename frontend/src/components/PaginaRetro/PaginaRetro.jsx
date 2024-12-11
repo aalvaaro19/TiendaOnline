@@ -11,6 +11,9 @@ function PaginaRetro() {
   return (
     <>
         <HeaderProductos />
+        <div className='titulo-alineacion'>
+          <button className='titulo-favoritos'>RETRO</button>
+        </div>
         <div className='bodyApp'>
         {DataRetro.map((camiseta) => (
           <Card
@@ -19,6 +22,7 @@ function PaginaRetro() {
             description={camiseta.description}
             price={camiseta.price}
             image={camiseta.image}
+            carpeta={camiseta.carpeta}
           />
         ))}
       </div>
