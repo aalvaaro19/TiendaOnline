@@ -1,5 +1,7 @@
-class User{
-  constructor( nombreUsuario, nombreCompleto, telefono, direccion, email, password){
+const { ObjectId } = require('mongodb');
+
+class User {
+  constructor(nombreUsuario, nombreCompleto, telefono, direccion, email, password) {
     this.nombreUsuario = nombreUsuario;
     this.nombreCompleto = nombreCompleto;
     this.telefono = telefono;
@@ -8,59 +10,60 @@ class User{
     this.password = password;
   }
 
-  getIdUsuario(){
-    return this.idUsuario;
+  setId(id) {
+    this._id = id;
   }
 
-  getNombreUsuario(){
+  getId() {
+    return this._id;
+  }
+
+  getNombreUsuario() {
     return this.nombreUsuario;
   }
 
-  getNombreCompleto(){
+  getNombreCompleto() {
     return this.nombreCompleto;
   }
 
-  getTelefono(){
+  getTelefono() {
     return this.telefono;
   }
 
-  getDireccion(){
+  getDireccion() {
     return this.direccion;
   }
 
-  getemail(){
+  getEmail() {
     return this.email;
   }
 
-  getPassword(){
+  getPassword() {
     return this.password;
   }
 
-  setIdUsuario(idUsuario){
-    this.idUsuario = idUsuario;
-  }
-
-  setNombreUsuario(nombreUsuario){
+  // Métodos de modificación
+  setNombreUsuario(nombreUsuario) {
     this.nombreUsuario = nombreUsuario;
   }
 
-  setNombreCompleto(nombreCompleto){
+  setNombreCompleto(nombreCompleto) {
     this.nombreCompleto = nombreCompleto;
   }
 
-  setTelefono(telefono){
+  setTelefono(telefono) {
     this.telefono = telefono;
   }
 
-  setDireccion(direccion){
+  setDireccion(direccion) {
     this.direccion = direccion;
   }
 
-  setemail(email){
+  setEmail(email) {
     this.email = email;
   }
 
-  setPassword(password){
+  setPassword(password) {
     this.password = password;
   }
 }

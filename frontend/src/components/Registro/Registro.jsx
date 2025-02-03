@@ -1,10 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { GiSoccerBall } from "react-icons/gi";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Balon from '../Balon/Balon';
 import './Registro.css';
+import axios from 'axios';
 
 function Registro() {
+  const navigate = useNavigate();
+
+  const [formData, setFormData] = useState({
+    nombreUsuario: '',
+    nombreCompleto: '',
+    telefono: '',
+    direccion: '',
+    email: '',
+    password: ''
+  });
+
+  const handleChange = (e) => {
+    const { id, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [id]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      await axios.post('/crearUsuario', formData);
+      setFormData({
+        nombreUsuario: '',
+        nombreCompleto: '',
+        telefono: '',
+        direccion: '',
+        email: '',
+        password: ''
+      });
+      console.log('Usuario creado correctamente');
+      navigate('/login');
+    } catch (error) {
+      console.error('Error creating user:', error);
+    }
+  };
+
   return (
     <div className='contenedor-login-login'>
       <Balon />
@@ -12,29 +51,45 @@ function Registro() {
         <div className='encabezado-contenedor-registro'>
           <GiSoccerBall className='logo-usuario'/>
         </div>
-        <div className='principal-contenedor-registro'>
+        <form onSubmit={handleSubmit} className='principal-contenedor-registro'>
+        <div>
+            <input
+              type="text"
+              id="nombreUsuario"
+              placeholder="Nombre usuario"
+              className='entrada'
+              value={formData.nombreUsuario}
+              onChange={handleChange}
+            />
+          </div>
           <div>
             <input
               type="text"
-              id="text"
+              id="nombreCompleto"
               placeholder="Nombre completo"
               className='entrada'
+              value={formData.nombreCompleto}
+              onChange={handleChange}
             />
           </div>
           <div>
             <input
               type="number"
-              id="number"
+              id="telefono"
               placeholder="Número de telefono"
               className='entrada'
+              value={formData.telefono}
+              onChange={handleChange}
             />
           </div>
           <div>
             <input
               type="text"
-              id="text"
+              id="direccion"
               placeholder="Dirección"
               className='entrada'
+              value={formData.direccion}
+              onChange={handleChange}
             />
           </div>
           <div>
@@ -43,6 +98,8 @@ function Registro() {
               id="email"
               placeholder="example@gmail.com"
               className='entrada'
+              value={formData.email}
+              onChange={handleChange}
             />
           </div>
           <div>
@@ -51,16 +108,16 @@ function Registro() {
               id="password"
               placeholder="Contraseña"
               className='entrada'
+              value={formData.password}
+              onChange={handleChange}
             />
           </div>
-        </div>
-        <div className='boton-contenedor-registro'>
-          <Link to="/login" className='boton-registro'>
-            <button className='boton-registro'>
+          <div className='boton-contenedor-registro'>
+            <button type="submit" className='boton-registro'>
               Registrarse
             </button>
-          </Link>
-        </div>
+          </div>
+        </form>
         <div className='inferior-contenedor-registro'>
           <p>¿Ya tienes cuenta? 
             <button className='navBar-element-registro'>

@@ -1,9 +1,10 @@
 class Producto{
-    constructor(nombre, descripcion, precio, stock, imagen){
+    constructor(nombre, descripcion, precio, stock, carpeta, imagen){
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;
         this.stock = stock;
+        this.carpeta = carpeta;
         this.imagen = imagen;
     }
 
@@ -22,7 +23,9 @@ class Producto{
     getStock(){
         return this.stock;
     }
-
+    getCarpeta(){
+        return this.carpeta;
+    }
     getImagen(){
         return this.imagen;
     }
@@ -42,7 +45,9 @@ class Producto{
     setStock(stock){
         this.stock = stock;
     }
-
+    setCarpeta(carpeta){
+        this.carpeta = carpeta;
+    }
     setImagen(imagen){
         this.imagen = imagen;
     }
