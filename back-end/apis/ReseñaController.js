@@ -1,7 +1,7 @@
 const express = require('express');
 const api = express.Router();
 const connection = require('../bd/Conexion.js');
-const Reseña = require('../Clases/Reseña.js');
+const Reseña = require('../Clases/Resenia.js');
 
 api.get('/listarResenias', (req, res) => {
   connection.query('SELECT * FROM resenias', (err, rows) => {

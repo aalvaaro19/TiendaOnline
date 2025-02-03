@@ -5,9 +5,35 @@ import ContactaConNosotros from '../ContactaConNosotros/ContactaConNosotros.jsx'
 import Card from '../Card/Card.jsx';
 import Certificacion from '../certificacion/Certificacion.jsx';
 import './PaginaColaboraciones.css'
-import DataColabos from '../../Data/Exclusivas.json'
+import { useEffect, useState } from 'react';
 
 function PaginaColaboraciones() {
+      const [data, setData] = useState([]);
+      const [loading, setLoading] = useState(true)
+      const [error, setError] = useState(null);
+    
+      useEffect(() => {
+        // Hacer la solicitud GET a la API
+        fetch('http://localhost:5000/api/listarProductos')
+          .then((res) => res.json())
+          .then((data) => {
+            setData(data);
+            setLoading(false);
+          })
+          .catch((error) => {
+            setError(error);
+            setLoading(false);
+          });
+      }, []);
+    
+      if (loading) {
+        return <div>Loading...</div>;
+      }
+    
+      if (error) {
+        return <div>Error: {error.message}</div>;
+      }
+
   return (
     <>
         <HeaderProductos />
@@ -15,16 +41,22 @@ function PaginaColaboraciones() {
           <button className='titulo-favoritos'>COLABORACIONES</button>
         </div>
         <div className='bodyApp'>
-        {DataColabos.map((camiseta) => (
-          <Card
-            key={camiseta.id}
-            name={camiseta.name}
-            description={camiseta.description}
-            price={camiseta.price}
-            carpeta={camiseta.carpeta}
-            image={camiseta.image}
-          />
-        ))}
+        {data.length > 0 ? (
+          data
+            .filter((camiseta) => camiseta.carpeta === 'colaboraciones')
+            .map((camiseta) => (
+              <Card
+                key={camiseta.idProducto}
+                name={camiseta.nombre}
+                description={camiseta.descripcion}
+                price={camiseta.precio}
+                image={camiseta.imagen}
+                carpeta={camiseta.carpeta}
+              />
+            ))
+        ) : (
+          <p>No hay productos disponibles.</p>
+        )}
       </div>
         <Certificacion />
         <ContactaConNosotros />
