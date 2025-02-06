@@ -17,6 +17,7 @@ function ProductoIndividual() {
   const [producto, setProducto] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [cantidad, setCantidad] = useState(1);
 
   useEffect(() => {
     fetch(`http://localhost:5000/api/obtenerProducto/${idProducto}`)
@@ -45,6 +46,8 @@ function ProductoIndividual() {
     return <div>Producto no encontrado.</div>;  // Mensaje si no se encuentra el producto
   }
 
+  const precioTotal = producto.precio * cantidad;
+
   return (
     <div className="pagina-producto">
       <Header />
@@ -64,8 +67,8 @@ function ProductoIndividual() {
             <p className="texto-informacion-producto">{producto.descripcion}</p>
           </div>
           <div className="precio-y-cantidad">
-            <PrecioIndividual precio={producto.precio} />
-            <Cantidad />
+            <PrecioIndividual precio={precioTotal} />
+            <Cantidad cantidad={cantidad} setCantidad={setCantidad}/>
           </div>
           <div className="certificacion-contenedor">
             <Link to="/paginaCertificacion" className="a-link-certificacion-individual">
@@ -74,7 +77,7 @@ function ProductoIndividual() {
             <CiCircleCheck className="check-logo" />
           </div>
           <div className="botones-producto-individual">
-            <BotonCarritoProductoIndividual />
+            <BotonCarritoProductoIndividual idProducto={producto.idProducto} cantidad={cantidad} precioUnitario={producto.precio}/>
             <BotonComprarProductoIndividual />
           </div>
         </div>

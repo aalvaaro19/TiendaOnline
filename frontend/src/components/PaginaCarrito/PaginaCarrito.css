@@ -47,6 +47,13 @@
     color: #000;
 }
 
+.icono-eliminar-sector-1{
+    color: red;
+    margin-top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
 hr {
     border: none;
     border-top: 2px solid #ddd;
