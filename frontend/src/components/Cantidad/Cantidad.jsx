@@ -4,7 +4,7 @@ import { LuMinus } from "react-icons/lu";
 import { GoPlus } from "react-icons/go";
 
 function Cantidad() {
-  const [cantidad, setCantidad] = useState(0);
+  const [cantidad, setCantidad] = useState(1);
 
   const incrementarCantidad = () => {
     setCantidad(cantidad + 1);

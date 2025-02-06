@@ -53,7 +53,7 @@ function Card(props) {
         />
         <div className="personal-card-text">
           <p className="cardDescription">{props.name}</p>
-          <p className="cardPrice">{props.price}</p>
+          <p className="cardPrice">${props.price}</p>
         </div>
       </div>
     </Link>
