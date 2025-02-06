@@ -39,6 +39,12 @@
     width: 190%;
     font-size: 25px;
     margin-top: 10px;
+    color: grey;
+    transition: color 0.3s;
+    cursor: pointer;
+  }
+  
+  .cardHeart.favorito {
     color: red;
   }
 

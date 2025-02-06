@@ -22,6 +22,7 @@
   float: left;
   margin-left: 25%;
   box-shadow: none;
+  border: none;
 }
 
 .header-Search {
@@ -56,13 +57,16 @@
 
 .header-Search-button:hover{
   transform: scale(1.2);
-
-
 }
 
 
 .header-icons{
 	margin-top: 15px;
+  font-size: 25px;
+}
+
+.color-icono-logout{
+  cursor: pointer;
   font-size: 25px;
 }
 

@@ -7,16 +7,17 @@ import Certificacion from '../certificacion/Certificacion.jsx';
 import './PaginaRetro.css'
 import { useEffect, useState } from 'react';
 
+
 function PaginaRetro() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Hacer la solicitud GET a la API
     fetch('http://localhost:5000/api/listarProductos')
       .then((res) => res.json())
       .then((data) => {
+        console.log('Datos de la BBDD:', data);
         setData(data);
         setLoading(false);
       })
@@ -33,30 +34,7 @@ function PaginaRetro() {
   if (error) {
     return <div>Error: {error.message}</div>;
   }
-
-  // return (
-  //   <>
-  //       <HeaderProductos />
-  //       <div className='titulo-alineacion'>
-  //         <button className='titulo-favoritos'>RETRO</button>
-  //       </div>
-  //       <div className='bodyApp'>
-  //       {DataRetro.map((camiseta) => (
-  //         <Card
-  //           key={camiseta.id}
-  //           name={camiseta.name}
-  //           description={camiseta.description}
-  //           price={camiseta.price}
-  //           image={camiseta.image}
-  //           carpeta={camiseta.carpeta}
-  //         />
-  //       ))}
-  //     </div>
-  //       <Certificacion />
-  //       <ContactaConNosotros />
-  //       <Footer />
-  //   </>
-  // )
+  
   return (
     <>
       <HeaderProductos />
@@ -70,6 +48,7 @@ function PaginaRetro() {
             .map((camiseta) => (
               <Card
                 key={camiseta.idProducto}
+                idProducto={camiseta.idProducto}
                 name={camiseta.nombre}
                 description={camiseta.descripcion}
                 price={camiseta.precio}

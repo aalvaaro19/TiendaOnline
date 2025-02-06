@@ -1,48 +1,62 @@
 import './HeaderProductos.css';
-import balonLogo from '../../images/LogoTienda.png';
-import { FaRegHeart } from "react-icons/fa";
-import { MdOutlineShoppingBag } from "react-icons/md";
-import { FaRegUser } from "react-icons/fa6";
-import { IoSearchOutline } from "react-icons/io5";
-import Nav from '../Nav/Nav';
+import React from 'react';
+import imagenLogo from '../../images/LogoTienda.png'
 import { Link } from 'react-router-dom';
+import { FaRegUser } from "react-icons/fa6";
+import { IoHomeOutline} from "react-icons/io5";
+import { IoMdLogOut } from "react-icons/io";
+import { useEffect, useState } from 'react';
 
 
 
 function HeaderProductos(){
-  return (
-    <div className="header">
-			<div className="header-display">
-			<div className='imagen-header'>
-                <Link to="/">
-                    <img  
-                        className="header-Image"
-                        src={balonLogo}
-                        alt="logo" 
-                    />
-                </Link>
-            </div>
-				<div class="header-Search">
-					<input type="text" placeholder="Search..." className="header-Search-input"/>
-					<button className="header-Search-button"><IoSearchOutline /></button>
-				</div>
-				<div className="header-icons">
-                    <div className='display-header-icons'>
-                        <Link to="/PaginaFavoritos">
-                            <FaRegHeart className="color-iconos"/>
-                        </Link>
-                        <Link to="/PaginaCarrito">
-                            <MdOutlineShoppingBag className="color-iconos"/>
-                        </Link>
-                        <Link to="/login">
-                            <FaRegUser className="color-iconos"/>
-                        </Link>
-                    </div>
-            </div>
-			</div>
-            <Nav />
-		</div>
-  )
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+    useEffect(() => {
+        const token = localStorage.getItem('token');
+        if (token) {
+            setIsLoggedIn(true);
+        }
+    }, []);
+  
+    const handleLogout = async () => {
+        try {
+            const response = await fetch('/logout', { method: 'POST' });
+            const data = await response.json();
+            console.log(data.message);
+            
+            // Eliminar el token del almacenamiento local
+            localStorage.removeItem('token');
+            setIsLoggedIn(false);
+            alert('Sesión cerrada exitosamente');
+        } catch (error) {
+            console.error('Error al cerrar sesión:', error);
+        }
+    };
+    return (
+      <div className='header-auxiliar'>
+      <Link to='/'>
+      <IoHomeOutline  className='home-icono-auxiliar'/>
+      </Link>
+          <img  
+              className="header-auxiliar-Image"
+              src= {imagenLogo}
+              alt="logo" 
+          />
+          <div className='usuario'>
+          {isLoggedIn ? (
+            <button onClick={handleLogout} className="color-iconos">
+                <IoMdLogOut className='color-icono-auxiliar'/>
+            </button>
+          ) : (
+            <Link to="/login">
+                <FaRegUser className="color-iconos"/>
+            </Link>
+          )}
+          </div>
+      </div>
+  
+    );
 };
 
 export default HeaderProductos;

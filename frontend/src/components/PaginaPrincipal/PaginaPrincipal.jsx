@@ -8,6 +8,8 @@ import EscaleraFotos from '../escaleraFotos/CarruselFotos';
 import Certificacion from '../certificacion/Certificacion';
 
 function PaginaPrincipal() {
+  const token = localStorage.getItem('token');
+  console.log(token);
   return (
     <div>
         <Header />

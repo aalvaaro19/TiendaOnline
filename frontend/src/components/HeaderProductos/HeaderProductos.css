@@ -67,15 +67,18 @@ margin-top: 15px;
 font-size: 25px;
 }
 
-.color-iconos{
-color: white;
-}
 
 .display-header-icons{
 display: flex;
 justify-content: space-evenly;
 width: 100%;
 }
+
+.usuario{
+  display: flex;
+  align-items: center;
+}
+
 
 
 

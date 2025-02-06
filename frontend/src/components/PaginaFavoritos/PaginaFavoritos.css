@@ -37,3 +37,8 @@
 .titulo-favoritos:hover::after, .titulo-favoritos:hover::before {
     width: 100%;
 }
+
+.contenedor-contenido-favoritos-principal{
+    display: grid;
+    grid-template-columns: repeat(3, 33.34%);
+}
