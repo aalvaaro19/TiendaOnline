@@ -31,7 +31,7 @@ function App() {
             <Route path="/paginaCertificacion" element={<PaginaCertificacion/>} />
             <Route path='/PaginaCarrito' element={<PaginaCarrito />} />
             <Route path='/PaginaPago' element={<PaginaPago />} />
-            <Route path="/ProductoIndividual" element={<ProductoIndividual/>} />
+            <Route path="/ProductoIndividual/:idProducto" element={<ProductoIndividual />} />
             <Route path="/PaginaFavoritos" element={<PaginaFavoritos/>} />
           </Routes>
         </div>

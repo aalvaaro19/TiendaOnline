@@ -47,6 +47,7 @@ function PaginaFirmadas() {
             .map((camiseta) => (
               <Card
                 key={camiseta.idProducto}
+                idProducto={camiseta.idProducto}
                 name={camiseta.nombre}
                 description={camiseta.descripcion}
                 price={camiseta.precio}

@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import Balon from '../Balon/Balon';
 import './Registro.css';
 import axios from 'axios';
+import bcrypt from 'bcryptjs';
 
 function Registro() {
   const navigate = useNavigate();
@@ -24,11 +25,15 @@ function Registro() {
       [id]: value
     }));
   };
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     try {
+      // Enviar los datos al backend sin encriptar la contraseña
       await axios.post('/crearUsuario', formData);
+      
+      // Restablece el formulario después del registro exitoso
       setFormData({
         nombreUsuario: '',
         nombreCompleto: '',
@@ -37,10 +42,11 @@ function Registro() {
         email: '',
         password: ''
       });
+      console.log('Usuario:', formData);
       console.log('Usuario creado correctamente');
-      navigate('/login');
+      navigate('/login');  // Redirige al login
     } catch (error) {
-      console.error('Error creating user:', error);
+      console.error('Error creando usuario:', error);
     }
   };
 

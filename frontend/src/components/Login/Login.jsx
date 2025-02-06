@@ -3,23 +3,27 @@ import { GiSoccerBall } from "react-icons/gi";
 import { Link, useNavigate } from 'react-router-dom'; 
 import Balon from '../Balon/Balon';
 import './Login.css';
-// import { useAuth } from '../context/AuthContext';
 
 function Login() {
   const navigate = useNavigate();
-  const [nombreUser, setnombreUser] = useState('');
+  const [nombreUsuario, setnombreUsuario] = useState('');
   const [password, setPassword] = useState('');
-  // const { login } = useAuth();
 
   const handleLogin = async () => {
     try {
-      const response = await fetch(`/loginUser/${nombreUser}/${password}`);
-      const idUsuario = await response.json();
-      if (idUsuario) {
+      const response = await fetch('/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ nombreUsuario: nombreUsuario, password })
+      });
+      const data = await response.json();
+      if (response.ok) {
+        console.log(data);
         console.log('Usuario inició sesión correctamente');
-        console.log(idUsuario);
+        localStorage.setItem('token', data.token);
         navigate('/');
       } else {
+        console.log(data);
         console.log('Usuario o contraseña incorrectos');
         alert('Usuario o contraseña incorrectos');
       }
@@ -39,10 +43,11 @@ function Login() {
           <div className="entrada-correo">
             <input 
               type="text" 
-              id="nombreUser" 
+              id="nombreUsuario" 
               placeholder="Nombre de usuario" 
-              value={nombreUser}
-              onChange={(e) => setnombreUser(e.target.value)}
+              className="entrada-correo"
+              value={nombreUsuario}
+              onChange={(e) => setnombreUsuario(e.target.value)}
             />
           </div>
           <div className="entrada-contrasena">
@@ -50,6 +55,7 @@ function Login() {
               type="password" 
               id="password" 
               placeholder="Contraseña" 
+              className="entrada-contrasena"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />

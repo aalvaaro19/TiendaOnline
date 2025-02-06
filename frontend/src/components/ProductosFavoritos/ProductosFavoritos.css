@@ -1,30 +1,52 @@
-.contenedor-contenido-favoritos{
-  border-radius: 15px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.imagen-div{
-  margin: 10px;
-  padding-top: 10px;
+html, body{
+  font-size: 18px;
 }
 
-.imagen-favoritos{
+.personal-Card{
+  background-color: white;
+  width: 450px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.personal-Image{
   width: 100%;
-  height: 100%;
   border-radius: 15px;
 }
 
-.contenedor-contenido-favoritos-principal{
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-column-gap: 5%;
-  margin-top: 15px;
-  margin-left: 40px;
-  margin-right: 40px;
+.cardDescription{
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
 }
 
-.info-producto-favoritos{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+.cardPrice{
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.favoritosHeart{
+  font-size: 25px;
+  color: grey;
+  transition: color 0.3s;
+  cursor: pointer;
+  color: red;
+}
+
+.favoritosHeart.favorito {
+  color: red;
+}
+
+.link-producto-individual{
+  text-decoration: none;
 }
