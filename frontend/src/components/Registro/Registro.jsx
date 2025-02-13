@@ -4,7 +4,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import Balon from '../Balon/Balon';
 import './Registro.css';
 import axios from 'axios';
-import bcrypt from 'bcryptjs';
+import { FaEye, FaEyeSlash } from "react-icons/fa";
+
 
 function Registro() {
   const navigate = useNavigate();
@@ -17,6 +18,8 @@ function Registro() {
     email: '',
     password: ''
   });
+
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -42,7 +45,6 @@ function Registro() {
         email: '',
         password: ''
       });
-      console.log('Usuario:', formData);
       console.log('Usuario creado correctamente');
       navigate('/login');  // Redirige al login
     } catch (error) {
@@ -58,7 +60,7 @@ function Registro() {
           <GiSoccerBall className='logo-usuario'/>
         </div>
         <form onSubmit={handleSubmit} className='principal-contenedor-registro'>
-        <div>
+          <div>
             <input
               type="text"
               id="nombreUsuario"
@@ -108,14 +110,22 @@ function Registro() {
               onChange={handleChange}
             />
           </div>
-          <div>
-            <input
-              type="password"
-              id="password"
-              placeholder="Contraseña"
-              className='entrada'
-              value={formData.password}
-              onChange={handleChange}
+          <div className="entrada-contrasena">
+            <input 
+              type={showPassword ? "text" : "password"} // Cambiar tipo según showPassword
+              id="password" 
+              placeholder="Contraseña" 
+              className="entrada"
+              value={formData.password}  // Vincula password con formData
+              onChange={handleChange}   // Actualiza el campo password
+            />
+            <FaEye
+              className={`position-absolute ${showPassword ? 'd-none' : ''}`}
+              onClick={() => setShowPassword(true)} // Cambiar a tipo "text"
+            />
+            <FaEyeSlash
+              className={`position-absolute ${showPassword ? '' : 'd-none'}`}
+              onClick={() => setShowPassword(false)} // Cambiar a tipo "password"
             />
           </div>
           <div className='boton-contenedor-registro'>

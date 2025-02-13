@@ -3,11 +3,13 @@ import { GiSoccerBall } from "react-icons/gi";
 import { Link, useNavigate } from 'react-router-dom'; 
 import Balon from '../Balon/Balon';
 import './Login.css';
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 function Login() {
   const navigate = useNavigate();
   const [nombreUsuario, setnombreUsuario] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
 
   const handleLogin = async () => {
     try {
@@ -22,6 +24,9 @@ function Login() {
         console.log('Usuario inició sesión correctamente');
         localStorage.setItem('token', data.token);
         navigate('/');
+        if (nombreUsuario === 'admin' && password === 'admin') {
+          navigate('/admin');
+        }
       } else {
         console.log(data);
         console.log('Usuario o contraseña incorrectos');
@@ -31,6 +36,7 @@ function Login() {
       console.error('Error al iniciar sesión:', error);
     }
   };
+
 
   return (
     <div className='contenedor-login-login'>
@@ -52,12 +58,20 @@ function Login() {
           </div>
           <div className="entrada-contrasena">
             <input 
-              type="password" 
+              type={showPassword ? "text" : "password"} // Cambiar tipo según showPassword
               id="password" 
               placeholder="Contraseña" 
               className="entrada-contrasena"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+            />
+            <FaEye
+              className={`position-absolute ${showPassword ? 'd-none' : ''}`}
+              onClick={() => setShowPassword(true)} // Cambiar a tipo "text"
+            />
+            <FaEyeSlash
+              className={`position-absolute ${showPassword ? '' : 'd-none'}`}
+              onClick={() => setShowPassword(false)} // Cambiar a tipo "password"
             />
           </div>
         </div>
