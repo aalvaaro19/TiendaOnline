@@ -1,5 +1,3 @@
-const { ObjectId } = require('mongodb');
-
 class User {
   constructor(nombreUsuario, nombreCompleto, telefono, direccion, email, password) {
     this.nombreUsuario = nombreUsuario;

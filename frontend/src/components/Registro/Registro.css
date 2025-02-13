@@ -3,6 +3,15 @@
   justify-content: space-evenly;
 }
 
+
+.position-absolute {
+  position: absolute;
+  top: 50%; /* Centra verticalmente */
+  right: 15px; /* Coloca el ícono a la derecha */
+  transform: translateY(-50%); /* Asegura que esté centrado */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
 .contenedor-registro {
   height: auto;
   width: 450px;
@@ -44,6 +53,7 @@
 .entrada-contrasena {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .entrada {

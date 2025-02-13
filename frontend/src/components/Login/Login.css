@@ -46,6 +46,7 @@
 .entrada-contrasena {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 input[type="email"],
@@ -54,6 +55,7 @@ input[type="password"] {
   height: 50px;
   width: 100%;
   padding: 12px;
+  padding-right: 40px;
   border: 1px solid #cbd5e0;
   border-radius: 4px;
   font-size: 16px;
@@ -63,6 +65,14 @@ input[type="email"]::placeholder,
 input[type="text"]::placeholder,
 input[type="password"]::placeholder {
   color: #a0aec0;
+}
+
+.position-absolute {
+  position: absolute;
+  top: 50%; /* Centra verticalmente */
+  right: 15px; /* Coloca el ícono a la derecha */
+  transform: translateY(-50%); /* Asegura que esté centrado */
+  cursor: pointer; /* Cambia el cursor al pasar por encima */
 }
 
 /* CSS para el botón del container */

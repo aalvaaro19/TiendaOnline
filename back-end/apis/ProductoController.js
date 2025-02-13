@@ -39,8 +39,8 @@ api.post('/crearProducto', (req, res) => {
 });
 
 api.put('/actualizarProducto/:id', (req, res) => {
-    const { nombre, descripcion, precio, stock, imagen } = req.body;
-    const producto = new Producto(nombre, descripcion, precio, stock, imagen);
+    const { nombre, descripcion, precio, stock, carpeta, imagen } = req.body;
+    const producto = new Producto(nombre, descripcion, precio, stock, carpeta, imagen);
 
     connection.query(`UPDATE productos SET ? WHERE idProducto = ?`, [producto, req.params.id], (err, rows) => {
         if (err) throw err;
