@@ -41,7 +41,10 @@ function PaginaCarrito(){
     })
     .then((response) => {
         if (response.ok) {
-            setCarrito(carrito.filter((producto) => producto.idProducto !== idProducto));
+          const updatedCarrito = carrito.filter((producto) => producto.idProducto !== idProducto);
+          setCarrito(updatedCarrito);            
+          const totalCarrito = updatedCarrito.reduce((acc, producto) => acc + producto.subtotal, 0);
+          setTotal(totalCarrito);
         } else {
         }
     })

@@ -30,6 +30,7 @@ function HeaderAuxiliar() {
           console.error('Error al cerrar sesión:', error);
       }
   };
+  
   return (
     <div className='header-auxiliar'>
     <Link to='/'>
