@@ -18,6 +18,7 @@ import ListarProductos from './components/ZonaAdmin/Productos/ListarProductos';
 import RegistrarProductos from './components/ZonaAdmin/Productos/RegistrarProductos';
 import ListarResenias from './components/ZonaAdmin/Reseñas/ListarReseñas';
 import CrearResenia from './components/ZonaAdmin/Reseñas/CrearReseña';
+import PaginaBusqueda from './components/PaginaBusqueda/PaginaBusqueda';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
             <Route path='/admin/resenias/listar' element={<ListarResenias />} />
             <Route path='/admin/resenias/crear' element={<CrearResenia />} />
             <Route path='/admin/resenias/actualizar/:idResenia' element={<CrearResenia />} />
+            <Route path='/PaginaBusqueda' element={<PaginaBusqueda />} />
           </Routes>
         </div>
       </div>

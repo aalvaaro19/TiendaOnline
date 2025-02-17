@@ -2,9 +2,6 @@ const express = require('express');
 const api = express.Router();
 const connection = require('../bd/Conexion.js');
 const Producto = require('../Clases/Producto.js');
-const jwt = require('jsonwebtoken');
-
-const SECRET_KEY = 'keySecretaDelUsuarioParaTenerSesiones';
 
 
 api.get('/listarProductos', (req, res) => {
@@ -94,5 +91,22 @@ api.delete('/eliminarProductoFavoritos/:idUsuario/:idProducto', (req, res) => {
         }
     );
 });
+
+api.get('/listarProductosPorNombre/:nombre', (req, res) => {
+    const nombre = req.params.nombre;
+    connection.query(`
+        SELECT * FROM productos
+        WHERE nombre LIKE ?
+        ORDER BY LOCATE(?, nombre) ASC`, [`%${nombre}%`, nombre], (err, rows) => {
+        if (err) {
+            console.error('Error en la consulta SQL:', err);
+            res.status(500).json({ error: 'Error interno del servidor' });
+            return;
+        }
+        console.log("Consulta realizada con éxito");
+        res.json(rows);
+    });
+});
+
 
 module.exports = api;
