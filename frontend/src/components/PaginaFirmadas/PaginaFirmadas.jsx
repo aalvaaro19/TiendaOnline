@@ -40,7 +40,7 @@ function PaginaFirmadas() {
       <div className='titulo-alineacion'>
         <button className='titulo-favoritos'>FIRMADAS</button>
       </div>
-      <div className='bodyApp'>
+      <div className='bodyAppFirmadas'>
         {data.length > 0 ? (
           data
             .filter((camiseta) => camiseta.carpeta === 'firmadas')

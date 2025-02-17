@@ -41,7 +41,7 @@ function PaginaRetro() {
       <div className='titulo-alineacion'>
         <button className='titulo-favoritos'>RETRO</button>
       </div>
-      <div className='bodyApp'>
+      <div className='bodyAppRetro'>
         {data.length > 0 ? (
           data
             .filter((camiseta) => camiseta.carpeta === 'retro')

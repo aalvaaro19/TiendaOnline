@@ -40,7 +40,7 @@ function PaginaColaboraciones() {
         <div className='titulo-alineacion'>
           <button className='titulo-favoritos'>COLABORACIONES</button>
         </div>
-        <div className='bodyApp'>
+        <div className='bodyAppColaboraciones'>
         {data.length > 0 ? (
           data
             .filter((camiseta) => camiseta.carpeta === 'colaboraciones')

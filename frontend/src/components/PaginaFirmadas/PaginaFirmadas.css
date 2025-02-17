@@ -1,4 +1,4 @@
-.bodyApp{
+.bodyAppFirmadas{
     display: grid;
     grid-template-columns: repeat(3, 33.34%);
     text-decoration: none;
@@ -37,4 +37,18 @@
   
 .titulo-favoritos:hover::after, .titulo-favoritos:hover::before {
     width: 100%;
+}
+
+@media screen and (max-width: 939px){
+    .bodyAppFirmadas{
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+
+@media screen and (min-width: 939px) and (max-width: 1374px){
+    .bodyAppFirmadas{
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    } 
 }
