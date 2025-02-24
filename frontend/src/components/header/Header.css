@@ -1,44 +1,48 @@
 .header {
-    width: 100%;
-    background-color: rgb(87, 87, 141);
+  width: 100%;
+  background-color: rgb(87, 87, 141);
+  box-sizing: border-box;
+  padding: 10px;
 }
 
-.header-display{
-	display: grid;
-	grid-template-columns: 24% 50% 24%;
+.header-display {
+  display: grid;
+  grid-template-columns: 24% 50% 24%;
   align-items: center;
-
 }
-  
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 2em;
+      font-size: 2em;
   }
 }
 
-.header-Image{
+.header-Image {
   width: 110px;
   float: left;
   margin-left: 25%;
   box-shadow: none;
   border: none;
+  height: auto;
 }
 
 .header-Search {
   display: inline-block;
   position: relative;
   margin-top: 15px;
+  width: 100%;
+  padding: 5px;
 }
 
 .header-Search-input {
-	width: 100%;
+  width: 100%;
   padding: 10px;
   border: none;
   border-radius: 20px;
+  box-sizing: border-box;
 }
 
-.header-Search-input:focus{
+.header-Search-input:focus {
   outline: none;
   box-shadow: 0 0 10px #aeaeae;
 }
@@ -55,30 +59,97 @@
   transition: .01s ease;
 }
 
-.header-Search-button:hover{
+.header-Search-button:hover {
   transform: scale(1.2);
 }
 
-
-.header-icons{
-	margin-top: 15px;
+.header-icons {
+  margin-top: 15px;
   font-size: 25px;
+  padding: 5px;
 }
 
-.color-icono-logout{
+.color-icono-logout {
   cursor: pointer;
   font-size: 25px;
 }
 
-.color-iconos{
+.color-iconos {
   color: white;
 }
 
-.display-header-icons{
+.display-header-icons {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .header-display {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      padding: 10px;
+      text-align: center;
+      grid-auto-rows: auto;
+  }
 
+  .imagen-header {
+      margin-bottom: 10px;
+  }
 
+  .header-Image {
+      max-width: 100px;
+      margin-left: 0;
+  }
+
+  .header-Search {
+      margin-top: 0;
+  }
+
+  .header-Search-input {
+      width: 80%;
+      padding: 8px;
+      font-size: 14px;
+  }
+
+  .header-Search-button {
+      right: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+
+  .header-icons {
+      margin-top: 0;
+      font-size: 20px;
+  }
+
+  .display-header-icons {
+      justify-content: center;
+      gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-display {
+      gap: 10px;
+      padding: 5px;
+  }
+
+  .header-Image {
+      max-width: 50px;
+  }
+
+  .header-Search-input {
+      width: 70%;
+      padding: 6px;
+      font-size: 12px;
+  }
+
+  .header-Search-button {
+      right: 5%;
+  }
+
+  .display-header-icons {
+      gap: 15px;
+  }
+}

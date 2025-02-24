@@ -24,3 +24,37 @@
   font-size: 20px; /* Tamaño de texto ajustado */
   margin-top: 20px;
 }
+
+@media (max-width: 768px) {
+  .descripcion-container {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .descripcion-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .descripcion-container p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .descripcion-container {
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .descripcion-container h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .descripcion-container p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+}

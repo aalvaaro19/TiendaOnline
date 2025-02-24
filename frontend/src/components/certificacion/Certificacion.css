@@ -19,3 +19,15 @@
     height: auto;
     
 }
+
+@media (max-width: 768px) {
+    #img-certificacion {
+      width: 200px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #img-certificacion {
+      width: 150px;
+    }
+  }

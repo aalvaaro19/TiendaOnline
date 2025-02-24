@@ -5,7 +5,7 @@ function Footer(){
             <div className="footer-content">
                 <div className="footer-section about">
                     <button className="logo-text"><span>Limited</span>Football</button>
-                    <p>
+                    <p className='p-descripcion-footer'>
                     ¡Bienvenido a Limited Football, tu destino en línea para las camisetas más exclusivas y a la moda! En nuestra tienda, encontrarás una selección cuidadosamente curada de diseños únicos que se adaptan a todos los estilos y gustos. Nos enorgullecemos de ofrecer productos de alta calidad, comodidad y originalidad, asegurándonos de que siempre luzcas a la vanguardia de la moda.
                     </p>
                 </div>

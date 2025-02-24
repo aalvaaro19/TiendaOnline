@@ -88,3 +88,59 @@
     box-sizing: border-box;
   }
   
+
+  @media (max-width: 768px) {
+    .container-contacta {
+      flex-direction: column;
+      width: 90%;
+    }
+  
+    .container-parte-izquierda {
+      margin-right: 0;
+    }
+  
+    .boton-enviar {
+      justify-content: center;
+    }
+  
+    .container-parte-derecha textarea {
+      height: 150px;
+    }
+  }
+
+
+  @media (max-width: 480px) {
+    .texto-contacta-con-nosotros {
+      font-size: 1.8rem;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .container-contacta {
+      flex-direction: column;
+      width: 90%;
+      padding: 15px;
+    }
+  
+    .container-parte-izquierda {
+      margin-right: 0;
+    }
+  
+    .boton-enviar {
+      justify-content: center;
+    }
+  
+    .container-parte-derecha textarea {
+      height: 150px;
+    }
+  
+    .input-nombre input,
+    .input-correo input {
+      padding: 10px;
+    }
+  
+    .boton-enviar button {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  }
