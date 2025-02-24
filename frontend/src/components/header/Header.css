@@ -1,15 +1,15 @@
 .header {
-    width: 100%;
-    background-color: rgb(87, 87, 141);
+  width: 100%;
+  background-color: rgb(87, 87, 141);
+  box-sizing: border-box;
+  padding: 10px;
 }
 
-.header-display{
-	display: grid;
-	grid-template-columns: 24% 50% 24%;
+.header-display {
+  display: grid;
+  grid-template-columns: 24% 50% 24%;
   align-items: center;
-
 }
-  
 
 @media (max-width: 600px) {
   h1 {
@@ -17,68 +17,155 @@
   }
 }
 
-.header-Image{
+.header-Image {
   width: 110px;
   float: left;
   margin-left: 25%;
   box-shadow: none;
   border: none;
+  height: auto;
 }
 
 .header-Search {
-  display: inline-block;
+  display: flex; /* Cambiamos a flexbox */
   position: relative;
   margin-top: 15px;
+  width: 100%;
+  padding: 5px;
+  align-items: center; /* Centramos verticalmente */
 }
 
 .header-Search-input {
-	width: 100%;
+  flex-grow: 1; /* Permite que el input ocupe el espacio restante */
   padding: 10px;
   border: none;
   border-radius: 20px;
+  box-sizing: border-box;
 }
 
-.header-Search-input:focus{
+.header-Search-input:focus {
   outline: none;
   box-shadow: 0 0 10px #aeaeae;
 }
 
 .header-Search-button {
-  margin-right: 15px;
+  margin-right: 0; /* Eliminamos el margen derecho */
   border: none;
   background-color: transparent;
   cursor: pointer;
   border-radius: 20px;
-  position: absolute;
-  top: 0;
-  right: -20px;
-  transition: .01s ease;
+  display: flex; /* Usamos flexbox para centrar el icono */
+  align-items: center;
+  justify-content: center;
+  padding: 8px; /* Ajustamos el padding */
+  position: static; /* Cambiamos a posición static para que funcione con flexbox */
 }
 
-.header-Search-button:hover{
+.header-Search-button:hover {
   transform: scale(1.2);
 }
 
-
-.header-icons{
-	margin-top: 15px;
+.header-icons {
+  margin-top: 15px;
   font-size: 25px;
+  padding: 5px;
 }
 
-.color-icono-logout{
+.color-icono-logout {
   cursor: pointer;
   font-size: 25px;
 }
 
-.color-iconos{
+.color-iconos {
   color: white;
 }
 
-.display-header-icons{
+.display-header-icons {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .header-display {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 10px;
+    text-align: center;
+    grid-auto-rows: auto;
+  }
 
+  .imagen-header {
+    margin-bottom: 10px;
+  }
 
+  .header-Image {
+    max-width: 100px;
+    margin-left: 0;
+  }
+
+  .header-Search {
+    margin-top: 0;
+  }
+
+  .header-Search-input {
+    width: calc(100% - 40px); /* Ajustamos el ancho del input */
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .header-Search-button {
+    right: 0; /* Aseguramos que el botón esté al final */
+    top: 50%;
+    transform: none; /* Eliminamos la transformación */
+  }
+
+  .header-icons {
+    margin-top: 0;
+    font-size: 20px;
+  }
+
+  .display-header-icons {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-display {
+    gap: 5px;
+    padding: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+  }
+
+  .header-Image {
+    max-width: 60px;
+  }
+
+  .header-Search-input {
+    width: calc(100% - 30px); /* Ajustamos el ancho del input */
+    padding: 4px;
+    font-size: 10px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+  }
+
+  .header-Search-button {
+    padding: 4px; /* Ajustamos el padding */
+    right: 0;
+  }
+
+  .display-header-icons {
+    gap: 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  .display-header-icons img {
+    max-width: 10px;
+  }
+}
