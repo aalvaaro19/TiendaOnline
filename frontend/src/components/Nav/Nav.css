@@ -1,19 +1,19 @@
 .navBar {
-	margin-top: 1rem;
+  margin-top: 1rem;
 }
 
-ul{
+ul {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   list-style: none;
   text-align: center;
 }
 
-.palabra-boton-login{
+.palabra-boton-login {
   color: white;
 }
 
-.navBar-element{
+.navBar-element {
   text-align: center;
   padding: 10px;
   font-size: 15px;
@@ -26,7 +26,7 @@ ul{
   text-decoration: none;
 }
 
-.navBar-element a{
+.navBar-element a {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
@@ -35,7 +35,10 @@ ul{
   margin-left: auto;
 }
 
-.navBar-element::after, .navBar-element::before, .palabra-boton-login::after, .palabra-boton-login::before {
+.navBar-element::after, 
+.navBar-element::before, 
+.palabra-boton-login::after, 
+.palabra-boton-login::before {
   content: '';
   width: 0%;
   height: 2px;
@@ -44,6 +47,46 @@ ul{
   transition: 0.5s;
 }
 
-.navBar-element:hover::after, .navBar-element:hover::before {
+.navBar-element:hover::after, 
+.navBar-element:hover::before {
   width: 100%;
+}
+
+
+/* Tablet: hasta 992px (aprox) */
+@media (max-width: 992px) {
+  /* Aseguramos que la barra no exceda el 100% de ancho */
+  .navBar {
+    max-width: 100%;
+  }
+
+  /* Aquí podrías reducir el número de columnas si lo deseas;
+     por ejemplo, mantener las 4 pero más ajustadas, 
+     o bien pasarlo a 2 columnas. A modo de ejemplo: */
+  ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* Reducimos ligeramente el tamaño de la fuente */
+  .navBar-element {
+    font-size: 14px;
+  }
+}
+
+/* Móvil: hasta 600px */
+@media (max-width: 600px) {
+  .navBar {
+    max-width: 100%;
+  }
+
+  /* En móvil solemos ponerlo en una sola columna 
+     para que cada item ocupe toda la línea */
+  ul {
+    grid-template-columns: 1fr;
+  }
+
+  /* Reducimos un poco más el tamaño en pantallas muy pequeñas */
+  .navBar-element {
+    font-size: 10px;
+  }
 }
