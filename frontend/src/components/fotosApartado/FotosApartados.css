@@ -1,14 +1,25 @@
+/* 1. Reset global y evitar scroll lateral */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita cualquier scroll horizontal */
+}
+
+/* 2. Contenedor principal de imágenes */
 .contenedor-apartados-imagenes {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 90vh;
   width: 90vw;
-  margin: auto;
-  margin-bottom: 70px;
-  margin-top: 40px;
+  margin: 40px auto 70px; /* margin-top: 40px, margin-bottom: 70px, centrado horizontal */
 }
 
+/* 3. Estilos para cada contenedor de imagen */
 .contenedor-apartados-imagen-1,
 .contenedor-apartados-imagen-2,
 .contenedor-apartados-imagen-3 {
@@ -33,6 +44,7 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* 4. Imágenes de fondo según contenedor */
 .contenedor-apartados-imagen-1 {
   background-image: url('../../images/retro.jpg');
 }
@@ -45,6 +57,7 @@
   background-image: url('../../images/colaboraciones.jpg');
 }
 
+/* 5. Encabezados dentro de cada contenedor */
 .header-contenedor-apartados-imagen-1,
 .header-contenedor-apartados-imagen-2,
 .header-contenedor-apartados-imagen-3 {
@@ -55,6 +68,7 @@
   margin-top: 7%;
 }
 
+/* 6. Media query para pantallas de hasta 768px (tablets y móviles pequeños) */
 @media (max-width: 768px) {
   .contenedor-apartados-imagenes {
       flex-direction: column;
@@ -77,6 +91,7 @@
   }
 }
 
+/* 7. Media query para móviles (hasta 480px) */
 @media (max-width: 480px) {
   .contenedor-apartados-imagenes {
       width: 90%;
@@ -89,6 +104,8 @@
   }
 }
 
+/* 8. Media query adicional para tablets (de 481px a 768px) */
+/* Esta regla es complementaria para asegurar que en ese rango los contenedores ocupen el 100% del ancho interno */
 @media (min-width: 481px) and (max-width: 768px) {
   .contenedor-apartados-imagenes {
       width: 80%;
@@ -97,10 +114,10 @@
   .contenedor-apartados-imagen-1,
   .contenedor-apartados-imagen-2,
   .contenedor-apartados-imagen-3 {
-      width: 100%; /* Asegura que ocupen el 100% del ancho en tablets */
+      width: 100%;
   }
 
   .titulo {
-      font-size: 1.8rem; /* Ajusta el tamaño del título para tablets */
+      font-size: 1.8rem;
   }
 }

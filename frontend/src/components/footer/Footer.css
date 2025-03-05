@@ -1,68 +1,83 @@
-.footer {
-    background-color: #57578D;
-    color: #c6c6c6;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 2);
-    padding: 20px 0;
-    text-align: center;
-    margin-top: 30px;
+/* Reset global y prevención de scroll horizontal */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita scroll lateral */
+}
+
+/* Footer base */
+.footer {
+  background-color: #57578D;
+  color: #c6c6c6;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 2);
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* Logo de texto del footer */
 .logo-text {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ffffff;
-    text-decoration: none;
-    border: none;
-    background: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  background: none;
 }
   
 .logo-text::before {
-    margin-left: auto;
+  margin-left: auto;
 }
   
 .logo-text::after, .logo-text::before {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #f44336;
-    display: block;
-    transition: 0.5s;
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #f44336;
+  display: block;
+  transition: 0.5s;
 }
   
 .logo-text:hover::after, .logo-text:hover::before {
-    width: 100%;
+  width: 100%;
 }
 
+/* Contenido interno del footer */
 .footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .footer-section {
-    flex: 1;
-    margin: 10px;
-    min-width: 250px;
+  flex: 1;
+  margin: 10px;
+  min-width: 250px;
 }
-
 
 .footer-section h2 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #007bff;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #007bff;
 }
 
-.p-descripcion-footer{
+.p-descripcion-footer {
   font-size: 10px;
   padding: 25px;
 }
 
-.footer-section p, .footer-section ul, .footer-section li {
-    font-size: 14px;
-    line-height: 1.6;
-    margin: 5px 0;
+.footer-section p,
+.footer-section ul,
+.footer-section li {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 5px 0;
 }
 
 .footer-section ul {
@@ -77,152 +92,160 @@
 }
 
 .footer-section ul li a {
-    color: #c6c6c6;
-    text-decoration: none;
-    transition: color 0.3s;
+  color: #c6c6c6;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
-    color: #007bff;
+  color: #007bff;
 }
 
-.footer-section p{
+.footer-section p {
   color: #c6c6c6;
 }
 
 .footer-section .fas {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .footer-bottom {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #ffffff;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ffffff;
 }
 
-/* Personalizacion de las rdees sociales */
+/* Personalización de las redes sociales */
 .social-card {
-    height: fit-content;
-    width: fit-content;
-    display: flex;
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background: #57578D;
+  padding: 30px 73px;
+  border-radius: 14px;
+}
+
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  z-index: 2;
+}
+
+.BG {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #181818;
+  z-index: 1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+  font-size: 0px;
+}
+
+.instagram .BG {
+  background: #D62976;
+}
+
+.x-app .BG {
+  background: black;
+}
+
+.whatsapp .BG {
+  background: #075e54;
+}
+
+.gmail .BG {
+  background: #EA4335;
+}
+
+.Btn:hover .BG {
+  transform: scale(1.5);
+  font-size: 20px;
+  color: white;
+}
+
+.Btn:hover .svgContainer {
+  border: 1px solid rgba(216, 216, 216, 0.466);
+  background-color: rgba(209, 209, 209, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+/* Media Query para tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
-    background: #57578D;
-    padding: 30px 73px;
-    border-radius: 14px;
   }
+  
+  .footer-section {
+    margin: 10px 0;
+  }
+  
+  .social-card {
+    padding: 20px;
+    /* Se recomienda evitar un max-width muy pequeño en caso de que genere desbordamiento.
+       Puedes ajustar este valor según tu diseño; en este ejemplo se reduce para adaptarse */
+    max-width: 100%;
+  }
+}
+
+/* Media Query para móviles (max-width: 480px) */
+@media (max-width: 480px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-section {
+    margin: 10px 0;
+  }
+  
+  .footer-section ul {
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin: 5px 0;
+  }
+  
+  .social-card {
+    padding: 15px;
+    gap: 10px;
+  }
+  
   .Btn {
-    width: 45px;
-    height: 45px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    background-color: transparent;
-    position: relative;
-    border-radius: 7px;
-    cursor: pointer;
-    transition: all 0.3s;
+    width: 40px;
+    height: 40px;
   }
   
-  .svgContainer {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    backdrop-filter: blur(0px);
-    letter-spacing: 0.8px;
-    border-radius: 10px;
-    transition: all 0.3s;
-    z-index: 2;
+  .footer-bottom {
+    font-size: 12px;
   }
-  
-  .BG {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #181818;
-    z-index: 1;
-    border-radius: 10px;
-    pointer-events: none;
-    transition: all 0.3s;
-    font-size: 0px;
-  }
-  .instagram .BG {
-    background: #D62976;
-  }
-  .x-app .BG {
-    background: black;
-  }
-  .whatsapp .BG {
-    background: #075e54;
-  }
-  .gmail .BG {
-    background: #EA4335;
-  }
-  .Btn:hover .BG {
-    transform: scale(1.5);
-    /* transform-origin: bottom; */
-    font-size: 20px;
-    color: white;
-  }
-  
-  .Btn:hover .svgContainer {
-    border: 1px solid rgba(216, 216, 216, 0.466);
-    background-color: rgba(209, 209, 209, 0.466);
-    backdrop-filter: blur(4px);
-  }
-
-
-  @media (max-width: 768px) {
-    .footer-content {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .footer-section {
-      margin: 10px 0;
-    }
-  
-    .social-card {
-      padding: 20px;
-      max-width: 30px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    .footer-content {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .footer-section {
-      margin: 10px 0;
-    }
-  
-    .footer-section ul {
-      padding: 0;
-    }
-  
-    .footer-section ul li {
-      margin: 5px 0;
-    }
-  
-    .social-card {
-      padding: 15px;
-      gap: 10px;
-    }
-  
-    .Btn {
-      width: 40px;
-      height: 40px;
-    }
-  
-    .footer-bottom {
-      font-size: 12px;
-    }
-  }
+}

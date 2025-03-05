@@ -1,33 +1,48 @@
+/* 1. Reset global y evitar scroll horizontal */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Previene cualquier scroll lateral */
+}
+
+/* 2. Contenedor externo de certificación */
 .div-externo-certificacion {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/* 3. Contenedor interno con fondo y centrado */
 .div-interno-certificacion {
-    background-color: #57578D;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: #57578D;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+/* 4. Imagen de certificación con tamaño base */
 #img-certificacion {
-    width: 300px;
-    height: auto;
-    
+  width: 300px;
+  height: auto;
 }
 
+/* 5. Ajuste para tablets (pantallas hasta 768px) */
 @media (max-width: 768px) {
-    #img-certificacion {
-      width: 200px;
-    }
+  #img-certificacion {
+    width: 200px;
   }
+}
 
-  @media (max-width: 480px) {
-    #img-certificacion {
-      width: 150px;
-    }
+/* 6. Ajuste para móviles (pantallas hasta 480px) */
+@media (max-width: 480px) {
+  #img-certificacion {
+    width: 150px;
   }
+}

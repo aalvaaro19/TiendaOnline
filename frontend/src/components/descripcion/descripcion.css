@@ -1,12 +1,22 @@
+/* Reset global y evitar scroll horizontal */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+/* Estilos base para el contenedor de descripción */
 .descripcion-container {
   padding: 20px;
   background-color: #f8f8f8a4;
   border-radius: 8px;
-  max-width: 90%; /* Igual que contenedor-carrusel-principal */
-  margin: 0 auto;
+  max-width: 90%; /* Se mantiene dentro del 90% del viewport */
+  margin: 70px auto; /* Centrado vertical con márgenes superior e inferior */
   text-align: justify;
-  margin-bottom: 70px;
-  margin-top: 70px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
@@ -25,6 +35,7 @@
   margin-top: 20px;
 }
 
+/* Media Query para pantallas de hasta 768px (tablets y móviles pequeños) */
 @media (max-width: 768px) {
   .descripcion-container {
     padding: 20px;
@@ -41,6 +52,7 @@
   }
 }
 
+/* Media Query para móviles (hasta 480px) */
 @media (max-width: 480px) {
   .descripcion-container {
     padding: 25px;

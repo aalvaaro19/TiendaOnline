@@ -1,7 +1,20 @@
-body {
+/* 1. Aplicar box-sizing global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Estilos base para html y body */
+body, html {
   font-family: 'LV', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+/* 3. Evitar scroll horizontal en tablets y móviles */
+@media (max-width: 1024px) {
+  html, body {
+    overflow-x: hidden;
+  }
 }
 
 .contendor-carrusel-principal {
@@ -47,8 +60,6 @@ body {
   gap: 20px; 
 }
 
-
-
 .contendor-imagenes-carrusel img {
   width: 100%;
   height: auto;
@@ -66,7 +77,7 @@ body {
   text-align: left;
 }
 
-.info-contenedor-2, .info-contenedor-4{
+.info-contenedor-2, .info-contenedor-4 {
   margin-left: 90px;
 }
 
@@ -82,13 +93,14 @@ h2 {
   margin-bottom: 5px; /* Menos separación con el párrafo */
   color: #444;
 }
+
 p {
   font-size: 1rem;
   line-height: 1.5;
   color: #666;
 }
 
-
+/* Media query para pantallas hasta 768px */
 @media (max-width: 768px) {
   .contendor-carrusel-principal {
     padding: 20px;
@@ -121,7 +133,7 @@ p {
   }
 }
 
-
+/* Media query para móviles (max-width: 480px) */
 @media (max-width: 480px) {
   .contendor-carrusel-principal {
     padding: 25px;
