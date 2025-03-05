@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import ContactaConNosotros from '../ContactaConNosotros/ContactaConNosotros';
 import Footer from '../footer/Footer';
-import Certificacion from '../certificacion/Certificacion';
+import Certificacion from '../Certificacion/Certificacion';
 import Header from "../header/Header";
 import './ProductoIndividual.css';
 import BotonComprarProductoIndividual from '../BotonComprarProductoIndividual/BotonComprarProductoIndividual';

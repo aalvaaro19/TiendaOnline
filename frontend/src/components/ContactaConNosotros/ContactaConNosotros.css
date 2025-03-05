@@ -1,5 +1,5 @@
-/* 1. Reset global y prevención de scroll horizontal */
-*, *::before, *::after {
+ /* 1. Reset global y prevención de scroll horizontal */
+ *, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -68,6 +68,7 @@ html, body {
   display: flex;
   justify-content: flex-start;
   margin-top: 15px;
+
 }
 
 .boton-enviar button {
@@ -107,8 +108,9 @@ html, body {
 /* 8. Media Query para pantallas hasta 768px (tablets y móviles pequeños) */
 @media (max-width: 768px) {
   .container-contacta {
-    flex-direction: column;
-    width: 90%;
+    .container-contacta {
+      flex-direction: column;
+    }
   }
 
   .container-parte-izquierda {

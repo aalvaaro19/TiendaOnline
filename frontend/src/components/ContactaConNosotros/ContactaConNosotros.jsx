@@ -12,12 +12,14 @@ function ContactaConNosotros() {
                     <div className="input-correo">
                         <input type="email" placeholder="Correo Electrónico" className='entrada'/>
                     </div>
-                    <div className="boton-enviar">
-                        <button>Enviar</button>
-                    </div>
                 </div>
+                
                 <div className="container-parte-derecha">
                     <textarea placeholder="Escribe tu mensaje aquí..." className='entrada'></textarea>
+                </div>
+                
+                <div className="boton-enviar">
+                    <button>Enviar</button>
                 </div>
             </div>
         </div>

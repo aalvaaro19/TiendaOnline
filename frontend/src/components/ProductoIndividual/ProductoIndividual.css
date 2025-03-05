@@ -71,3 +71,30 @@
 
 }
 
+@media (max-width: 768px) {
+    .contenedor-producto-individual {
+      flex-direction: column;
+      align-items: center;     
+      gap: 20px;              
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  
+    .contenedor-producto-individual-imagen {
+      width: 80%;
+      max-width: 300px;       
+      height: auto;           
+    }
+  
+    .texto-informacion-producto {
+      width: 80%;
+      max-width: 300px;
+      margin: 0 auto;         
+    }
+  
+    .contenedor-producto-individual-contenido {
+      width: 80%;
+      max-width: 300px;
+    }
+  }
+  
