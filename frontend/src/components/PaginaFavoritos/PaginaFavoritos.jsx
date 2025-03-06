@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../PaginaFavoritos/PaginaFavoritos.css';
+import './PaginaFavoritos.css';
 import HeaderAuxiliar from '../HeaderAuxiliar/HeaderAuxiliar';
 import Footer from '../footer/Footer';
 import ContactaConNosotros from '../ContactaConNosotros/ContactaConNosotros';

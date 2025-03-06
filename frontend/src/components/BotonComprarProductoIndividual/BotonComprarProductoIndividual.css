@@ -14,3 +14,9 @@
     color: black;
     cursor: pointer;
 }
+
+@media screen and (max-width: 992px) {
+    .boton-comprar-p-i{
+        width: 150px;
+    }
+}

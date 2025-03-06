@@ -1,53 +1,88 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-size: 18px;
+}
+
+.personal-Card-Card {
+  background-color: white;
+  width: 450px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.personal-Image {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.cardDescription {
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.cardPrice {
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.cardHeart {
+  width: 190%;
+  font-size: 25px;
+  margin-top: 10px;
+  color: grey;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.cardHeart.favorito {
+  color: red;
+}
+
+.link-producto-individual {
+  text-decoration: none;
+}
+
+/* ===============================================
+   MEDIA QUERIES PARA RESPONSIVE
+   =============================================== */
+
+/* Tablet: hasta 992px */
+@media screen and (max-width: 992px) {
+  .personal-Card-Card {
+    width: 400px; /* Reduce un poco el ancho en tablet */
+    margin: 15px auto;
   }
-  
-  html, body{
-    font-size: 18px;
-  }
-  
-  .personal-Card{
-    background-color: white;
-    width: 450px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  .personal-Image{
-    width: 100%;
-    border-radius: 15px;
-  }
-  
-  .cardDescription{
-    margin-top: 10px;
-    font-size: 18px;
-    text-align: center;
-  }
-  
-  
-  .cardPrice{
-    margin-top: 10px;
-    font-size: 18px;
-    text-align: center;
-    font-weight: bold;
+}
+
+/* Móvil: hasta 600px */
+@media screen and (max-width: 600px) {
+  .personal-Card-Card {
+    width: 300px;
+    /* o, si prefieres un valor fijo: width: 300px; */
+    margin: 10px 36px 15px;
   }
 
-  .cardHeart{
-    width: 190%;
-    font-size: 25px;
-    margin-top: 10px;
-    color: grey;
-    transition: color 0.3s;
-    cursor: pointer;
-  }
-  
-  .cardHeart.favorito {
-    color: red;
+  /* Opcional: reducir un poco la fuente interna para pantallas muy pequeñas */
+  .cardDescription,
+  .cardPrice {
+    font-size: 16px;
   }
 
-  .link-producto-individual{
-    text-decoration: none;
+  .cardHeart {
+    font-size: 20px;
   }
+
+  img{
+    width: 60%;
+    height: 50%;
+  }
+}

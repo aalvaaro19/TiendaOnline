@@ -1,9 +1,22 @@
-body {
+/* 1. Aplicar box-sizing global */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Estilos base para html y body */
+body, html {
   font-family: 'LV', sans-serif;
   margin: 0;
   padding: 0;
 }
- 
+
+/* 3. Evitar scroll horizontal en tablets y móviles */
+@media (max-width: 1024px) {
+  html, body {
+    overflow-x: hidden;
+  }
+}
+
 .contendor-carrusel-principal {
   max-width: 90%;
   margin: 0 auto;
@@ -46,9 +59,7 @@ body {
   align-items: center;
   gap: 20px;
 }
- 
- 
- 
+
 .contendor-imagenes-carrusel img {
   width: 100%;
   height: auto;
@@ -65,8 +76,8 @@ body {
   flex: 1;
   text-align: left;
 }
- 
-.info-contenedor-2, .info-contenedor-4{
+
+.info-contenedor-2, .info-contenedor-4 {
   margin-left: 90px;
 }
  
@@ -82,22 +93,23 @@ h2 {
   margin-bottom: 5px; /* Menos separación con el párrafo */
   color: #444;
 }
+
 p {
   font-size: 1rem;
   line-height: 1.5;
   color: #666;
 }
- 
- 
+
+/* Media query para pantallas hasta 768px */
 @media (max-width: 768px) {
   .contendor-carrusel-principal {
     padding: 20px;
   }
- 
+
   .contendor-titulo-carrusel h1 {
     font-size: 1.5rem;
   }
- 
+
   .contenedor-imagen-1,
   .contenedor-imagen-2,
   .contenedor-imagen-3,
@@ -120,18 +132,18 @@ p {
     max-width: 100%;
   }
 }
- 
- 
+
+/* Media query para móviles (max-width: 480px) */
 @media (max-width: 480px) {
   .contendor-carrusel-principal {
     padding: 25px;
     margin-bottom: 20px;
   }
- 
+
   .contendor-titulo-carrusel h1 {
     font-size: 1.5rem;
   }
- 
+
   .contenedor-imagen-1,
   .contenedor-imagen-2,
   .contenedor-imagen-3,
@@ -140,21 +152,21 @@ p {
     text-align: center;
     gap: 10px;
   }
- 
+
   .info-contenedor-1,
   .info-contenedor-2,
   .info-contenedor-3,
   .info-contenedor-4 {
     margin-left: 0;
   }
- 
+
   .texto-info-contenedor-1,
   .texto-info-contenedor-2,
   .texto-info-contenedor-3,
   .texto-info-contenedor-4 {
     max-width: 100%;
   }
- 
+
   .contendor-imagenes-carrusel img {
     max-width: 100%;
     margin: 0;

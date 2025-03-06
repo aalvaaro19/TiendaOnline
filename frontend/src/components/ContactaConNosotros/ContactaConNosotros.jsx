@@ -16,9 +16,11 @@ function ContactaConNosotros() {
                         <button>Enviar</button>
                     </div>
                 </div>
+                
                 <div className="container-parte-derecha">
                     <textarea placeholder="Escribe tu mensaje aquí..." className='entrada'></textarea>
                 </div>
+            
             </div>
         </div>
     );

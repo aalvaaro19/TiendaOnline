@@ -1,19 +1,19 @@
 .navBar {
-	margin-top: 1rem;
+  margin-top: 1rem;
 }
 
-ul{
+ul {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   list-style: none;
   text-align: center;
 }
 
-.palabra-boton-login{
+.palabra-boton-login {
   color: white;
 }
 
-.navBar-element{
+.navBar-element {
   text-align: center;
   padding: 10px;
   font-size: 15px;
@@ -26,7 +26,7 @@ ul{
   text-decoration: none;
 }
 
-.navBar-element a{
+.navBar-element a {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
@@ -35,7 +35,10 @@ ul{
   margin-left: auto;
 }
 
-.navBar-element::after, .navBar-element::before, .palabra-boton-login::after, .palabra-boton-login::before {
+.navBar-element::after, 
+.navBar-element::before, 
+.palabra-boton-login::after, 
+.palabra-boton-login::before {
   content: '';
   width: 0%;
   height: 2px;
@@ -44,56 +47,56 @@ ul{
   transition: 0.5s;
 }
 
-.navBar-element:hover::after, .navBar-element:hover::before {
+.navBar-element:hover::after, 
+.navBar-element:hover::before {
   width: 100%;
 }
 
-.menu-dropdown {
+.menu-responsive {
   display: none;
-  position: absolute;
-  background-color: #4b4b7e;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.menu-container:hover .menu-dropdown {
-  display: block;
 }
 
 
-@media screen and (min-width: 769px) {
-  .menu-responsive {
-      display: none;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  /* .navBar-list{
-    display: grid;
-    grid-template-columns: repeat(1, 100%);
-    list-style: none;
-    text-align: center;
+/* Tablet: hasta 992px (aprox) */
+@media (max-width: 992px) {
+  .navBar {
+    max-width: 100%;
   }
 
-  .navBar-element-li{
-    text-align: justify;
-  } */
-
+  /* Ocultamos la lista en pantallas pequeñas */
   .navBar-list {
     display: none;
   }
+
+  /* Mostramos solo el menú en pantallas pequeñas */
   .menu-responsive {
     display: block;
   }
-  .menu-container {
-    width: 100%;
-    text-align: center;
+
+  /* Reducimos un poco más el tamaño en pantallas muy pequeñas */
+  .navBar-element {
+    font-size: 10px;
+  }
+}
+
+/* Móvil: hasta 600px */
+@media (max-width: 600px) {
+  .navBar {
+    max-width: 100%;
   }
 
-  .navBar-list-dropdown{
-    list-style: none;
-    text-align: center;
-    padding-left: 0;
+  /* Ocultamos la lista en pantallas pequeñas */
+  .navBar-list {
+    display: none;
+  }
+
+  /* Mostramos solo el menú en pantallas pequeñas */
+  .menu-responsive {
+    display: block;
+  }
+
+  /* Reducimos un poco más el tamaño en pantallas muy pequeñas */
+  .navBar-element {
+    font-size: 10px;
   }
 }

@@ -1,10 +1,20 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .PaginaPago {
     font-family: Arial, sans-serif;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
   }
   
   .contenedor-pago {
     display: flex;
+    flex: 1;
     justify-content: space-between;
     max-width: 1000px;
     margin: 20px auto;
@@ -80,5 +90,22 @@
   
   form button:hover {
     background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    /* Cambiamos a columna y reducimos ancho para que no se corte */
+    .contenedor-pago {
+      flex-direction: column;  /* Apila las secciones una debajo de la otra */
+      max-width: 90%;         /* Ajusta el contenedor para evitar recortes laterales */
+      margin: 20px auto;      /* Centrado horizontal */
+      padding: 20px;          /* Espaciado interno */
+    }
+  
+    /* Cada sección se expande al 100% en pantallas pequeñas */
+    .detalle-compra,
+    .formulario-pago {
+      width: 100%;
+      margin-bottom: 20px;     /* Espacio entre secciones */
+    }
   }
   

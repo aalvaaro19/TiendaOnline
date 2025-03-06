@@ -1,3 +1,15 @@
+/* Reset global y prevención de scroll horizontal */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita scroll lateral */
+}
+
+/* Footer base */
 .footer {
   background-color: #57578D;
   color: #c6c6c6;
@@ -7,6 +19,7 @@
   margin-top: 30px;
 }
 
+/* Logo de texto del footer */
 .logo-text {
   font-size: 24px;
   font-weight: bold;
@@ -33,6 +46,7 @@
   width: 100%;
 }
 
+/* Contenido interno del footer */
 .footer-content {
   display: flex;
   justify-content: space-around;
@@ -47,7 +61,6 @@
   min-width: 250px;
 }
 
-
 .footer-section h2 {
   font-size: 18px;
   margin-bottom: 10px;
@@ -59,7 +72,14 @@ font-size: 10px;
 padding: 25px;
 }
 
-.footer-section p, .footer-section ul, .footer-section li {
+.p-descripcion-footer {
+  font-size: 10px;
+  padding: 25px;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section li {
   font-size: 14px;
   line-height: 1.6;
   margin: 5px 0;
@@ -86,8 +106,8 @@ margin: 5px 0;
   color: #007bff;
 }
 
-.footer-section p{
-color: #c6c6c6;
+.footer-section p {
+  color: #c6c6c6;
 }
 
 .footer-section .fas {
@@ -100,7 +120,7 @@ color: #c6c6c6;
   color: #ffffff;
 }
 
-/* Personalizacion de las rdees sociales */
+/* Personalización de las redes sociales */
 .social-card {
   height: fit-content;
   width: fit-content;
@@ -109,9 +129,10 @@ color: #c6c6c6;
   justify-content: center;
   gap: 20px;
   background: #57578D;
-  padding: 30px 73px;
+  padding: 5% 10%;
   border-radius: 14px;
 }
+
 .Btn {
   width: 45px;
   height: 45px;
@@ -151,21 +172,25 @@ color: #c6c6c6;
   transition: all 0.3s;
   font-size: 0px;
 }
+
 .instagram .BG {
   background: #D62976;
 }
+
 .x-app .BG {
   background: black;
 }
+
 .whatsapp .BG {
   background: #075e54;
 }
+
 .gmail .BG {
   background: #EA4335;
 }
+
 .Btn:hover .BG {
   transform: scale(1.5);
-  /* transform-origin: bottom; */
   font-size: 20px;
   color: white;
 }
@@ -176,52 +201,57 @@ color: #c6c6c6;
   backdrop-filter: blur(4px);
 }
 
-
-@media (max-width: 768px) {
+/* Media Query para tablets (max-width: 768px) */
+@media (max-width: 810px) {
   .footer-content {
     flex-direction: column;
     align-items: center;
   }
-
+  
   .footer-section {
     margin: 10px 0;
   }
-
+  
   .social-card {
     padding: 20px;
+    /* Se recomienda evitar un max-width muy pequeño en caso de que genere desbordamiento.
+       Puedes ajustar este valor según tu diseño; en este ejemplo se reduce para adaptarse */
+    max-width: 100%;
   }
 }
 
+/* Media Query para móviles (max-width: 480px) */
 @media (max-width: 480px) {
   .footer-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-
+  
   .footer-section {
     margin: 10px 0;
   }
-
+  
   .footer-section ul {
     padding: 0;
   }
-
+  
   .footer-section ul li {
     margin: 5px 0;
   }
-
+  
   .social-card {
     padding: 15px;
     gap: 10px;
+    margin-left: 20px;
   }
-
+  
   .Btn {
     width: 40px;
     height: 40px;
   }
-
+  
   .footer-bottom {
-    font-size: 12px;
+    font-size: 12px;
   }
 }

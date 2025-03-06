@@ -39,7 +39,7 @@ function Card(props) {
 
   return (
     <Link to={`/ProductoIndividual/${props.idProducto}`} className="link-producto-individual">
-      <div className="personal-Card">
+      <div className="personal-Card-Card">
         <Link to="/PaginaFavoritos" className="link-producto-individual">
           <FaRegHeart 
             className={`cardHeart ${isFavorito ? 'favorito' : ''}`}

@@ -35,3 +35,18 @@
   background-color: #a9a9f0;
   color: black;
 }
+
+@media screen and (max-width: 992px) {
+  .cantidad-container{
+    width: 100px;
+  }
+
+  .cantidad-input{
+    width: 50px;
+    padding-left: 0;
+  }
+
+  .cantidad-button{
+    width: 25px;
+  }
+}
