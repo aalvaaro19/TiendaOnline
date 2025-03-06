@@ -68,6 +68,7 @@ html, body {
   background-color: transparent;
   cursor: pointer;
   border-radius: 20px;
+
   display: flex; /* Centrado del ícono */
   align-items: center;
   justify-content: center;
@@ -100,7 +101,6 @@ html, body {
   width: 100%;
 }
 
-/* Media Query para pantallas hasta 768px (tablets y algunos móviles) */
 @media (max-width: 768px) {
   .header-display {
     grid-template-columns: 1fr;
@@ -185,3 +185,4 @@ html, body {
     max-width: 10px;
   }
 }
+

@@ -106,6 +106,7 @@ margin: 5px 0;
   color: #007bff;
 }
 
+
 .footer-section p {
   color: #c6c6c6;
 }
@@ -132,7 +133,6 @@ margin: 5px 0;
   padding: 5% 10%;
   border-radius: 14px;
 }
-
 .Btn {
   width: 45px;
   height: 45px;
@@ -201,6 +201,7 @@ margin: 5px 0;
   backdrop-filter: blur(4px);
 }
 
+
 /* Media Query para tablets (max-width: 768px) */
 @media (max-width: 810px) {
   .footer-content {
@@ -227,6 +228,7 @@ margin: 5px 0;
     align-items: center;
     text-align: center;
   }
+
   
   .footer-section {
     margin: 10px 0;

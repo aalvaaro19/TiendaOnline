@@ -52,6 +52,7 @@ ul {
   width: 100%;
 }
 
+
 .menu-responsive {
   display: none;
 }
@@ -98,5 +99,6 @@ ul {
   /* Reducimos un poco más el tamaño en pantallas muy pequeñas */
   .navBar-element {
     font-size: 10px;
+
   }
 }
