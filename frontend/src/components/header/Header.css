@@ -1,3 +1,16 @@
+/* Reset global y evitar scroll horizontal */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'LV', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;  /* Evita scroll lateral */
+}
+
+/* Header base */
 .header {
   width: 100%;
   background-color: rgb(87, 87, 141);
@@ -11,6 +24,7 @@
   align-items: center;
 }
 
+/* Ajuste de tipografía en pantallas pequeñas */
 @media (max-width: 600px) {
   h1 {
     font-size: 2em;
@@ -27,16 +41,16 @@
 }
 
 .header-Search {
-  display: flex; /* Cambiamos a flexbox */
+  display: flex; /* Usamos flexbox */
   position: relative;
   margin-top: 15px;
   width: 100%;
   padding: 5px;
-  align-items: center; /* Centramos verticalmente */
+  align-items: center; /* Centrado vertical */
 }
 
 .header-Search-input {
-  flex-grow: 1; /* Permite que el input ocupe el espacio restante */
+  flex-grow: 1; /* Ocupa el espacio restante */
   padding: 10px;
   border: none;
   border-radius: 20px;
@@ -49,16 +63,17 @@
 }
 
 .header-Search-button {
-  margin-right: 0; /* Eliminamos el margen derecho */
+  margin-right: 0; /* Sin margen derecho */
   border: none;
   background-color: transparent;
   cursor: pointer;
   border-radius: 20px;
-  display: flex; /* Usamos flexbox para centrar el icono */
+
+  display: flex; /* Centrado del ícono */
   align-items: center;
   justify-content: center;
-  padding: 8px; /* Ajustamos el padding */
-  position: static; /* Cambiamos a posición static para que funcione con flexbox */
+  padding: 8px; /* Ajuste de padding */
+  position: static; /* Posición estática para funcionar con flexbox */
 }
 
 .header-Search-button:hover {
@@ -101,7 +116,7 @@
 
   .header-Image {
     max-width: 100px;
-    margin-left: 0;
+    margin-left: 0;  /* Quitar margen lateral para evitar desbordamientos */
   }
 
   .header-Search {
@@ -109,15 +124,15 @@
   }
 
   .header-Search-input {
-    width: calc(100% - 40px); /* Ajustamos el ancho del input */
+    width: calc(100% - 40px); /* Ajuste del ancho del input */
     padding: 8px;
     font-size: 14px;
   }
 
   .header-Search-button {
-    right: 0; /* Aseguramos que el botón esté al final */
+    right: 0; /* Asegura posición final */
     top: 50%;
-    transform: none; /* Eliminamos la transformación */
+    transform: none; /* Elimina transformación */
   }
 
   .header-icons {
@@ -131,6 +146,7 @@
   }
 }
 
+/* Media Query para móviles (max-width: 480px) */
 @media (max-width: 480px) {
   .header-display {
     gap: 5px;
@@ -155,7 +171,7 @@
   }
 
   .header-Search-button {
-    padding: 4px; /* Ajustamos el padding */
+    padding: 4px; /* Ajuste del padding */
     right: 0;
   }
 
@@ -169,3 +185,4 @@
     max-width: 10px;
   }
 }
+

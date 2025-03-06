@@ -1,90 +1,162 @@
+ /* 1. Reset global y prevención de scroll horizontal */
+ *, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+/* 2. Contenedor externo de contacto */
 .div-externo-contacta {
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px;
+}
+
+/* 3. Texto de contacto */
+.texto-contacta-con-nosotros {
+  font-size: 2.5em;
+  color: rgb(85, 85, 146);
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-align: left;
+  width: 80%;
+  max-width: 800px;
+}
+
+/* 4. Contenedor principal del formulario de contacto */
+.container-contacta {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 800px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* 5. Parte izquierda del formulario */
+.container-parte-izquierda {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-right: 15px;
+}
+
+.input-nombre,
+.input-correo {
+  margin-bottom: 20px;
+}
+
+.input-nombre input,
+.input-correo input {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* 6. Botón de envío */
+.boton-enviar {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15px;
 
 }
-  
-  .texto-contacta-con-nosotros {
-    font-size: 2.5em;
-    color: rgb(85, 85, 146);
-    margin-top: 10px;
-    margin-bottom: 20px;
-    text-align: left;
-    width: 80%;
-    max-width: 800px;
-  }
-  
+
+.boton-enviar button {
+  padding: 12px 25px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: rgb(85, 85, 146);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-enviar button:hover {
+  background-color: rgb(76, 76, 137);
+}
+
+/* 7. Parte derecha del formulario (área de texto) */
+.container-parte-derecha {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.container-parte-derecha textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  padding: 15px;
+  font-size: 1.1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* 8. Media Query para pantallas hasta 768px (tablets y móviles pequeños) */
+@media (max-width: 768px) {
   .container-contacta {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    max-width: 800px;
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    gap: 3%;
   }
-  
+
   .container-parte-izquierda {
-    flex: 1;
-    display: flex;
+    margin-right: 0;
+  }
+
+  .boton-enviar {
+    justify-content: center;
+  }
+
+  .container-parte-derecha textarea {
+    height: 150px;
+  }
+}
+
+/* 9. Media Query para móviles (hasta 480px) */
+@media (max-width: 480px) {
+  .texto-contacta-con-nosotros {
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .container-contacta {
     flex-direction: column;
-    margin-right: 15px;
+    width: 90%;
+    padding: 15px;
   }
-  
-  .input-nombre,
-  .input-correo {
-    margin-bottom: 20px;
+
+  .container-parte-izquierda {
+    margin-right: 0;
   }
-  
+
+  .boton-enviar {
+    justify-content: center;
+  }
+
+  .container-parte-derecha textarea {
+    height: 150px;
+  }
+
   .input-nombre input,
   .input-correo input {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+    padding: 10px;
   }
-  
-  .boton-enviar {
-    display: flex;
-    justify-content: flex-start;
-    margin-top: 15px;
-  }
-  
+
   .boton-enviar button {
-    padding: 12px 25px;
-    font-size: 1.2em;
-    color: #fff;
-    background-color: rgb(85, 85, 146);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    padding: 10px 20px;
+    font-size: 1rem;
   }
-  
-  .boton-enviar button:hover {
-    background-color: rgb(76, 76, 137);
-  }
-  
-  .container-parte-derecha {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
-  }
-  
-  .container-parte-derecha textarea {
-    width: 100%;
-    height: 100%;
-    resize: none;
-    padding: 15px;
-    font-size: 1.1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-  }
-  
+}

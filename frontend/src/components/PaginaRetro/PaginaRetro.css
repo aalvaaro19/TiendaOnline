@@ -1,15 +1,15 @@
-.bodyAppRetro{
+.bodyAppRetro {
     display: grid;
     grid-template-columns: repeat(3, 33.34%);
-}
-
-.titulo-alineacion{
+  }
+  
+  .titulo-alineacion {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.titulo-favoritos{
+  }
+  
+  .titulo-favoritos {
     width: 250px;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -19,35 +19,61 @@
     text-decoration: none;
     border: none;
     background: none;
-}
+  }
   
-.titulo-favoritos::before {
+  .titulo-favoritos::before {
     margin-left: auto;
-}
+  }
   
-.titulo-favoritos::after, .titulo-favoritos::before {
+  .titulo-favoritos::after,
+  .titulo-favoritos::before {
     content: '';
     width: 0%;
     height: 2px;
     background: #E3001B;
     display: block;
     transition: 0.5s;
-}
+  }
   
-.titulo-favoritos:hover::after, .titulo-favoritos:hover::before {
+  .titulo-favoritos:hover::after,
+  .titulo-favoritos:hover::before {
     width: 100%;
-}
+  }
 
-@media screen and (max-width: 939px){
-    .bodyAppRetro{
-        display: grid;
-        grid-template-columns: repeat(1, 100%);
+  @media screen and (max-width: 500px) {
+    .bodyAppRetro {
+      /* Pasamos a una columna */
+      grid-template-columns: 1fr;
+      /* Nos aseguramos de no pasarnos del ancho */
+      max-width: 80%;
+      margin-left: 10%;
+            /* Si aun así surge scroll horizontal, forzamos a esconderlo */
+      overflow-x: hidden;
     }
-}
 
-@media screen and (min-width: 939px) and (max-width: 1374px){
-    .bodyAppRetro{
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-    } 
-}
+  }
+  
+  @media screen and (max-width: 939px) {
+    .bodyAppRetro {
+      /* Pasamos a una columna */
+      grid-template-columns: 1fr;
+      /* Nos aseguramos de no pasarnos del ancho */
+      max-width: 80%;
+      margin-left: 10%;
+            /* Si aun así surge scroll horizontal, forzamos a esconderlo */
+      overflow-x: hidden;
+    }
+
+  }
+  
+  @media screen and (min-width: 939px) and (max-width: 1374px) {
+    .bodyAppRetro {
+      /* Pasamos a dos columnas de igual ancho (en lugar de 50% puedes usar 1fr) */
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 100%;
+      width: 100%;
+      /* Forzamos a esconder scroll horizontal si apareciera */
+      overflow-x: hidden;
+    }
+  }
+  

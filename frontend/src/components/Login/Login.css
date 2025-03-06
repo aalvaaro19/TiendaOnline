@@ -1,29 +1,53 @@
-/* CSS del contenedor principal donde se encuentran los sub-componentes */
-.contenedor-login-login{
-  display: flex;
-  justify-content: center;
+/* 1) Reset básico y configuración de body para ocupar 100% de la pantalla */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
 }
 
+/* 2) Contenedor principal que alinea los balones y el login en el centro */
+.contenedor-login-login {
+  display: flex;
+  justify-content: space-evenly; /* Espacio uniforme entre balones y login */
+  align-items: center;          /* Centra verticalmente */
+  width: 100%;
+  height: 100vh;                /* Ocupa toda la altura de la ventana */
+  background-color: #f3f3f3;    /* Ejemplo de color de fondo */
+}
+
+/* 3) Estilo para el componente Balon (si en tu Balon.jsx no usas clase, añádela) */
+.balon-lateral {
+  width: 80px;   /* Tamaño por defecto en pantallas grandes */
+  height: 80px;
+  /* Ajusta según sea un <img> o un ícono SVG */
+}
+
+/* 4) Contenedor del login */
 .contenedor-login {
-  margin-top: 100px;
-  height: 550px;
-  width: 450px;
-  padding: 20px;
   background-color: rgb(81, 81, 133);
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  
+  /* Quita altura y margen fijos para que se adapte */
+  margin: 0;
+  padding: 20px;
+  width: 450px;     /* Ancho base en desktop */
+  height: 550px;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; /* Distribuye espacio entre elementos */
+  justify-content: space-between;
   gap: 20px;
 }
 
-/* CSS del icono del container */
+/* Encabezado con el ícono de la pelota */
 .encabezado-contenedor-login {
   display: flex;
   justify-content: center;
-  margin-top: 10px; /* Ajusta el espacio superior */
+  margin-top: 10px;
 }
 
 .logo-usuario {
@@ -32,16 +56,14 @@
   color: white;
 }
 
-/* CSS para los inputs */
+/* Inputs */
 .principal-contenedor-login {
   display: flex;
   flex-direction: column;
   gap: 15px;
   width: 100%;
-
 }
 
-/* Ajustes para cada entrada */
 .entrada-correo,
 .entrada-contrasena {
   display: flex;
@@ -49,6 +71,7 @@
   position: relative;
 }
 
+/* Inputs 100% del contenedor */
 input[type="email"],
 input[type="text"],
 input[type="password"] {
@@ -67,91 +90,110 @@ input[type="password"]::placeholder {
   color: #a0aec0;
 }
 
+/* Iconos de ojo */
 .position-absolute {
   position: absolute;
-  top: 50%; /* Centra verticalmente */
-  right: 15px; /* Coloca el ícono a la derecha */
-  transform: translateY(-50%); /* Asegura que esté centrado */
-  cursor: pointer; /* Cambia el cursor al pasar por encima */
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 
-/* CSS para el botón del container */
+/* Botón de iniciar sesión */
 .boton-contenedor-login {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px; /* Ajusta el espacio inferior */
 }
 
 .boton-login {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 70%;
-  height: 70%;
   padding: 12px;
   font-size: 16px;
-  color: black;
   background-color: white;
   border: none;
   border-radius: 4px;
+  color: rgb(81, 81, 133);
   cursor: pointer;
   transition: background-color 0.3s ease;
-  text-decoration: none;
-  color: rgb(81, 81, 133);
 }
 
-.palabra-boton-login-login{
-  text-decoration: none;
-  color: rgb(81, 81, 133);
-}
-
-/* CSS del texto inferior del container */
+/* Texto de registro */
 .inferior-contenedor-login {
   text-align: center;
-  font-size: 14px;
   color: white;
-  margin-top: auto; /* Empuja el texto hacia abajo */
   font-size: 15px;
+  margin-top: auto;
 }
 
-.cuenta-texto{
-  color: white
+.cuenta-texto {
+  color: white;
 }
 
-
-.navBar-element-login{
-  text-align: center;
-  padding: 10px;
+.navBar-element-login {
+  background: none;
+  border: none;
   font-size: 15px;
   font-weight: bold;
-	text-decoration: none;
-  border: none;
-  background: none;
-	font-family: 'Poppins', sans-serif;
   color: #fff;
-	text-decoration: none;
+  cursor: pointer;
 }
 
-.navBar-element-login a{
+.navBar-element-login a {
   color: black;
   text-decoration: none;
 }
 
-.navBar-element-login::before {
-  margin-left: auto;
-}
-
-.navBar-element-login::after, .navBar-element-login::before {
+.navBar-element-login::before,
+.navBar-element-login::after {
   content: '';
   width: 0%;
   height: 2px;
   background: white;
-	display: block;
+  display: block;
   transition: 0.5s;
 }
 
-.navBar-element-login:hover::after, .navBar-element-login:hover::before {
+.navBar-element-login:hover::after,
+.navBar-element-login:hover::before {
   width: 100%;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contenedor-login {
+    width: 60%;         
+    max-width: 700px;   
+    height: 700px;     
+    margin-top: 0;     
+    
+    font-size: 1.2rem;
+  }
+
+  .contenedor-login .logo-usuario {
+    width: 90px;
+    height: 90px;
+  }
+  .contenedor-login input[type="text"],
+  .contenedor-login input[type="email"],
+  .contenedor-login input[type="password"] {
+    font-size: 1.1rem;  
+    padding: 14px;      
+  }
+
+  .contenedor-login .boton-login {
+    font-size: 1.1rem;
+    padding: 14px;
+    width: 70%;         
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .balon-lateral {
+    display: none;
+  }
+  .contenedor-login{
+    width: 90%;
+  }
 }
